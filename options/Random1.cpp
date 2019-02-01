@@ -1,13 +1,3 @@
-//
-//  Random1.cpp
-//  vanilla_call
-//
-//  Created by cheerzzh on 21/5/14.
-//  Copyright (c) 2014年 Jared Zhou. All rights reserved.
-//
-
-//Random1.cpp
-
 #include <cstdlib>
 #include <cmath>
 
@@ -15,11 +5,9 @@
 using namespace std;
 #endif
 
-
-
 double GetOneGaussianBySummation() {
 	double result = 0;
-    
+
 	for(unsigned long j=0;j<12;j++) {
 		result += rand()/static_cast<double>(RAND_MAX);
 	}
@@ -33,7 +21,7 @@ double GetOneGaussianByBoxMuller() {
 	double result;
 	double x, y;
 	double sizeSquared;
-   
+
 	do {
 		x = 2.0 * rand()/static_cast<double>(RAND_MAX)-1;
 		y = 2.0 * rand()/static_cast<double>(RAND_MAX)-1;
@@ -43,18 +31,4 @@ double GetOneGaussianByBoxMuller() {
 	result = x*sqrt(-2*log(sizeSquared)/sizeSquared);    
 	return result;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
