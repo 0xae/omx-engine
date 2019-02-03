@@ -32,7 +32,7 @@ double simpleMonteCarlo(double expiry, double strike,
 
     printf(
         "sum: %f\nmean: %f\n",
-        sum,mean
+        sum, mean
     );
 
     return mean;
