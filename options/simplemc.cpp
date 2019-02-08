@@ -17,21 +17,26 @@ double simpleMonteCarlo(double expiry, double strike,
     for (int i=0; i<npaths; ++i) {
         double gaussian = GetOneGaussianByBoxMuller();
         thisSpot = movedSpot*exp(rootVariance*gaussian);
+
         double payoff = thisSpot-strike;
         payoff = (payoff>0)?payoff : 0;
+
         sum += payoff;
     }
 
     double mean = sum / npaths;
+
     mean *= exp(-r*expiry);
 
     printf(
         "variance: %f\nrootVariance: %f\nitoCorrection: %f\nmovedSpot: %f\n",
+
         variance, rootVariance, itoCorrection, movedSpot
     );
 
     printf(
         "sum: %f\nmean: %f\n",
+
         sum, mean
     );
 
