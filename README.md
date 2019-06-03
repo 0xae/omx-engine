@@ -15,4 +15,8 @@ and at the same time provide unbreakable security upon settlement procedure.
 
 The unsecure window is between the matching the orders and finalizing the settlement procedures, that is what this research is about.
 
+## Links
+
+[Ethereum HTLC](https://github.com/chatch/hashed-timelock-contract-ethereum)
+
 
