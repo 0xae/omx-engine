@@ -13,4 +13,6 @@ Decoupling the matching engine and the settlement infraestructure allows us to p
 
 and at the same time provide unbreakable security upon settlement procedure.
 
-The unsecure window is between the matching the orders and finalizing the settlement procedures, that is what omx is about.
+The unsecure window is between the matching the orders and finalizing the settlement procedures, that is what this research is about.
+
+
