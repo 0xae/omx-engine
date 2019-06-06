@@ -18,5 +18,8 @@ The unsecure window is between the matching the orders and finalizing the settle
 ## Links
 
 [Ethereum HTLC](https://github.com/chatch/hashed-timelock-contract-ethereum)
+
 [GOLD Shares (GLD)](http://www.spdrgoldshares.com/media/GLD/file/Introduction_to_SPDR_Gold_Shares.pdf)
+
 [Diamond Trading](http://www.idexonline.com/)
+
