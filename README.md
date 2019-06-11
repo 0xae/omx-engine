@@ -26,7 +26,7 @@ Links
 * [DAI stablecoin](https://medium.com/@james_3093/the-dai-stablecoin-is-a-game-changer-for-ethereum-and-the-entire-cryptocurrency-ecosystem-13fb412d1e75)
 * [Ethereum HTLC](https://github.com/chatch/hashed-timelock-contract-ethereum)
 * [GOLD Shares (GLD)](http://www.spdrgoldshares.com/media/GLD/file/Introduction_to_SPDR_Gold_Shares.pdf)
-* [Diamond Trading](http://www.idexonline.com/)
+* [International Diamong Exchange](http://www.idexonline.com/)
 * [Bitcoin](https://github.com/bitcoin)
 * [Ethereum](https://github.com/ethereum)
 * [Solidity](https://github.com/ethereum/solidity)
