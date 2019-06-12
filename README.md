@@ -15,39 +15,38 @@ powered by bitcoin or ethereum blockchain to represent financial instruments of 
 can distributed, safe and sofisticated instruments be implemented in the modern era of cross 
 border and interplanetary finance - blockchain.
 
-keywords
+
+Keywords
 ===
-ethereum, bitcoin, smart contracts, stablecoins, pegs, lightning network, consensus,
-blockchain, solidity, monax, hyperledger, contracts, financial instruments, FINEX
+Ethereum, Bitcoin, smart-contracts, stablecoins, pegs, lightning-network, consensus,
+blockchain, solidity, monax, hyperledger, contracts, financial-instruments, FINEX
 
 
 Links
-===
-* [DAI stablecoin](https://medium.com/@james_3093/the-dai-stablecoin-is-a-game-changer-for-ethereum-and-the-entire-cryptocurrency-ecosystem-13fb412d1e75)
-* [Ethereum HTLC](https://github.com/chatch/hashed-timelock-contract-ethereum)
-* [GOLD Shares (GLD)](http://www.spdrgoldshares.com/media/GLD/file/Introduction_to_SPDR_Gold_Shares.pdf)
-* [International Diamong Exchange](http://www.idexonline.com/)
+=====
+* [International-Diamond-Exchange](http://www.idexonline.com)
+* [Ethereum-HTLC](https://github.com/chatch/hashed-timelock-contract-ethereum)
+* [GOLD-Shares(GLD)](http://www.spdrgoldshares.com/media/GLD/file/Introduction_to_SPDR_Gold_Shares.pdf)
+* [DAI-stablecoin](https://medium.com/@james_3093/the-dai-stablecoin-is-a-game-changer-for-ethereum-and-the-entire-cryptocurrency-ecosystem-13fb412d1e75)
 * [Bitcoin](https://github.com/bitcoin)
 * [Ethereum](https://github.com/ethereum)
 * [Solidity](https://github.com/ethereum/solidity)
 * [Lightning](https://github.com/lightningnetwork/lnd)
-* [BitMEX (Bitcoin Merchantile Exchange)](bitmex.com/app/)
-* [Bitcoin Talk](https://bitcointalk.org)
-* [Graphene Blockchain](https://github.com/0xae/graphene)
-* [Hyperledger burrow](https://github.com/hyperledger/burrow)
+* [Bitcoin-Talk](https://bitcointalk.org)
+* [Graphene-Blockchain](https://github.com/0xae/graphene)
+* [BitMEX-(Bitcoin-Merchantile-Exchange)](bitmex.com/app/)
+* [Hyperledger-burrow](https://github.com/hyperledger/burrow)
 * [Monax](https://github.com/monax/monax)
-* [The bitcoin protocol stack](https://medium.com/@melik_87377/lightning-network-enables-unicast-transactions-in-bitcoin-lightning-is-bitcoins-tcp-ip-stack-8ec1d42c14f5)
-* [Dai stablecoin](https://makerdao.com/)
-* [Dai stablecoin introduction](https://medium.com/@james_3093/the-dai-stablecoin-is-a-game-changer-for-ethereum-and-the-entire-cryptocurrency-ecosystem-13fb412d1e75)
+* [Dai-stablecoin](https://makerdao.com/)
+* [The-bitcoin-protocol-stack](https://medium.com/@melik_87377/lightning-network-enables-unicast-transactions-in-bitcoin-lightning-is-bitcoins-tcp-ip-stack-8ec1d42c14f5)
+* [Dai-stablecoin-introduction](https://medium.com/@james_3093/the-dai-stablecoin-is-a-game-changer-for-ethereum-and-the-entire-cryptocurrency-ecosystem-13fb412d1e75)
+
 
 EOS
-===
+=====
 * [eosrio](https://web.eosrio.io/)
 * [EOS Blockchain](https://github.com/EOSIO/eos)
 * [eos-price-oracle](https://github.com/eosrio/eos-price-oracle)
 * [eosriosignup](https://github.com/eosrio/eosriosignup)
 * [dappmetadata (Contract Auditing platform)](https://github.com/eosrio/dappmetadata)
 * [Hyperion-History-API](https://github.com/eosrio/Hyperion-History-API)
-
-
-
