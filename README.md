@@ -21,12 +21,19 @@ Keywords
 Ethereum, Bitcoin, smart-contracts, stablecoins, pegs, lightning-network, consensus,
 blockchain, solidity, monax, hyperledger, contracts, financial-instruments, FINEX
 
-
-Links
+Financial Markets
 =====
+* [Hong Kong Exchange Derivatives](https://www.hkex.com.hk/Market-Data/Statistics/Derivatives-Market?sc_lang=en)
 * [International-Diamond-Exchange](http://www.idexonline.com)
-* [Ethereum-HTLC](https://github.com/chatch/hashed-timelock-contract-ethereum)
+* [Vanguard Equity ETF](https://www.vanguard.com.hk/portal/mvc/detail/etf/overview?portId=9582&assetCode=EQUITY##overview)
+* [Leverage Technicals](https://nordfx.com/349-1-1000-Leverage-Ratio-Freedom-of-Trading.html)
 * [GOLD-Shares(GLD)](http://www.spdrgoldshares.com/media/GLD/file/Introduction_to_SPDR_Gold_Shares.pdf)
+* [Options Strategy Software](https://promo.cboevesttech.com/ria/)
+
+
+Cryptocurrency
+=====
+* [Ethereum-HTLC](https://github.com/chatch/hashed-timelock-contract-ethereum)
 * [DAI-stablecoin](https://medium.com/@james_3093/the-dai-stablecoin-is-a-game-changer-for-ethereum-and-the-entire-cryptocurrency-ecosystem-13fb412d1e75)
 * [Bitcoin](https://github.com/bitcoin)
 * [Ethereum](https://github.com/ethereum)
