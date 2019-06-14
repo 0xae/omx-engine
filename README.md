@@ -30,7 +30,6 @@ Financial Markets
 * [GOLD-Shares(GLD)](http://www.spdrgoldshares.com/media/GLD/file/Introduction_to_SPDR_Gold_Shares.pdf)
 * [Options Strategy Software](https://promo.cboevesttech.com/ria/)
 
-
 Cryptocurrency
 =====
 * [Ethereum-HTLC](https://github.com/chatch/hashed-timelock-contract-ethereum)
@@ -47,7 +46,6 @@ Cryptocurrency
 * [Dai-stablecoin](https://makerdao.com/)
 * [The-bitcoin-protocol-stack](https://medium.com/@melik_87377/lightning-network-enables-unicast-transactions-in-bitcoin-lightning-is-bitcoins-tcp-ip-stack-8ec1d42c14f5)
 * [Dai-stablecoin-introduction](https://medium.com/@james_3093/the-dai-stablecoin-is-a-game-changer-for-ethereum-and-the-entire-cryptocurrency-ecosystem-13fb412d1e75)
-
 
 EOS
 =====
