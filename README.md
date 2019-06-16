@@ -15,7 +15,6 @@ powered by bitcoin or ethereum blockchain to represent financial instruments of 
 can distributed, safe and sofisticated instruments be implemented in the modern era of cross 
 border and interplanetary finance - blockchain.
 
-
 Keywords
 ===
 Ethereum, Bitcoin, smart-contracts, stablecoins, pegs, lightning-network, consensus,
