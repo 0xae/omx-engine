@@ -2,20 +2,20 @@
 #include <iostream>
 #include <cmath>
 
-#include "Random1.h"
-#include "payoff1.h"
+#include "options/Random1.h"
+#include "options/payoff1.h"
 
 int main(int argc, char const *argv[]) {
     double spot;
     double strike;
-    OptionType t=call;
+    PayOff::OptionType t=PayOff::call;
     std::string otype;
 
     std::cout << "Option Type (put, call)";
     std::cin >> otype;
 
     if (otype=="put") {
-        t=put;
+        t=PayOff::put;
     } else if (otype!="call") {
         std::cout << "Invalid option type "+otype;
         return -1;

@@ -1,8 +1,8 @@
 #include <stdio.h>
-#include "Random1.h"
 #include <iostream>
 #include <cmath>
 
+#include "Random1.h"
 using namespace std;
 
 double simpleMonteCarlo(double expiry, double strike,
