@@ -1,10 +1,11 @@
 #ifndef PAYOFF_H
 #define PAYOFF_H
 
+enum OptionType {call, put};
+
 class PayOff {
 
 public:
-    enum OptionType {call, put};
     PayOff(double Strike_, OptionType TheOptionsType_);
     double Calculate(double Spot) const;
 
