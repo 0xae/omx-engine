@@ -1,9 +1,8 @@
 #include <cmath>
-
-#include "options/simplemc2.h"
+#include "options/simplemc3.h"
 #include "options/Random1.h"
 
-double SimpleMonteCarlo2(const PayOff& payOff,
+double SimpleMonteCarlo3(const PayOff& payOff,
     double Expiry,
     double Spot,
     double Vol,
