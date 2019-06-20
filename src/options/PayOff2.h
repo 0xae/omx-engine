@@ -3,7 +3,6 @@
 
 
 class PayOff {
-
 public:
     PayOff() {};
     virtual double Calculate(double Spot) const=0;
