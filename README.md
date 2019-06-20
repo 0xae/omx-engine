@@ -8,7 +8,7 @@ like tendermint to do the settlement.
 
 Decoupling the matching engine and the settlement infraestructure allows us to process thousands of tx per second
 and at the same time provide unbreakable security upon the settlement procedure.
-The unsecure window is between the matching the orders and finalizing the settlement procedures, that is what this research is about.
+The unsecure window is between matching the orders and finalizing the settlement procedures, that is what this research is about.
 
 With that being said, we're to research the viability and challenges of using smart contracts
 powered by bitcoin or ethereum blockchain to represent financial instruments of interest and how
@@ -17,7 +17,7 @@ border and interplanetary finance - blockchain.
 
 Keywords
 ===
-Ethereum, Bitcoin, smart-contracts, stablecoins, pegs, lightning-network, consensus,
+eletronic trading, financial instruments exchange, futures trading, options trading, contracts tradings, Ethereum, Bitcoin, smart-contracts, stablecoins, pegs, lightning-network, consensus,
 blockchain, solidity, monax, hyperledger, contracts, financial-instruments, FINEX
 
 Financial Markets
