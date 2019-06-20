@@ -1,5 +1,5 @@
-#ifndef SIMPLEMC_H
-#define SIMPLEMC_H
+#ifndef SIMPLEMC2_H
+#define SIMPLEMC2_H
 
 #include "options/payoff1.h"
 
