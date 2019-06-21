@@ -1,7 +1,6 @@
 #ifndef PAYOFF_H
 #define PAYOFF_H
 
-
 class PayOff {
 
 public:

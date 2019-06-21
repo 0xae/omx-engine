@@ -1,19 +1,12 @@
-//
-//  Random1.cpp
-//  vanilla_call
-//
-//  Created by cheerzzh on 21/5/14.
-//  Copyright (c) 2014年 Jared Zhou. All rights reserved.
-//
-
-//Random1.cpp
-
 #include <cstdlib>
 #include <cmath>
 
 #if !defined(_MSC_VER)
 using namespace std;
 #endif
+
+#ifndef RANDOM1_UTILS
+#define RANDOM1_UTILS
 
 double GetOneGaussianBySummation() {
 	double result = 0;
@@ -42,17 +35,4 @@ double GetOneGaussianByBoxMuller() {
 	return result;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#endif

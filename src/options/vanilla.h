@@ -8,7 +8,7 @@ public:
     VanillaOption(PayOff &payOff, double expiry);
     virtual double CalcPayoff(double Spot) const;
     double GetExpiry() const;
-    virtual ~VanillaOption() {};
+    virtual ~VanillaOption();
 
 private:
     PayOff &ThePayoff;
