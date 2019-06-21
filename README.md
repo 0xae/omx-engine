@@ -1,5 +1,5 @@
 # OMX Engine
-An derivative trading engine build for the future.
+An derivative trading engine built for the future.
 
 omx is a research project to develop a next generation trading engine for options
 and futures, without much constraints on the specific flavors of these financial instruments.
