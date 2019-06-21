@@ -52,3 +52,9 @@ EOS
 * [eosriosignup](https://github.com/eosrio/eosriosignup)
 * [dappmetadata (Contract Auditing platform)](https://github.com/eosrio/dappmetadata)
 * [Hyperion-History-API](https://github.com/eosrio/Hyperion-History-API)
+
+About Us
+====
+Sales, more information xbtfinex@gmail.com
+2019 [xbtfinex.com](https://xbtfinex.com)
+
