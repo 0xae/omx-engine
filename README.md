@@ -1,5 +1,5 @@
 # OMX Engine
-Futures and Options trading engines.
+An derivative trading engine build for the future.
 
 omx is a research project to develop a next generation trading engine for options
 and futures, without much constraints on the specific flavors of these financial instruments.
@@ -8,7 +8,7 @@ like tendermint to do the settlement.
 
 Decoupling the matching engine and the settlement infraestructure allows us to process thousands of tx per second
 and at the same time provide unbreakable security upon the settlement procedure.
-The unsecure window is between matching the orders and finalizing the settlement procedures, that is what this research is about.
+The unsecure window is between matching the orders and finalizing the settlement procedures, with cold-storage, advanced and user friendly cryptography we hope to overcome the challenge. 
 
 With that being said, we're to research the viability and challenges of using smart contracts
 powered by bitcoin or ethereum blockchain to represent financial instruments of interest and how
