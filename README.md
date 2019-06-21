@@ -55,6 +55,8 @@ EOS
 
 About Us
 ====
-Sales, more information xbtfinex@gmail.com
+For Sales and more information: xbtfinex@gmail.com
+
 2019 [xbtfinex.com](https://xbtfinex.com)
+======
 
