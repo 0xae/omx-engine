@@ -8,12 +8,10 @@ like tendermint to do the settlement.
 
 Decoupling the matching engine and the settlement infraestructure allows us to process thousands of tx per second
 and at the same time provide unbreakable security upon the settlement procedure.
-The unsecure window is between matching the orders and finalizing the settlement procedures, with cold-storage, advanced and user friendly cryptography we hope to overcome the challenge. 
+The unsecure window is between matching the orders and finalizing the settlement procedures.
+With cold-storage, advanced and user friendly cryptography we can to overcome the challenge. 
 
-With that being said, we're to research the viability and challenges of using smart contracts
-powered by bitcoin or ethereum blockchain to represent financial instruments of interest and how
-can distributed, safe and sofisticated instruments be implemented in the modern era of cross 
-border and interplanetary finance - blockchain.
+Our main inovation is the use of smart contracts powered by bitcoin or ethereum blockchain to represent financial instruments of interest which allows the engine to be extensible and able to transact various financial instruments with great performance and relentless security.
 
 Keywords
 ===
