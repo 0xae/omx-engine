@@ -28,7 +28,7 @@ int main(int argc, char const *argv[]) {
     printPayoff("option[put]", option_ptr->CalcPayoff(spot));
 
     unique_ptr<PayOff> ptr=payoffPut.Clone();
-
     printPayoff("put2", ptr->Calculate(spot));
+
     return 0;
 }
