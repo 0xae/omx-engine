@@ -20,7 +20,7 @@ blockchain, solidity, monax, hyperledger, contracts, financial-instruments, FINE
 
 Financial Markets
 =====
-* [Hong Kong Exchange Derivatives](https://www.hkex.com.hk/Market-Data/Statistics/Derivatives-Market?sc_lang=en)
+* [Hong Kong Derivatives Exchange](https://www.hkex.com.hk/Market-Data/Statistics/Derivatives-Market?sc_lang=en)
 * [International Diamond Exchange](http://www.idexonline.com)
 * [Vanguard FTSE Asia](https://www.vanguard.com.hk/portal/mvc/detail/etf/overview?portId=9582&assetCode=EQUITY##overview)
 * [Leverage Technicals](https://nordfx.com/349-1-1000-Leverage-Ratio-Freedom-of-Trading.html)
