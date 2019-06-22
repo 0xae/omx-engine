@@ -32,12 +32,5 @@ int main(int argc, char const *argv[]) {
     unique_ptr<PayOff> ptr=payoffPut.Clone();
     printPayoff("put2", ptr->Calculate(spot));
 
-    VanillaOption option1(payoffPut, strike);
-    VanillaOption option2(payoffPut2, strike*0.5);
-
-    option2 = option1;
-
-    VanillaOption& option3 = option2;
-
     return 0;
 }
