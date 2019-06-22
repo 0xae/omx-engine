@@ -24,13 +24,8 @@ int main(int argc, char const *argv[]) {
     PayOffPut payoffPut(strike);
     PayOffPut payoffPut2(strike*0.5);
 
-    printPayoff("put", payoffPut.Calculate(spot));
-
-    unique_ptr<VanillaOption> option_ptr(new VanillaOption(payoffPut, strike));
-    printPayoff("option[put]", option_ptr->CalcPayoff(spot));
-
-    unique_ptr<PayOff> ptr=payoffPut.Clone();
-    printPayoff("put2", ptr->Calculate(spot));
+    // just to pass warnings
+    payoffPut.Calculate(spot);
 
     VanillaOption option1(payoffPut, strike);
     VanillaOption option2(payoffPut2, strike*0.5);
