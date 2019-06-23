@@ -1,4 +1,5 @@
 #include <cmath>
+#include <iostream>
 #include "options/simplemc4.h"
 #include "options/Random1.h"
 
@@ -18,13 +19,22 @@ double SimpleMonteCarlo4(const VanillaOption& option,
 
     for (unsigned long i=0; i < NumberOfPaths; i++) {
         double thisGaussian = GetOneGaussianByBoxMuller();
-        thisSpot = movedSpot*exp( rootVariance*thisGaussian);
+        thisSpot = movedSpot * exp(rootVariance*thisGaussian);
 
         double thisPayOff = option.CalcPayoff(thisSpot);
+
+        std::cout << "gaussian: " << thisGaussian
+            << ", thisSpot: " << thisSpot
+            << ", movedSpot: " << movedSpot
+            << ", payoff: " << thisPayOff
+            << std::endl;
+
         runningSum += thisPayOff;
     }
 
     double mean = runningSum / NumberOfPaths;
     mean *= exp(-r*Expiry);
+
+    std::cout << "mean: " << mean << std::endl;
     return mean;
 }

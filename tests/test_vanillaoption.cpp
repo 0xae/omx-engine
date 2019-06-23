@@ -14,7 +14,7 @@ void printPayoff(std::string context, double value) {
             << "$"
             << value
             << ".00"
-            << std::endl;    
+            << std::endl;
 }
 
 int main(int argc, char const *argv[]) {

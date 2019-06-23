@@ -7,7 +7,7 @@ VanillaOption::VanillaOption(PayOff &payoff, double expiry)
     Expiry = expiry;
 }
 
-VanillaOption::VanillaOption(const VanillaOption& original) 
+VanillaOption::VanillaOption(const VanillaOption& original)
 {
     Expiry = original.Expiry;
     ThePayoff = original.ThePayoff->Clone();
