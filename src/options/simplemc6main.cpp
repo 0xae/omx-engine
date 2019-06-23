@@ -1,7 +1,6 @@
 #include <iostream>
 #include "options/PayOff2.h"
 #include "options/simplemc4.h"
-// #include "options/doubledigital.h"
 
 using std::cout;
 using std::cin;
@@ -48,8 +47,33 @@ int main(int argc, char const *argv[])
           << result
           << endl;
 
-    PayOffPut payOffPut(Strike);
     VanillaOption option2(option);
+
+    result = SimpleMonteCarlo4(option2,
+        Spot,
+        Vol,
+        r,
+        NumberOfPaths
+    );    
+
+    cout << "Price of Call option::2 = " 
+          << result
+          << endl;
+
+    PayOffPut payOffPut(Strike);
+    VanillaOption option3(payOffPut, Strike);
+
+    result = SimpleMonteCarlo4(option3,
+        Spot,
+        Vol,
+        r,
+        NumberOfPaths
+    );    
+
+    cout << "Price of Put option::3 = " 
+          << result
+          << endl;
+
 
     return 0;
 }

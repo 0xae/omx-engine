@@ -7,9 +7,9 @@ PayOffCall::PayOffCall(double Strike_): Strike(Strike_) {
 }
 
 double PayOffCall::Calculate (double Spot) const {
-    std::cout << "option[call]: strike("<<Strike
-        << ") - spot(" << Spot << ")"
-        << std::endl;
+    // std::cout << "option[call]: spot("<<Spot
+    //     << ") - strike(" << Strike << ")"
+    //     << std::endl;
 
     return fmax(Spot-Strike, 0.0);
 }
@@ -23,9 +23,9 @@ PayOffPut::PayOffPut(double Strike_): Strike(Strike_) {
 }
 
 double PayOffPut::Calculate (double Spot) const {
-    std::cout << "option[put]: spot("<<Spot
-        << ") - strike(" << Strike << ")"
-        << std::endl;
+    // std::cout << "option[put]: strike("<<Strike
+    //     << ") - spot(" << Spot << ")"
+    //     << std::endl;
 
     return fmax(Strike-Spot, 0.0);
 }

@@ -23,11 +23,11 @@ double SimpleMonteCarlo4(const VanillaOption& option,
 
         double thisPayOff = option.CalcPayoff(thisSpot);
 
-        std::cout << "gaussian: " << thisGaussian
-            << ", thisSpot: " << thisSpot
-            << ", movedSpot: " << movedSpot
-            << ", payoff: " << thisPayOff
-            << std::endl;
+        // std::cout << "gaussian: " << thisGaussian
+        //     << ", thisSpot: " << thisSpot
+        //     << ", movedSpot: " << movedSpot
+        //     << ", payoff: " << thisPayOff
+        //     << std::endl;
 
         runningSum += thisPayOff;
     }
@@ -35,6 +35,6 @@ double SimpleMonteCarlo4(const VanillaOption& option,
     double mean = runningSum / NumberOfPaths;
     mean *= exp(-r*Expiry);
 
-    std::cout << "mean: " << mean << std::endl;
+    // std::cout << "mean: " << mean << std::endl;
     return mean;
 }
