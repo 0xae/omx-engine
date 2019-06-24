@@ -28,6 +28,9 @@ montecarlo6: payoff2 simplemc4 vanillaoption
 vanillamain: vanillaoption doubledigital simplemc4 payoff2
 	$(CC) $(PARAMS) -o bin/vanillamain vanilla.o doubledigital.o PayOff2.o simplemc4.o src/options/vanillamain.cpp
 
+vanillamain2: vanillaoption2 simplemc5 payoff2 payoffbridge
+	$(CC) $(PARAMS) -o bin/vanillamain2 PayOff2.o payoffbridge.o vanilla2.o simplemc5.o src/options/vanillamain2.cpp
+
 tests: payoff simplemc2 simplemc3 simplemc4 payoff2 vanillaoption
 	$(CC) $(PARAMS) -o bin/test_uniqueptr vanilla.o doubledigital.o PayOff2.o simplemc4.o tests/test_uniqueptr.cpp
 	$(CC) $(PARAMS) -o bin/test_vanillaoption vanilla.o doubledigital.o PayOff2.o simplemc4.o tests/test_vanillaoption.cpp
@@ -36,16 +39,22 @@ payoff:
 	$(CC) $(PARAMS) -c src/options/payoff1.cpp
 payoff2:
 	$(CC) $(PARAMS) -c src/options/PayOff2.cpp
+payoffbridge:
+	$(CC) $(PARAMS) -c src/options/payoffbridge.cpp
 doubledigital:
 	$(CC) $(PARAMS) -c src/options/doubledigital.cpp
 vanillaoption:
 	$(CC) $(PARAMS) -c src/options/vanilla.cpp
+vanillaoption2:
+	$(CC) $(PARAMS) -c src/options/vanilla2.cpp
 simplemc2:
 	$(CC) $(PARAMS) -c src/options/simplemc2.cpp
 simplemc3:
 	$(CC) $(PARAMS) -c src/options/simplemc3.cpp
 simplemc4:
 	$(CC) $(PARAMS) -c src/options/simplemc4.cpp
+simplemc5:
+	$(CC) $(PARAMS) -c src/options/simplemc5.cpp
 
 clean:
 	rm bin/*

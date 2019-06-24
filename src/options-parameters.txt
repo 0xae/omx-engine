@@ -1,0 +1,6 @@
+# for put options
+expiry=8
+strike=9
+spot=4
+vol=7
+r=4

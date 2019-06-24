@@ -7,14 +7,14 @@ class VanillaOption {
 public:
     VanillaOption(PayOff &payOff, double expiry);
     VanillaOption(const VanillaOption& original);
-    VanillaOption& operator=(const VanillaOption & original);
+    VanillaOption& operator=(const VanillaOption &original);
 
-    virtual double CalcPayoff(double Spot) const;
+    double CalcPayoff(double Spot) const;
     double GetExpiry() const;
-    virtual ~VanillaOption();
-    unique_ptr<PayOff> ThePayoff;
+    ~VanillaOption();
 
 private:
+    unique_ptr<PayOff> ThePayoff;
     double Expiry;
 };
 
