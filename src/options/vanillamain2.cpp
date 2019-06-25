@@ -7,6 +7,12 @@ using std::cout;
 using std::cin;
 using std::endl;
 
+void fromPayoffBridge(PayoffBridge &bridge, double Spot) {
+    std::cout << "option payoff: "
+        << bridge.Calculate(Spot)
+        << std::endl;
+}
+
 int main(int argc, char const *argv[])
 {
     double Expiry;
@@ -35,7 +41,10 @@ int main(int argc, char const *argv[])
     cin >> NumberOfPaths;
 
     PayOffPut payOff(Strike);
+    // PayoffBridge bridge(payOff);
     VanillaOption option(payOff, Expiry);
+
+    // fromPayoffBridge(bridge, Spot);
 
     double result = SimpleMonteCarlo5(option,
         Spot,

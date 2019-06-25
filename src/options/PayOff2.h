@@ -22,8 +22,8 @@ public:
     virtual double Calculate(double Spot) const;
     virtual unique_ptr<PayOff> Clone() const;
     virtual ~PayOffPut(){
-        cout << "~PayOffPut()" 
-             << endl;
+        // cout << "~PayOffPut()" 
+        //      << endl;
     }
 
 private:
@@ -36,8 +36,8 @@ public:
     virtual double Calculate(double Spot) const;
     virtual unique_ptr<PayOff> Clone() const;
     virtual ~PayOffCall(){
-        cout << "~PayOffCall()" 
-             << endl;
+        // cout << "~PayOffCall()" 
+        //      << endl;
     }
 
 private:
