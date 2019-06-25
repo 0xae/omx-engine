@@ -26,6 +26,6 @@ double PayoffBridge::Calculate(double Spot) const {
 }
 
 PayoffBridge::~PayoffBridge() {
-    std::cout << "PayoffBridge::destructor()" 
+    std::cout << "~PayoffBridge()" 
             << std::endl;
 }
