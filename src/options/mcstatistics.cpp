@@ -21,5 +21,5 @@ vector<vector<double>> StatisticsMean::GetResultsSoFar() const {
 }
 
 unique_ptr<StatisticsMC> StatisticsMean::Clone() const {
-    return std::unique_ptr<StatisticsMC>(new StatisticsMean(*this));
+    return unique_ptr<StatisticsMC>(new StatisticsMean(*this));
 }

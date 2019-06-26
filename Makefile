@@ -3,7 +3,7 @@ OPTIMUS=-O2
 BIN=bin
 TESTS=tests
 CC=g++
-PARAMS=-I./src -Wall -std=c++14 -g -DDEBUG
+PARAMS=-I./src -Wall -std=c++11 -g -DDEBUG
 
 all: payoff payoff2 doubledigital vanillaoption simplemc2 simplemc3 simplemc4
 

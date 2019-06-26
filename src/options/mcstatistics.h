@@ -19,7 +19,7 @@ public:
     virtual std::unique_ptr<StatisticsMC> Clone() const=0;
 };
 
-class StatisticsMean
+class StatisticsMean : public StatisticsMC
 {
 public:
     StatisticsMean();
