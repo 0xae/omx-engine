@@ -3,7 +3,7 @@ OPTIMUS=-O2
 BIN=bin
 TESTS=tests
 CC=g++
-PARAMS=-I./src -Wall -std=c++11 -g -DDEBUG
+PARAMS=-I./src -Wall -std=c++14 -g -DDEBUG
 
 all: payoff payoff2 doubledigital vanillaoption simplemc2 simplemc3 simplemc4
 
@@ -62,6 +62,8 @@ simplemc6a:
 	$(CC) $(PARAMS) -c src/options/simplemc6a.cpp
 parameters:
 	$(CC) $(PARAMS) -c src/options/parameters.cpp
+mcstatistics:
+	$(CC) $(PARAMS) -c src/options/mcstatistics.cpp
 
 clean:
 	rm bin/*
