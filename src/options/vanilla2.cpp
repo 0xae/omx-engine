@@ -15,5 +15,5 @@ double VanillaOption::GetExpiry() const {
 }
 
 VanillaOption::~VanillaOption() {
-    std::cout << "VanillaOption::destructor()" << std::endl;
+    // std::cout << "VanillaOption::destructor()" << std::endl;
 }

@@ -10,8 +10,8 @@ class StatisticsMC
 public:
     StatisticsMC() {}
     virtual ~StatisticsMC() {
-        std::cout << "~StatisticsMC()" 
-            << std::endl;
+        // std::cout << "~StatisticsMC()" 
+        //     << std::endl;
     }
 
     virtual void DumpOneResult (double result)=0;

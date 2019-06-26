@@ -3,16 +3,16 @@
 
 PayoffBridge::PayoffBridge(const PayOff &payoff) 
 {
-    std::cout << "PayoffBridge(payoff)" 
-        << std::endl;
+    // std::cout << "PayoffBridge(payoff)" 
+    //     << std::endl;
 
     ThePayoff = payoff.Clone();
 }
 
 PayoffBridge::PayoffBridge(const PayoffBridge& original)
 {
-    std::cout << "PayoffBridge(&obj)" 
-        << std::endl;
+    // std::cout << "PayoffBridge(&obj)" 
+    //     << std::endl;
 
     ThePayoff = original.ThePayoff->Clone();
 }
@@ -35,6 +35,6 @@ double PayoffBridge::Calculate(double Spot) const {
 }
 
 PayoffBridge::~PayoffBridge() {
-    std::cout << "~PayoffBridge()" 
-            << std::endl;
+    // std::cout << "~PayoffBridge()" 
+    //         << std::endl;
 }

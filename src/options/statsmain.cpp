@@ -52,11 +52,12 @@ int main(int argc, char const *argv[])
     );
 
     vector<vector<double>> results = gatherer.GetResultsSoFar();
+
     cout << "Price of option calls: " << endl;
 
     for (unsigned int i=0; i<results.size(); i++) {
         for (unsigned int j=0; j<results[i].size(); j++) {
-            cout << "P[" << i << "]"
+            cout << "\t" << i << " => "
                 << results[i][j]
                 << ";"
                 << endl;
@@ -65,3 +66,4 @@ int main(int argc, char const *argv[])
 
     return 0;
 }
+
