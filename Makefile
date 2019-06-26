@@ -34,6 +34,9 @@ vanillamain: vanillaoption doubledigital simplemc4 payoff2
 vanillamain2: vanillaoption2 simplemc5 payoff2 payoffbridge
 	$(CC) $(PARAMS) -o bin/vanillamain2 PayOff2.o payoffbridge.o vanilla2.o simplemc5.o src/options/vanillamain2.cpp
 
+statsmain: vanillaoption2 simplemc7 payoff2 payoffbridge mcstatistics
+	$(CC) $(PARAMS) -o bin/statsmain PayOff2.o payoffbridge.o vanilla2.o simplemc7.o mcstatistics.o parameters.o src/options/statsmain.cpp
+
 tests: payoff simplemc2 simplemc3 simplemc4 payoff2 vanillaoption
 	$(CC) $(PARAMS) -o bin/test_uniqueptr vanilla.o doubledigital.o PayOff2.o simplemc4.o tests/test_uniqueptr.cpp
 	$(CC) $(PARAMS) -o bin/test_vanillaoption vanilla.o doubledigital.o PayOff2.o simplemc4.o tests/test_vanillaoption.cpp
@@ -60,6 +63,8 @@ simplemc5:
 	$(CC) $(PARAMS) -c src/options/simplemc5.cpp
 simplemc6a:
 	$(CC) $(PARAMS) -c src/options/simplemc6a.cpp
+simplemc7:
+	$(CC) $(PARAMS) -c src/options/simplemc7.cpp
 parameters:
 	$(CC) $(PARAMS) -c src/options/parameters.cpp
 mcstatistics:
