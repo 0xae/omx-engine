@@ -37,6 +37,9 @@ vanillamain2: vanillaoption2 simplemc5 payoff2 payoffbridge
 statsmain: vanillaoption2 simplemc7 payoff2 payoffbridge meanstatistics
 	$(CC) $(PARAMS) -o bin/statsmain PayOff2.o payoffbridge.o vanilla2.o simplemc7.o meanstatistics.o parameters.o src/options/statsmain.cpp
 
+statsmain2: vanillaoption2 simplemc7 payoff2 payoffbridge meanstatistics convergencetable
+	$(CC) $(PARAMS) -o bin/statsmain2 PayOff2.o payoffbridge.o vanilla2.o simplemc7.o meanstatistics.o parameters.o convergencetable.o src/options/statsmain2.cpp
+
 tests: payoff simplemc2 simplemc3 simplemc4 payoff2 vanillaoption
 	$(CC) $(PARAMS) -o bin/test_uniqueptr vanilla.o doubledigital.o PayOff2.o simplemc4.o tests/test_uniqueptr.cpp
 	$(CC) $(PARAMS) -o bin/test_vanillaoption vanilla.o doubledigital.o PayOff2.o simplemc4.o tests/test_vanillaoption.cpp
