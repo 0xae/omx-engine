@@ -12,7 +12,7 @@ using std::unique_ptr;
 class ConvergenceTable : public StatisticsMC
 {
 public:
-    ConvergenceTable(unique_ptr<StatisticsMC> ptr);
+    ConvergenceTable(StatisticsMC &ptr);
 
     virtual void DumpOneResult (double result);
     virtual vector<vector<double>> GetResultsSoFar() const;

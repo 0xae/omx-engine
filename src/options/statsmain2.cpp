@@ -43,7 +43,7 @@ int main(int argc, char const *argv[])
     ParametersConstant rParam(r);
 
     StatisticsMean gatherer;
-    ConvergenceTable resumeTable(gatherer.Clone());
+    ConvergenceTable resumeTable(gatherer);
 
     SimpleMonteCarlo7(option,
         Spot,

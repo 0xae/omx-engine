@@ -3,18 +3,18 @@
 using std::vector;
 using std::unique_ptr;
 
-ConvergenceTable::ConvergenceTable(unique_ptr<StatisticsMC> ptr) {
-    Inner = std::move(ptr);
+ConvergenceTable::ConvergenceTable(StatisticsMC &ptr) {
+    Inner = ptr.Clone();
     StoppingPoint=2;
     PathsDone=0;
 }
 
 unique_ptr<StatisticsMC> ConvergenceTable::Clone() const {
-    return unique_ptr<StatisticsMC>(new ConvergenceTable(Inner->Clone()));
+    return unique_ptr<StatisticsMC>(new ConvergenceTable(*Inner));
 }
 
 void ConvergenceTable::DumpOneResult(double result) {
-    Inner->DumpOneResult(result);    
+    Inner->DumpOneResult(result);
     PathsDone++;
 
     if (PathsDone==StoppingPoint) {
