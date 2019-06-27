@@ -69,6 +69,8 @@ parameters:
 	$(CC) $(PARAMS) -c src/options/parameters.cpp
 meanstatistics:
 	$(CC) $(PARAMS) -c src/options/meanstatistics.cpp
+convergencetable:
+	$(CC) $(PARAMS) -c src/options/convergencetable.cpp
 
 clean:
 	rm bin/*
