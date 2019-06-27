@@ -4,14 +4,13 @@ using std::vector;
 using std::unique_ptr;
 
 ConvergenceTable::ConvergenceTable(unique_ptr<StatisticsMC> ptr) {
-    // Inner = std::move(ptr);
+    Inner = std::move(ptr);
     StoppingPoint=2;
     PathsDone=0;
 }
 
 unique_ptr<StatisticsMC> ConvergenceTable::Clone() const {
-    // ??? 
-    return unique_ptr<StatisticsMC>(new ConvergenceTable(*this));
+    return unique_ptr<StatisticsMC>(new ConvergenceTable(Inner->Clone()));
 }
 
 void ConvergenceTable::DumpOneResult(double result) {
