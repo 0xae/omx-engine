@@ -6,23 +6,20 @@
 
 using std::unique_ptr;
 
-class ParkMiller
-{
+class ParkMiller {
 public:
     ParkMiller(long Seed=1);
     ~ParkMiller(){}
 
     long GetOneRandomInteger();
     void SetSeed(long Seed);
-
     static unsigned long Max();
     static unsigned long Min();
 private:
     long Seed;
 };
 
-class RandomParkMiller : public RandomBase
-{
+class RandomParkMiller : public RandomBase {
 public:
     RandomParkMiller(unsigned long Dimensionality,
                      unsigned long Seed=1);
