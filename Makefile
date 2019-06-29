@@ -74,6 +74,14 @@ meanstatistics:
 	$(CC) $(PARAMS) -c src/options/meanstatistics.cpp
 convergencetable:
 	$(CC) $(PARAMS) -c src/options/convergencetable.cpp
+random2:
+	$(CC) $(PARAMS) -c src/options/random2.cpp
+arrays:
+	$(CC) $(PARAMS) -c src/options/arrays.cpp
+normals:
+	$(CC) $(PARAMS) -c src/options/normals.cpp
+parkmiller:
+	$(CC) $(PARAMS) -c src/options/parkmiller.cpp
 
 clean:
 	rm bin/*

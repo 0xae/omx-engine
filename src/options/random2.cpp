@@ -11,7 +11,7 @@ void RandomBase::GetGaussians(MJArray &variates) {
 
     for (unsigned long i=0; i<Dimensionality; i++) {
         double x=variates[i];
-        variates[i]=InverseCumulative(x);
+        variates[i]=InverseCumulativeNormal(x);
     }
 }
 

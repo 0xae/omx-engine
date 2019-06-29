@@ -50,3 +50,34 @@ unique_ptr<RandomBase> RandomParkMiller::Clone() const {
     return unique_ptr<RandomBase>(new RandomParkMiller(*this));
 }
 
+void RandomParkMiller::GetUniforms(MJArray &variates) {
+    for (unsigned long i = 0; i<GetDimensionality(); i++) {
+        variates[i]=InnerGenerator.GetOneRandomInteger()*Reciprocal;
+    }
+}
+
+void RandomParkMiller::Skip(unsigned long numberOfPaths) {
+    MJArray tmp(GetDimensionality());
+    for (unsigned long i = 0; i<numberOfPaths; i++) {
+        GetUniforms(tmp);
+    }
+}
+
+void RandomParkMiller::SetSeed(unsigned long Seed) {
+    InitialSeed=Seed;
+    InnerGenerator.SetSeed(Seed);
+}
+
+void RandomParkMiller::Reset() {
+    InnerGenerator.SetSeed(InitialSeed);
+}
+
+void RandomParkMiller::ResetDimensionality(unsigned long NewDimensionality) {
+    RandomBase::ResetDimensionality(NewDimensionality);
+    InnerGenerator.SetSeed(InitialSeed);
+}
+
+
+
+
+
