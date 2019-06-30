@@ -34,6 +34,7 @@ long ParkMiller::GetOneRandomInteger() {
     if (Seed < 0) {
         Seed += m;
     }
+
     return Seed;
 }
 

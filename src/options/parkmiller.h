@@ -1,8 +1,8 @@
 #ifndef PARKMILLER_H
 #define PARKMILLER_H
 
-#include "random2.h"
 #include <memory>
+#include "random2.h"
 
 using std::unique_ptr;
 
