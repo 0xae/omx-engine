@@ -1,6 +1,5 @@
-#include "random2.h"
-#include "normals.h"
 #include <cstdlib>
+#include "random2.h"
 
 unsigned long RandomBase::GetDimensionality() const {
     return Dimensionality;

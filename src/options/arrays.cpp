@@ -13,7 +13,7 @@
 MJArray::MJArray(unsigned long size)
 : Size(size), Capacity(size)
 {
-	if (Size >0)
+	if (Size>0)
 	{
 		ValuesPtr = new double[size];
 		EndPtr = ValuesPtr;

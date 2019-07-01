@@ -61,7 +61,7 @@ void RandomParkMiller::GetUniforms(MJArray &variates) {
 void RandomParkMiller::Skip(unsigned long numberOfPaths) {
     MJArray tmp(GetDimensionality());
 
-    for (unsigned long i = 0; i<numberOfPaths; i++) {
+    for (unsigned long i=0; i<numberOfPaths; i++) {
         GetUniforms(tmp);
     }
 }
