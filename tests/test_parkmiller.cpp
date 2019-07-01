@@ -9,8 +9,6 @@ int main(int argc, char const *argv[]) {
     int DIMENSION=12;
     int SEED=45;
 
-    cout << "argscount: "<< argc << endl;
-
     if (argc==2) {
         SEED=atoi(argv[1]);
     }

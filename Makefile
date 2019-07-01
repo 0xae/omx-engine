@@ -44,7 +44,7 @@ tests: payoff simplemc2 simplemc3 simplemc4 payoff2 vanillaoption
 	$(CC) $(PARAMS) -o bin/test_uniqueptr vanilla.o doubledigital.o PayOff2.o simplemc4.o tests/test_uniqueptr.cpp
 	$(CC) $(PARAMS) -o bin/test_vanillaoption vanilla.o doubledigital.o PayOff2.o simplemc4.o tests/test_vanillaoption.cpp
 
-test_parkmiller: parkmiller random2
+test_parkmiller: parkmiller random2 normals arrays
 	$(CC) $(PARAMS) -o bin/test_parkmiller parkmiller.o random2.o normals.o arrays.o tests/test_parkmiller.cpp
 
 payoff:
