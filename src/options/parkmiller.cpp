@@ -31,6 +31,7 @@ unsigned long ParkMiller::Min() {
 long ParkMiller::GetOneRandomInteger() {
     long k=Seed/q;
     Seed=a*(Seed-k*q)-r*k;
+
     if (Seed < 0) {
         Seed += m;
     }
@@ -39,10 +40,10 @@ long ParkMiller::GetOneRandomInteger() {
 }
 
 RandomParkMiller::RandomParkMiller(unsigned long Dimensionality,
-                                   unsigned long Seed) 
+                                   unsigned long Seed)
     : RandomBase(Dimensionality), 
       InnerGenerator(Seed),
-      InitialSeed(Seed) 
+      InitialSeed(Seed)
 {
     Reciprocal = 1/(1.0+InnerGenerator.Max());
 }
@@ -52,13 +53,14 @@ unique_ptr<RandomBase> RandomParkMiller::Clone() const {
 }
 
 void RandomParkMiller::GetUniforms(MJArray &variates) {
-    for (unsigned long i = 0; i<GetDimensionality(); i++) {
+    for (unsigned long i=0; i<GetDimensionality(); i++) {
         variates[i]=InnerGenerator.GetOneRandomInteger()*Reciprocal;
     }
 }
 
 void RandomParkMiller::Skip(unsigned long numberOfPaths) {
     MJArray tmp(GetDimensionality());
+
     for (unsigned long i = 0; i<numberOfPaths; i++) {
         GetUniforms(tmp);
     }

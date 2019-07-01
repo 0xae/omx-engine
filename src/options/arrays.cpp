@@ -29,49 +29,40 @@ MJArray::MJArray(unsigned long size)
 
 
 MJArray::MJArray(const MJArray& original)
-:
-Size(original.Size), Capacity(original.Size)
+	: Size(original.Size), 
+	Capacity(original.Size)
 {
-	if (Size > 0)
-	{
-		ValuesPtr = new double[Size];
-		
+	if (Size > 0) {
+		ValuesPtr = new double[Size];	
 		EndPtr = ValuesPtr;
-        
 		EndPtr += Size;
-        
 		std::copy(original.ValuesPtr, original.EndPtr, ValuesPtr);
         
-	}
-	else
-	{
-        
+	} else {
 		ValuesPtr = EndPtr =0;
 	}
     
 }
 
 
-MJArray::~MJArray()
-{
-	if (ValuesPtr >0)
+MJArray::~MJArray() {
+	if (ValuesPtr >0) {
 		delete [] ValuesPtr;
+	}
 }
 
 
-MJArray& MJArray::operator=(const MJArray& original)
-{
-	if (&original == this)
+MJArray& MJArray::operator=(const MJArray& original) {
+	if (&original == this) {
 		return *this;
+	}
     
-    
-	if (original.Size > Capacity)
-	{
-		if (Capacity > 0)
+	if (original.Size > Capacity) {
+		if (Capacity > 0) {
 			delete [] ValuesPtr;
+		}
         
 		ValuesPtr = new double[original.Size];
-        
 		Capacity = original.Size;
         
 	}
@@ -83,36 +74,25 @@ MJArray& MJArray::operator=(const MJArray& original)
 	
 	std::copy(original.ValuesPtr, original.EndPtr, ValuesPtr);
     
-    
 	return *this;
 }
 
-void MJArray::resize(unsigned long newSize)
-{
-	if (newSize > Capacity)
-	{
-		if (Capacity > 0)
+void MJArray::resize(unsigned long newSize) {
+	if (newSize > Capacity) {
+		if (Capacity > 0) {
 			delete [] ValuesPtr;
+		}
         
 		ValuesPtr = new double[newSize];
-        
 		Capacity = newSize;
-        
 	}
     
     
 	Size = newSize;
-    
     EndPtr = ValuesPtr + Size;
-    
 }
 
-
-
-MJArray& MJArray::operator+=(const MJArray& operand)
-{
-    
-	
+MJArray& MJArray::operator+=(const MJArray& operand) {	
 #ifdef RANGE_CHECKING
 	if ( Size != operand.size())
 	{
@@ -120,34 +100,30 @@ MJArray& MJArray::operator+=(const MJArray& operand)
 	}
 #endif
     
-	for (unsigned long i =0; i < Size; i++)
+	for (unsigned long i =0; i < Size; i++) {
 		ValuesPtr[i]+=operand[i];
+	}
     
 	return *this;
 }
 
 
-MJArray& MJArray::operator-=(const MJArray& operand)
-{
-    
+MJArray& MJArray::operator-=(const MJArray& operand) {   
 #ifdef RANGE_CHECKING
-	if ( Size != operand.size())
-	{
+	if ( Size != operand.size()) {
 		throw("to apply -= two arrays must be of same size");
 	}
 #endif
     
-	for (unsigned long i =0; i < Size; i++)
+	for (unsigned long i =0; i < Size; i++) {
 		ValuesPtr[i]-=operand[i];
-    
+	}
 	
 	return *this;
 }
 
 
-MJArray& MJArray::operator/=(const MJArray& operand)
-{
-	
+MJArray& MJArray::operator/=(const MJArray& operand) {
 #ifdef RANGE_CHECKING
 	if ( Size != operand.size())
 	{
@@ -155,17 +131,15 @@ MJArray& MJArray::operator/=(const MJArray& operand)
 	}
 #endif
     
-    
-	for (unsigned long i =0; i < Size; i++)
+	for (unsigned long i =0; i < Size; i++) {
 		ValuesPtr[i]/=operand[i];
+	}
     
 	return *this;
 }
 
 
-MJArray& MJArray::operator*=(const MJArray& operand)
-{
-	
+MJArray& MJArray::operator*=(const MJArray& operand) {
 #ifdef RANGE_CHECKING
 	if ( Size != operand.size())
 	{
@@ -173,9 +147,9 @@ MJArray& MJArray::operator*=(const MJArray& operand)
 	}
 #endif
     
-    
-	for (unsigned long i =0; i < Size; i++)
+	for (unsigned long i =0; i < Size; i++) {
 		ValuesPtr[i]*=operand[i];
+	}
     
 	return *this;
 }
@@ -183,11 +157,11 @@ MJArray& MJArray::operator*=(const MJArray& operand)
 
 /////////////////////////////
 
-MJArray& MJArray::operator+=(const double& operand)
-{
+MJArray& MJArray::operator+=(const double& operand) {
     
-	for (unsigned long i =0; i < Size; i++)
+	for (unsigned long i =0; i < Size; i++) {
 		ValuesPtr[i]+=operand;
+	}
     
 	return *this;
 }

@@ -23,4 +23,3 @@ RandomBase::RandomBase(unsigned long Dimensionality_)
     : Dimensionality(Dimensionality_) {
 }
 
-
