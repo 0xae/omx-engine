@@ -46,6 +46,8 @@ tests: payoff simplemc2 simplemc3 simplemc4 payoff2 vanillaoption
 
 test_parkmiller: parkmiller random2 normals arrays
 	$(CC) $(PARAMS) -o bin/test_parkmiller parkmiller.o random2.o normals.o arrays.o tests/test_parkmiller.cpp
+test_antithetic: parkmiller random2 normals arrays antithetic
+	$(CC) $(PARAMS) -o bin/test_antithetic parkmiller.o antithetic.o random2.o normals.o arrays.o tests/test_antithetic.cpp
 
 payoff:
 	$(CC) $(PARAMS) -c src/options/payoff1.cpp
@@ -85,6 +87,8 @@ normals:
 	$(CC) $(PARAMS) -c src/options/normals.cpp
 parkmiller:
 	$(CC) $(PARAMS) -c src/options/parkmiller.cpp
+antithetic:
+	$(CC) $(PARAMS) -c src/options/antithetic.cpp
 
 clean:
 	rm bin/*
