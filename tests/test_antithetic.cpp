@@ -1,10 +1,12 @@
 #include <iostream>
 #include <cstdlib>
+#include <vector>
 #include "options/parkmiller.h"
 #include "options/antithetic.h"
 
 using std::cout;
 using std::endl;
+using std::vector;
 
 int main(int argc, char const *argv[]) {
     int DIMENSION=12;
@@ -28,9 +30,7 @@ int main(int argc, char const *argv[]) {
     }
 
     RandomParkMiller rand2(DIMENSION, SEED);
-
     AntiThetic atRand(rand2);
-
     MJArray ary2(DIMENSION);
 
     rand.GetUniforms(ary2);

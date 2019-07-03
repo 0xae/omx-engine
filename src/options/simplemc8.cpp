@@ -8,7 +8,8 @@ void SimpleMonteCarlo8(const VanillaOption& option,
     const Parameters& Vol,
     const Parameters& r,
     unsigned long NumberOfPaths,
-    StatisticsMC &gatherer)
+    StatisticsMC &gatherer,
+    RandomBase &generator)
 {
     NumberOfPaths = fmax(NumberOfPaths, 1);
 
@@ -21,10 +22,12 @@ void SimpleMonteCarlo8(const VanillaOption& option,
     double discounting=exp(-r.Integral(0, Expiry));
     double thisSpot;
 
+    MJArray Variates(1);
+
     for (unsigned long i=0; i<NumberOfPaths; i++) {
-        double thisGaussian = GetOneGaussianByBoxMuller();
-        thisSpot = movedSpot * exp(rootVariance*thisGaussian);
+        generator.GetGaussians(Variates);
+        thisSpot = movedSpot*exp(rootVariance*Variates[0]);
         double thisPayOff = option.CalcPayoff(thisSpot);
-        gatherer.DumpOneResult(thisPayOff*discounting);
+        gatherer.DumpOneResult(thisPayOff * discounting);
     }
 }

@@ -40,6 +40,9 @@ statsmain: vanillaoption2 simplemc7 payoff2 payoffbridge meanstatistics
 statsmain2: vanillaoption2 simplemc7 payoff2 payoffbridge meanstatistics convergencetable
 	$(CC) $(PARAMS) -o bin/statsmain2 PayOff2.o payoffbridge.o vanilla2.o simplemc7.o meanstatistics.o parameters.o convergencetable.o src/options/statsmain2.cpp
 
+statsmain3: vanillaoption2 simplemc8 payoff2 payoffbridge meanstatistics convergencetable antithetic arrays parkmiller random2 normals
+	$(CC) $(PARAMS) -o bin/simplemc8main PayOff2.o payoffbridge.o vanilla2.o simplemc8.o meanstatistics.o antithetic.o parkmiller.o normals.o random2.o arrays.o parameters.o convergencetable.o src/options/simplemc8main.cpp
+
 tests: payoff simplemc2 simplemc3 simplemc4 payoff2 vanillaoption
 	$(CC) $(PARAMS) -o bin/test_uniqueptr vanilla.o doubledigital.o PayOff2.o simplemc4.o tests/test_uniqueptr.cpp
 	$(CC) $(PARAMS) -o bin/test_vanillaoption vanilla.o doubledigital.o PayOff2.o simplemc4.o tests/test_vanillaoption.cpp
@@ -73,6 +76,8 @@ simplemc6a:
 	$(CC) $(PARAMS) -c src/options/simplemc6a.cpp
 simplemc7:
 	$(CC) $(PARAMS) -c src/options/simplemc7.cpp
+simplemc8:
+	$(CC) $(PARAMS) -c src/options/simplemc8.cpp
 parameters:
 	$(CC) $(PARAMS) -c src/options/parameters.cpp
 meanstatistics:
