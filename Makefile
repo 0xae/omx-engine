@@ -94,6 +94,10 @@ parkmiller:
 	$(CC) $(PARAMS) -c src/options/parkmiller.cpp
 antithetic:
 	$(CC) $(PARAMS) -c src/options/antithetic.cpp
+exoticengine:
+	$(CC) $(PARAMS) -c src/options/exoticengine.cpp
+pathdependent:
+	$(CC) $(PARAMS) -c src/options/pathdependent.cpp
 
 clean:
 	rm bin/*

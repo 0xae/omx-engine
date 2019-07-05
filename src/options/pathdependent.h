@@ -13,8 +13,8 @@ public:
     double Amount;
     unsigned long TimeIndex;
     CashFlow(unsigned long TimeIndex_=0UL, double Amount_=0.0)
-        : TimeIndex(TimeIndex_),
-        Amount(Amount_) {
+        : Amount(Amount_), TimeIndex(TimeIndex_)
+    {
     }
 };
 
@@ -24,7 +24,6 @@ public:
     virtual ~PathDependent() {}
 
     const MJArray& GetLookAtTimes() const;
-
     virtual unsigned long MaxNumberOfCashFlows() const=0;
     virtual MJArray PossibleCashFlowTimes() const=0;
     virtual unsigned long CashFlows(

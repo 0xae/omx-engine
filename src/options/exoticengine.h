@@ -18,6 +18,7 @@ public:
 
     void DoSimulation(StatisticsMC &TheGatherer,
                       unsigned long NumberOfPaths);
+
     double DoOnePath(const MJArray &SpotValues) const;
 
     virtual void GetOnePath(MJArray &SpotValues)=0;
