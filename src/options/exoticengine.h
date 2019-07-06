@@ -14,13 +14,12 @@ class ExoticEngine {
 public:
     ExoticEngine(const PathDependent &TheProduct_, 
                  const Parameters &r);
+
     virtual ~ExoticEngine() {}
 
     void DoSimulation(StatisticsMC &TheGatherer,
                       unsigned long NumberOfPaths);
-
     double DoOnePath(const MJArray &SpotValues) const;
-
     virtual void GetOnePath(MJArray &SpotValues)=0;
 
 private:

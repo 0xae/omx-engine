@@ -96,6 +96,9 @@ antithetic:
 	$(CC) $(PARAMS) -c src/options/antithetic.cpp
 exoticengine:
 	$(CC) $(PARAMS) -c src/options/exoticengine.cpp
+exoticbsengine:
+	$(CC) $(PARAMS) -c src/options/exoticbsengine.cpp
+
 pathdependent:
 	$(CC) $(PARAMS) -c src/options/pathdependent.cpp
 
