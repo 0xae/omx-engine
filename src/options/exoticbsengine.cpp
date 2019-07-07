@@ -19,7 +19,7 @@ ExoticBSEngine::ExoticBSEngine(const PathDependent& TheProduct_,
     double Variance = Vol_.IntegralSquare(0,Times[0]);
 
     Drifts[0] = R_.Integral(0.0,Times[0])
-        - D_.Integral(0.0,Times[0]) - 0.5 * Variance;
+        - D_.Integral(0.0,Times[0]) - 0.5*Variance;
 
     StandardDevs[0] = sqrt(Variance);
 
@@ -42,8 +42,7 @@ void ExoticBSEngine::GetOnePath(MJArray& SpotValues)
     TheGenerator->GetGaussians(Variates);
     double CurrentLogSpot = LogSpot;
 
-    for (unsigned long j=0; j < NumberOfTimes; j++)
-    {
+    for (unsigned long j=0; j<NumberOfTimes; j++) {
         CurrentLogSpot += Drifts[j];
         CurrentLogSpot += StandardDevs[j]*Variates[j];
         SpotValues[j] = exp(CurrentLogSpot);

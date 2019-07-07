@@ -43,6 +43,13 @@ statsmain2: vanillaoption2 simplemc7 payoff2 payoffbridge meanstatistics converg
 statsmain3: vanillaoption2 simplemc8 payoff2 payoffbridge meanstatistics convergencetable antithetic arrays parkmiller random2 normals
 	$(CC) $(PARAMS) -o bin/simplemc8main PayOff2.o payoffbridge.o vanilla2.o simplemc8.o meanstatistics.o antithetic.o parkmiller.o normals.o random2.o arrays.o parameters.o convergencetable.o src/options/simplemc8main.cpp
 
+equityfxmain: vanillaoption2 simplemc8 payoff2 payoffbridge meanstatistics convergencetable antithetic arrays parkmiller random2 normals pathdependent pathdependentasian exoticengine exoticbsengine 
+	$(CC) $(PARAMS) -o bin/equityfxmain PayOff2.o payoffbridge.o vanilla2.o simplemc8.o \
+						meanstatistics.o antithetic.o parkmiller.o normals.o  \
+						random2.o arrays.o parameters.o convergencetable.o  \
+						pathdependent.o pathdependentasian.o exoticbsengine.o  exoticengine.o \
+						src/options/equityfxmain.cpp
+
 tests: payoff simplemc2 simplemc3 simplemc4 payoff2 vanillaoption
 	$(CC) $(PARAMS) -o bin/test_uniqueptr vanilla.o doubledigital.o PayOff2.o simplemc4.o tests/test_uniqueptr.cpp
 	$(CC) $(PARAMS) -o bin/test_vanillaoption vanilla.o doubledigital.o PayOff2.o simplemc4.o tests/test_vanillaoption.cpp
@@ -98,9 +105,10 @@ exoticengine:
 	$(CC) $(PARAMS) -c src/options/exoticengine.cpp
 exoticbsengine:
 	$(CC) $(PARAMS) -c src/options/exoticbsengine.cpp
-
 pathdependent:
 	$(CC) $(PARAMS) -c src/options/pathdependent.cpp
+pathdependentasian:
+	$(CC) $(PARAMS) -c src/options/pathdependentasian.cpp
 
 clean:
 	rm bin/*
