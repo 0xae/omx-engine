@@ -78,13 +78,13 @@ double SimpleBinomialTree::GetThePrice(const TreeProduct &TheProduct)
              j=j+2,k++)
         {
             double Spot = TheTree[index][k].first;
+
             double futureDiscountedValue = 0.5*Discounts[index]*
                 (TheTree[index+1][k].second +
                 TheTree[index+1][k+1].second);
 
             TheTree[index][k].second = TheProduct.PreFinalValue(
-                Spot, ThisTime,
-                futureDiscountedValue
+                Spot, ThisTime, futureDiscountedValue
             );
         }
     }

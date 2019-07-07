@@ -16,6 +16,8 @@ double TreeAmerican::FinalPayOff(double Spot) const {
     return ThePayOff.Calculate(Spot);
 }
 
-double TreeAmerican::PreFinalValue(double Spot, double Time, double DiscountedFutureValue) const  {
+double TreeAmerican::PreFinalValue(double Spot, double Time, 
+                double DiscountedFutureValue) const  
+{
     return fmax(ThePayOff.Calculate(Spot), DiscountedFutureValue);
 }

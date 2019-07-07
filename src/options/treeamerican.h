@@ -15,7 +15,9 @@ public:
     virtual ~TreeAmerican() {}
 
     virtual unique_ptr<TreeProduct> Clone() const;
+
     virtual double FinalPayOff(double Spot) const;
+
     virtual double PreFinalValue(double Spot,
                                  double Time,
                                  double DiscountedFutureValue) const;

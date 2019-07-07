@@ -5,8 +5,7 @@
 
 using std::unique_ptr;
 
-class TreeProduct
-{
+class TreeProduct {
 public:
     TreeProduct(double FinalTime_);
     virtual ~TreeProduct() {}
@@ -15,7 +14,7 @@ public:
 
     virtual double PreFinalValue(double Spot,
                                  double Time,
-                                 double DiscountedFutureValue)=0;
+                                 double DiscountedFutureValue) const=0;
 
     virtual unique_ptr<TreeProduct> Clone() const=0;
     double GetFinalTime() const;

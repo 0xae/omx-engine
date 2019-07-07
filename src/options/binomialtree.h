@@ -1,5 +1,4 @@
 #include <vector>
-
 #include "treeproduct.h"
 #include "parameters.h"
 #include "arrays.h"
