@@ -43,7 +43,8 @@ statsmain2: vanillaoption2 simplemc7 payoff2 payoffbridge meanstatistics converg
 statsmain3: vanillaoption2 simplemc8 payoff2 payoffbridge meanstatistics convergencetable antithetic arrays parkmiller random2 normals
 	$(CC) $(PARAMS) -o bin/simplemc8main PayOff2.o payoffbridge.o vanilla2.o simplemc8.o meanstatistics.o antithetic.o parkmiller.o normals.o random2.o arrays.o parameters.o convergencetable.o src/options/simplemc8main.cpp
 
-equityfxmain: vanillaoption2 simplemc8 payoff2 payoffbridge meanstatistics convergencetable antithetic arrays parkmiller random2 normals pathdependent pathdependentasian exoticengine exoticbsengine 
+# equityfxmain: vanillaoption2 simplemc8 payoff2 payoffbridge meanstatistics convergencetable antithetic arrays parkmiller random2 normals pathdependent pathdependentasian exoticengine exoticbsengine 
+equityfxmain:
 	$(CC) $(PARAMS) -o bin/equityfxmain PayOff2.o payoffbridge.o vanilla2.o simplemc8.o \
 						meanstatistics.o antithetic.o parkmiller.o normals.o  \
 						random2.o arrays.o parameters.o convergencetable.o  \

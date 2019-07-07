@@ -46,7 +46,7 @@ int main(int argc, char const *argv[]) {
     PayOffCall thePayOff(Strike);
     MJArray times(NumberOfDates);
 
-    for (int i=0; i<NumberOfDates; ++i) {
+    for (unsigned long i=0; i<NumberOfDates; ++i) {
         times[i]=(i+1.0) * Expiry/NumberOfDates;
     }
 
@@ -54,6 +54,29 @@ int main(int argc, char const *argv[]) {
     ParametersConstant rParam(r);
     ParametersConstant dParam(d);
 
+    PathDependentAsian theOption(times, Expiry, thePayOff);
+
+    StatisticsMean gatherer;
+    ConvergenceTable convTable(gatherer);
+
+    RandomParkMiller pmGenerator(NumberOfDates);
+    AntiThetic atGenerator(pmGenerator);
+
+    ExoticBSEngine exoEngine(theOption, rParam, dParam,
+                            VolParam, atGenerator, Spot);
+
+
+    exoEngine.DoSimulation(convTable, NumberOfPaths);
+
+    vector<vector<double>> results = convTable.GetResultsSoFar();
+    cout << "For the Asian call price, results are: \n";
+
+    for (unsigned long i=0; i<results.size(); i++) {
+        for (unsigned long j=0; j<results[i].size(); ++j) {
+            cout << results[i][j] << "  ";
+        }
+        cout << "\n";
+    }
 
     return 0;
 }
