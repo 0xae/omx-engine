@@ -110,6 +110,10 @@ pathdependent:
 	$(CC) $(PARAMS) -c src/options/pathdependent.cpp
 pathdependentasian:
 	$(CC) $(PARAMS) -c src/options/pathdependentasian.cpp
+treeproduct:
+	$(CC) $(PARAMS) -c src/options/treeproduct.cpp
+treeamerican:
+	$(CC) $(PARAMS) -c src/options/treeamerican.cpp
 
 clean:
 	rm bin/*

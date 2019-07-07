@@ -9,7 +9,7 @@ ExoticEngine::ExoticEngine(const PathDependent &TheProduct_, const Parameters& r
     for (unsigned long i=0; i < Discounts.size(); i++){
         Discounts[i] = exp(-r.Integral(0.0, Discounts[i]));
     }
-    
+
     TheCashFlows.resize(TheProduct->MaxNumberOfCashFlows());
 }
 
@@ -25,11 +25,9 @@ void ExoticEngine::DoSimulation(StatisticsMC& TheGatherer,
         thisValue = DoOnePath(SpotValues);
         TheGatherer.DumpOneResult(thisValue);
     }
-
 }
 
-double ExoticEngine::DoOnePath(const MJArray &SpotValues) const
-{
+double ExoticEngine::DoOnePath(const MJArray &SpotValues) const {
     unsigned long NumberFlows = TheProduct->CashFlows(
         SpotValues, 
         TheCashFlows
@@ -43,4 +41,3 @@ double ExoticEngine::DoOnePath(const MJArray &SpotValues) const
 
     return Value;
 }
-
