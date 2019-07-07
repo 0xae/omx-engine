@@ -26,6 +26,7 @@ Financial Markets
 * [Leverage Technicals](https://nordfx.com/349-1-1000-Leverage-Ratio-Freedom-of-Trading.html)
 * [GOLD-Shares(GLD)](http://www.spdrgoldshares.com/media/GLD/file/Introduction_to_SPDR_Gold_Shares.pdf)
 * [Options Strategy Software](https://promo.cboevesttech.com/ria/)
+* [Risk neutral expectation](https://en.wikipedia.org/wiki/Risk-neutral_measure)
 
 Cryptocurrency
 =====
