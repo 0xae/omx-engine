@@ -3,6 +3,7 @@
 
 #include <memory>
 #include "treeproduct.h"
+#include "payoffbridge.h"
 
 using std::unique_ptr;
 

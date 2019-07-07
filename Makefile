@@ -114,6 +114,10 @@ treeproduct:
 	$(CC) $(PARAMS) -c src/options/treeproduct.cpp
 treeamerican:
 	$(CC) $(PARAMS) -c src/options/treeamerican.cpp
+treeeuropean:
+	$(CC) $(PARAMS) -c src/options/treeeuropean.cpp
+binomialtree:
+	$(CC) $(PARAMS) -c src/options/binomialtree.cpp
 
 clean:
 	rm bin/*

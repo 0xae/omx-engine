@@ -12,9 +12,10 @@ public:
     virtual ~TreeProduct() {}
 
     virtual double FinalPayOff(double Spot) const=0;
+
     virtual double PreFinalValue(double Spot,
                                  double Time,
-                                 double DiscountedFutureValue);
+                                 double DiscountedFutureValue)=0;
 
     virtual unique_ptr<TreeProduct> Clone() const=0;
     double GetFinalTime() const;

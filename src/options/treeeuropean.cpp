@@ -1,4 +1,4 @@
-#include "TreeEuropean.h"
+#include "treeeuropean.h"
 
 TreeEuropean::TreeEuropean(double FinalTime,
                             const PayoffBridge &ThePayOff_) :
