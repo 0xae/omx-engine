@@ -50,16 +50,17 @@ equityfxmain: vanillaoption2 simplemc8 payoff2 payoffbridge meanstatistics conve
 						pathdependent.o pathdependentasian.o exoticbsengine.o  exoticengine.o \
 						src/options/equityfxmain.main
 
-# treemain: vanillaoption2 simplemc8 payoff2 payoffbridge meanstatistics \
-# convergencetable antithetic arrays parkmiller random2 \
-# normals pathdependent pathdependentasian exoticengine exoticbsengine payoff_forward \
-# treeamerican treeeuropean treeproduct parameters
-treemain:
+treemain: vanillaoption2 simplemc8 payoff2 payoffbridge meanstatistics \
+convergencetable antithetic arrays parkmiller random2 \
+normals pathdependent pathdependentasian exoticengine exoticbsengine payoff_forward \
+treeamerican treeeuropean treeproduct parameters blackscholesformulas binomialtree
+# treemain:
 	$(CC) $(PARAMS) -o bin/treemain PayOff2.o payoffbridge.o vanilla2.o simplemc8.o \
 						meanstatistics.o antithetic.o parkmiller.o normals.o  \
 						random2.o arrays.o parameters.o convergencetable.o  \
 						pathdependent.o pathdependentasian.o exoticbsengine.o  exoticengine.o \
 						PayOffForward.o binomialtree.o treeeuropean.o treeamerican.o treeproduct.o  \
+						BlackScholesFormulas.o \
 						src/options/treemain.cpp
 
 tests: payoff simplemc2 simplemc3 simplemc4 payoff2 vanillaoption
