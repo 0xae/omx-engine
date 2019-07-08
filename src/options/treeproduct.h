@@ -17,6 +17,7 @@ public:
                                  double DiscountedFutureValue) const=0;
 
     virtual unique_ptr<TreeProduct> Clone() const=0;
+
     double GetFinalTime() const;
 
 private:

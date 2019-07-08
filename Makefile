@@ -43,13 +43,24 @@ statsmain2: vanillaoption2 simplemc7 payoff2 payoffbridge meanstatistics converg
 statsmain3: vanillaoption2 simplemc8 payoff2 payoffbridge meanstatistics convergencetable antithetic arrays parkmiller random2 normals
 	$(CC) $(PARAMS) -o bin/simplemc8main PayOff2.o payoffbridge.o vanilla2.o simplemc8.o meanstatistics.o antithetic.o parkmiller.o normals.o random2.o arrays.o parameters.o convergencetable.o src/options/simplemc8main.cpp
 
-# equityfxmain: vanillaoption2 simplemc8 payoff2 payoffbridge meanstatistics convergencetable antithetic arrays parkmiller random2 normals pathdependent pathdependentasian exoticengine exoticbsengine 
-equityfxmain:
+equityfxmain: vanillaoption2 simplemc8 payoff2 payoffbridge meanstatistics convergencetable antithetic arrays parkmiller random2 normals pathdependent pathdependentasian exoticengine exoticbsengine 
 	$(CC) $(PARAMS) -o bin/equityfxmain PayOff2.o payoffbridge.o vanilla2.o simplemc8.o \
 						meanstatistics.o antithetic.o parkmiller.o normals.o  \
 						random2.o arrays.o parameters.o convergencetable.o  \
 						pathdependent.o pathdependentasian.o exoticbsengine.o  exoticengine.o \
-						src/options/equityfxmain.cpp
+						src/options/equityfxmain.main
+
+# treemain: vanillaoption2 simplemc8 payoff2 payoffbridge meanstatistics \
+# convergencetable antithetic arrays parkmiller random2 \
+# normals pathdependent pathdependentasian exoticengine exoticbsengine payoff_forward \
+# treeamerican treeeuropean treeproduct parameters
+treemain:
+	$(CC) $(PARAMS) -o bin/treemain PayOff2.o payoffbridge.o vanilla2.o simplemc8.o \
+						meanstatistics.o antithetic.o parkmiller.o normals.o  \
+						random2.o arrays.o parameters.o convergencetable.o  \
+						pathdependent.o pathdependentasian.o exoticbsengine.o  exoticengine.o \
+						PayOffForward.o binomialtree.o treeeuropean.o treeamerican.o treeproduct.o  \
+						src/options/treemain.cpp
 
 tests: payoff simplemc2 simplemc3 simplemc4 payoff2 vanillaoption
 	$(CC) $(PARAMS) -o bin/test_uniqueptr vanilla.o doubledigital.o PayOff2.o simplemc4.o tests/test_uniqueptr.cpp
@@ -64,6 +75,10 @@ payoff:
 	$(CC) $(PARAMS) -c src/options/payoff1.cpp
 payoff2:
 	$(CC) $(PARAMS) -c src/options/PayOff2.cpp
+payoff_forward:
+	$(CC) $(PARAMS) -c src/options/PayOffForward.cpp
+blackscholesformulas:
+	$(CC) $(PARAMS) -c src/options/BlackScholesFormulas.cpp
 payoffbridge:
 	$(CC) $(PARAMS) -c src/options/payoffbridge.cpp
 doubledigital:

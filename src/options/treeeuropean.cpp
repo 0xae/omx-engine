@@ -1,7 +1,7 @@
 #include "treeeuropean.h"
 
 TreeEuropean::TreeEuropean(double FinalTime,
-                            const PayoffBridge &ThePayOff_) :
+                           const PayoffBridge &ThePayOff_) :
                             TreeProduct(FinalTime),
                             ThePayOff(ThePayOff_) 
 {

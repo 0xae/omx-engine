@@ -1,6 +1,6 @@
+#include <cmath>
 #include "binomialtree.h"
 #include "arrays.h"
-#include <cmath>
 
 SimpleBinomialTree::SimpleBinomialTree(double Spot_,
     const Parameters& r_, const Parameters& d_,
@@ -22,7 +22,7 @@ void SimpleBinomialTree::BuildTree() {
 
     double InitialLogSpot=log(Spot);
 
-    for (unsigned long i=0; i<Steps; i++) {
+    for (unsigned long i=0; i<=Steps; i++) {
         TheTree[i].resize(i+1);
 
         double thisTime = (i*Time)/Steps;
@@ -44,7 +44,7 @@ void SimpleBinomialTree::BuildTree() {
 
         for (unsigned long l=0; l<Steps; l++)
         {
-            Discounts[l] = exp(- r.Integral(l*Time/Steps,(l+1)*Time/Steps));
+            Discounts[l] = exp(-r.Integral(l*Time/Steps,(l+1)*Time/Steps));
         }
     }
 }
@@ -84,7 +84,8 @@ double SimpleBinomialTree::GetThePrice(const TreeProduct &TheProduct)
                 TheTree[index+1][k+1].second);
 
             TheTree[index][k].second = TheProduct.PreFinalValue(
-                Spot, ThisTime, futureDiscountedValue
+                Spot, ThisTime, 
+                futureDiscountedValue
             );
         }
     }
