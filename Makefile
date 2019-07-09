@@ -66,6 +66,10 @@ solvemain: normals bscall blackscholesformulas
 	$(CC) $(PARAMS) -o bin/solvemain normals.o bscall.o BlackScholesFormulas.o \
 						src/options/solvemain.cpp
 
+solvemain2: normals bscall blackscholesformulas bscalltwo
+	$(CC) $(PARAMS) -o bin/solvemain2 normals.o bscalltwo.o BlackScholesFormulas.o \
+						src/options/solvemain2.cpp
+
 
 tests: payoff simplemc2 simplemc3 simplemc4 payoff2 vanillaoption
 	$(CC) $(PARAMS) -o bin/test_uniqueptr vanilla.o doubledigital.o PayOff2.o simplemc4.o tests/test_uniqueptr.cpp
@@ -140,6 +144,8 @@ binomialtree:
 	$(CC) $(PARAMS) -c src/options/binomialtree.cpp
 bscall:
 	$(CC) $(PARAMS) -c src/options/bscall.cpp
+bscalltwo:
+	$(CC) $(PARAMS) -c src/options/bscalltwo.cpp
 
 clean:
 	rm bin/*

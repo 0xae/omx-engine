@@ -15,7 +15,7 @@ private:
     double d;
     double T;
     double Spot;
-    double Strike;    
+    double Strike;
 };
 
 #endif

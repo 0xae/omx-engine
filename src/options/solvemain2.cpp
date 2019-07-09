@@ -1,9 +1,10 @@
 #include <iostream>
 #include <cmath>
 #include "normals.h"
-#include "bisection.h"
+
 #include "BlackScholesFormulas.h"
-#include "bscall.h"
+#include "bscalltwo.h"
+#include "NewtonRaphson.h"
 
 using std::cout;
 using std::cin;
@@ -34,20 +35,19 @@ int main(int argc, char const *argv[]) {
     cout << "\nd= ";
     cin >> d;
 
-    double low, high, tolerance;
+    double start, tolerance;
 
-    cout << "\nlow guess= ";
-    cin >> low;
-
-    cout << "\nhigh guess= ";
-    cin >> high;
+    cout << "\nstart guess= ";
+    cin >> start;
 
     cout << "\ntolerance= ";
     cin >> tolerance;
 
-    BSCall theCall(r,d,Expiry,Spot,Strike);
+    BSCallTwo theCall(r,d,Expiry,Spot,Strike);
 
-    double vol=Bisection(Price,low,high,tolerance,theCall);
+    double vol=NewtonRaphson<BSCallTwo, &BSCallTwo::Price,
+                             &BSCallTwo::Vega>(Price, start, 
+                                               tolerance,theCall);
 
     double PriceTwo=BlackScholesCall(Spot, Strike, r, d, vol, Expiry);
 
