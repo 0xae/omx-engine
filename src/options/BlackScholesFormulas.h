@@ -1,9 +1,3 @@
-//
-//
-//                      BlackScholesFormulas.h
-//
-//
-
 #ifndef BLACK_SCHOLES_FORMULAS_H
 #define BLACK_SCHOLES_FORMULAS_H
 
