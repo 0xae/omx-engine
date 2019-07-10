@@ -20,7 +20,6 @@ public:
     unique_ptr<PayOff> CreatePayOff(string PayOffId, double Strike);
 
     ~PayOffFactory() {}
-
 private:
     map<string, CreatePayOffFunction> TheCreatorFunctions;
     PayOffFactory() {}

@@ -70,6 +70,11 @@ solvemain2: normals bscall blackscholesformulas bscalltwo
 	$(CC) $(PARAMS) -o bin/solvemain2 normals.o bscalltwo.o BlackScholesFormulas.o \
 						src/options/solvemain2.cpp
 
+payfactorymain: payoffbridge payoff2 PayOffRegistration PayOffFactory
+	$(CC) $(PARAMS) -o bin/payfactorymain PayOff2.o payoffbridge.o PayOffRegistration.o \
+						PayOffFactory.o \
+						src/options/payfactorymain.cpp
+
 
 tests: payoff simplemc2 simplemc3 simplemc4 payoff2 vanillaoption
 	$(CC) $(PARAMS) -o bin/test_uniqueptr vanilla.o doubledigital.o PayOff2.o simplemc4.o tests/test_uniqueptr.cpp
@@ -148,6 +153,8 @@ bscalltwo:
 	$(CC) $(PARAMS) -c src/options/bscalltwo.cpp
 PayOffFactory:
 	$(CC) $(PARAMS) -c src/options/PayOffFactory.cpp
+PayOffRegistration:
+	$(CC) $(PARAMS) -c src/options/PayOffRegistration.cpp
 
 clean:
 	rm bin/*
