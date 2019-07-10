@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cmath>
-#include "normals.h"
 
+#include "normals.h"
 #include "BlackScholesFormulas.h"
 #include "bscalltwo.h"
 #include "NewtonRaphson.h"
@@ -16,7 +16,7 @@ int main(int argc, char const *argv[]) {
     double Spot;
     double r;
     double d;
-    
+
     cout << "expiry= ";
     cin >> Expiry;
 

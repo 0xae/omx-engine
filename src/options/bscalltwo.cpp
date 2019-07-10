@@ -1,7 +1,6 @@
 #include "bscalltwo.h"
 #include "BlackScholesFormulas.h"
 
-
 BSCallTwo::BSCallTwo(double r_, double d_,
         double T_, double Spot_,
         double Strike_) 

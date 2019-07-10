@@ -146,6 +146,8 @@ bscall:
 	$(CC) $(PARAMS) -c src/options/bscall.cpp
 bscalltwo:
 	$(CC) $(PARAMS) -c src/options/bscalltwo.cpp
+PayOffFactory:
+	$(CC) $(PARAMS) -c src/options/PayOffFactory.cpp
 
 clean:
 	rm bin/*

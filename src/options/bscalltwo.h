@@ -1,5 +1,5 @@
- #ifndef BS_CALL_TWO_H
- #define BS_CALL_TWO_H
+#ifndef BS_CALL_TWO_H
+#define BS_CALL_TWO_H
 
 class BSCallTwo
 {
@@ -19,4 +19,4 @@ private:
     double Strike;
 };
 
- #endif
+#endif
