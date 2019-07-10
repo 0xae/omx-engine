@@ -22,4 +22,10 @@ PayOffHelper<T>::PayOffHelper(string id) {
     theFactory.RegisterPayOff(id, PayOffHelper<T>::Create);
 }
 
+template<class T>
+unique_ptr<PayOff> PayOffHelper<T>::Create(double Strike) {
+    return unique_ptr<PayOff> (new T(Strike));
+}
+
+
 #endif

@@ -70,9 +70,9 @@ solvemain2: normals bscall blackscholesformulas bscalltwo
 	$(CC) $(PARAMS) -o bin/solvemain2 normals.o bscalltwo.o BlackScholesFormulas.o \
 						src/options/solvemain2.cpp
 
-payfactorymain: payoffbridge payoff2 PayOffRegistration PayOffFactory
+payfactorymain: payoffbridge payoff2 PayOffRegistration PayOffFactory payoff_forward
 	$(CC) $(PARAMS) -o bin/payfactorymain PayOff2.o payoffbridge.o PayOffRegistration.o \
-						PayOffFactory.o \
+						PayOffFactory.o vanilla2.o PayOffForward.o \
 						src/options/payfactorymain.cpp
 
 

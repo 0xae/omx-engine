@@ -3,6 +3,7 @@
 #include <string>
 
 #include "PayOffFactory.h"
+#include "PayOffForward.h"
 #include "PayOffConstruct.h"
 #include "payoffbridge.h"
 #include "PayOff2.h"
@@ -11,6 +12,8 @@ using std::cout;
 using std::cin;
 
 int main(int argc, char const *argv[]) {
+    PayOffHelper<PayOffForward> RegisterPut("forward");
+
     double Strike, Spot;
     string name;
     
@@ -31,6 +34,11 @@ int main(int argc, char const *argv[]) {
         cout << "profit=" 
              << PayOffInstance->Calculate(Spot) 
              << "\n";
+
+    } else {
+        cout << "Error: payoff category ("
+             << name
+             << ") not found.";
     }
 
     return 0;
