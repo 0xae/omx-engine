@@ -27,5 +27,4 @@ unique_ptr<PayOff> PayOffHelper<T>::Create(double Strike) {
     return unique_ptr<PayOff> (new T(Strike));
 }
 
-
 #endif
