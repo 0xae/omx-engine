@@ -5,8 +5,8 @@
 using namespace std;
 #endif
 
-#ifndef RANDOM1_UTILS
-#define RANDOM1_UTILS
+#ifndef RANDOM1_UTILS_H
+#define RANDOM1_UTILS_H
 
 double GetOneGaussianBySummation() {
 	double result = 0;
