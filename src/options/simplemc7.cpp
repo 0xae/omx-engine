@@ -1,9 +1,9 @@
 #include <cmath>
 #include <iostream>
 
-#include "options/simplemc8.h"
+#include "options/simplemc7.h"
 
-void SimpleMonteCarlo8(const VanillaOption& option,
+void SimpleMonteCarlo7(const VanillaOption& option,
     double Spot,
     const Parameters& Vol,
     const Parameters& r,
