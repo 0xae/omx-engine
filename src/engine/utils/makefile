@@ -1,5 +1,5 @@
 TARGET  := libutils.a
-INCS = -I ../network -I /home/ayrton/Development/Infraestructure/watchman
+INCS = -I ../network -I ../deps/watchman
 include ../makefile.inc
 $(TARGET) : $(OBJS)
 	ar -rs $@ $^

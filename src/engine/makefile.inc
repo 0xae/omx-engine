@@ -1,6 +1,6 @@
 SOURCE := $(wildcard *.c)
 OBJS := $(patsubst %.c, %.o, $(SOURCE))
-CC := gcc
+CC := g++
 CFLAGS := -Wall -Wno-strict-aliasing -Wno-uninitialized -g -rdynamic -std=gnu99
 LFLAGS := -g -DDEBUG -rdynamic
 
