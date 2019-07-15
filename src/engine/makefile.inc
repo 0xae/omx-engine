@@ -18,4 +18,3 @@ $(TARGET) : $(OBJS)
 	$(CC) $(CFLAGS) -c -o $@ $< $(INCS)
 
 install :
-
