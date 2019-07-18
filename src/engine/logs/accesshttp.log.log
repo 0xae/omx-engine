@@ -1,0 +1,7 @@
+[2019-07-18 09:43:54.241284] [4702] [vip]ah_main.c:116(main): server start
+[2019-07-18 09:43:54.242530] [4704] [vip]ah_main.c:116(main): server start
+[2019-07-18 09:43:54.242929] [4705] [vip]ah_main.c:116(main): server start
+[2019-07-18 09:43:54.243722] [4705] [info]ah_listener.c:74(worker_on_new_connection): new worker connected, current worker number: 1
+[2019-07-18 09:43:54.244087] [4705] [info]ah_listener.c:74(worker_on_new_connection): new worker connected, current worker number: 2
+[2019-07-18 09:43:54.243708] [4709] [vip]ah_main.c:116(main): server start
+[2019-07-18 09:43:54.244083] [4710] [vip]ah_main.c:116(main): server start
