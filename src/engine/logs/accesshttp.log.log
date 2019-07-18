@@ -5,3 +5,20 @@
 [2019-07-18 09:43:54.244087] [4705] [info]ah_listener.c:74(worker_on_new_connection): new worker connected, current worker number: 2
 [2019-07-18 09:43:54.243708] [4709] [vip]ah_main.c:116(main): server start
 [2019-07-18 09:43:54.244083] [4710] [vip]ah_main.c:116(main): server start
+[2019-07-18 09:46:46.967361] [4705] [vip]ut_signal.c:86(signal_handler): [4705]signal: 15 (SIGTERM) received, exiting
+[2019-07-18 09:46:46.967378] [4707] [vip]ut_signal.c:86(signal_handler): [4707]signal: 15 (SIGTERM) received, exiting
+[2019-07-18 09:46:46.967379] [4698] [vip]ut_signal.c:86(signal_handler): [4698]signal: 15 (SIGTERM) received, exiting
+[2019-07-18 09:46:46.967393] [4701] [vip]ut_signal.c:86(signal_handler): [4701]signal: 15 (SIGTERM) received, exiting
+[2019-07-18 09:46:46.967634] [4704] [vip]ut_signal.c:86(signal_handler): [4704]signal: 15 (SIGTERM) received, exiting
+[2019-07-18 09:46:46.967634] [4702] [vip]ut_signal.c:86(signal_handler): [4702]signal: 15 (SIGTERM) received, exiting
+[2019-07-18 09:46:46.967677] [4703] [vip]ut_signal.c:86(signal_handler): [4703]signal: 15 (SIGTERM) received, exiting
+[2019-07-18 09:46:46.967844] [4709] [vip]ut_signal.c:86(signal_handler): [4709]signal: 15 (SIGTERM) received, exiting
+[2019-07-18 09:46:46.967875] [4710] [vip]ut_signal.c:86(signal_handler): [4710]signal: 15 (SIGTERM) received, exiting
+[2019-07-18 09:46:46.968062] [4700] [vip]ut_signal.c:86(signal_handler): [4700]signal: 15 (SIGTERM) received, exiting
+[2019-07-18 09:46:47.241139] [4702] [vip]ah_main.c:119(main): server stop
+[2019-07-18 09:46:47.241916] [4704] [vip]ah_main.c:119(main): server stop
+[2019-07-18 09:46:47.242725] [4705] [vip]ah_main.c:119(main): server stop
+[2019-07-18 09:46:47.243130] [4710] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-18 09:46:47.243241] [4709] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-18 09:46:47.244381] [4710] [vip]ah_main.c:119(main): server stop
+[2019-07-18 09:46:47.244596] [4709] [vip]ah_main.c:119(main): server stop
