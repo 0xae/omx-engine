@@ -52,7 +52,10 @@ static int init_log(void)
 
 int main(int argc, char *argv[])
 {
-    printf("process: %s version: %s, compile date: %s %s\n", __process__, __version__, __DATE__, __TIME__);
+    printf("===================================\n");
+    printf("OMX HTTP ENGINE  \n", __version__);
+    printf("[process: %s] [version: %s] [compile date: %s %s]\n", __process__, __version__, __DATE__, __TIME__);
+    printf("===================================\n");
 
     if (argc < 2) {
         printf("usage: %s config.json\n", argv[0]);
@@ -100,8 +103,8 @@ int main(int argc, char *argv[])
     }
 
     process_title_set("%s_listener", __process__);
-    daemon(1, 1);
-    process_keepalive();
+    // daemon(1, 1);
+    // process_keepalive();
 
     ret = init_listener();
     if (ret < 0) {
@@ -114,7 +117,6 @@ run:
     nw_timer_set(&cron_timer, 0.5, true, on_cron_check, NULL);
     nw_timer_start(&cron_timer);
 
-    log_vip("server start");
     log_stderr("server start");
     nw_loop_run();
     log_vip("server stop");
