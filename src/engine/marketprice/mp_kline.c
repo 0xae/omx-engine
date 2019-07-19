@@ -12,12 +12,12 @@ struct kline_info *kline_info_new(mpd_t *open)
     if (info == NULL)
         return NULL;
 
-    info->open      = mpd_qncopy(open);
-    info->close     = mpd_qncopy(open);
-    info->high      = mpd_qncopy(open);
-    info->low       = mpd_qncopy(open);
-    info->volume    = mpd_qncopy(mpd_zero);
-    info->deal      = mpd_qncopy(mpd_zero);
+    info->open = mpd_qncopy(open);
+    info->close = mpd_qncopy(open);
+    info->high = mpd_qncopy(open);
+    info->low = mpd_qncopy(open);
+    info->volume = mpd_qncopy(mpd_zero);
+    info->deal = mpd_qncopy(mpd_zero);
 
     return info;
 }

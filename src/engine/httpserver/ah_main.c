@@ -107,6 +107,7 @@ int main(int argc, char *argv[])
     if (ret < 0) {
         error(EXIT_FAILURE, errno, "init listener fail: %d", ret);
     }
+
     dlog_set_no_shift(default_dlog);
 
 run:
