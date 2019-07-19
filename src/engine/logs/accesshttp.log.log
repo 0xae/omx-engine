@@ -2459,3 +2459,146 @@
 [2019-07-19 11:03:59.865184] [22563] [info]ah_listener.c:74(worker_on_new_connection): new worker connected, current worker number: 2
 [2019-07-19 11:03:59.865774] [22563] [info]ah_listener.c:74(worker_on_new_connection): new worker connected, current worker number: 3
 [2019-07-19 11:03:59.866001] [22563] [info]ah_listener.c:74(worker_on_new_connection): new worker connected, current worker number: 4
+[2019-07-19 11:19:36.312627] [22573] [trace]ut_http_svr.c:114(on_new_connection): new connection from: 127.0.0.1:46864
+[2019-07-19 11:19:36.319121] [22573] [trace]ut_http_svr.c:125(on_connection_close): connection 127.0.0.1:46864 close
+[2019-07-19 11:22:15.976874] [22575] [trace]ut_http_svr.c:114(on_new_connection): new connection from: 127.0.0.1:46970
+[2019-07-19 11:22:15.980387] [22575] [trace]ut_http_svr.c:125(on_connection_close): connection 127.0.0.1:46970 close
+[2019-07-19 11:22:28.690379] [22571] [trace]ut_http_svr.c:114(on_new_connection): new connection from: 127.0.0.1:46973
+[2019-07-19 11:22:28.693119] [22571] [trace]ut_http_svr.c:125(on_connection_close): connection 127.0.0.1:46973 close
+[2019-07-19 11:22:29.783827] [22573] [trace]ut_http_svr.c:114(on_new_connection): new connection from: 127.0.0.1:46974
+[2019-07-19 11:22:29.786647] [22573] [trace]ut_http_svr.c:125(on_connection_close): connection 127.0.0.1:46974 close
+[2019-07-19 11:22:30.402682] [22571] [trace]ut_http_svr.c:114(on_new_connection): new connection from: 127.0.0.1:46975
+[2019-07-19 11:22:30.734068] [22573] [trace]ut_http_svr.c:114(on_new_connection): new connection from: 127.0.0.1:46976
+[2019-07-19 11:22:30.405595] [22571] [trace]ut_http_svr.c:125(on_connection_close): connection 127.0.0.1:46975 close
+[2019-07-19 11:22:30.736413] [22573] [trace]ut_http_svr.c:125(on_connection_close): connection 127.0.0.1:46976 close
+[2019-07-19 11:22:31.262812] [22575] [trace]ut_http_svr.c:114(on_new_connection): new connection from: 127.0.0.1:46977
+[2019-07-19 11:22:31.265123] [22575] [trace]ut_http_svr.c:125(on_connection_close): connection 127.0.0.1:46977 close
+[2019-07-19 11:22:31.733757] [22572] [trace]ut_http_svr.c:114(on_new_connection): new connection from: 127.0.0.1:46979
+[2019-07-19 11:22:31.736535] [22572] [trace]ut_http_svr.c:125(on_connection_close): connection 127.0.0.1:46979 close
+[2019-07-19 11:24:14.562980] [22573] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-19 11:24:14.562980] [22575] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-19 11:24:14.563064] [22571] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-19 11:24:14.563123] [22572] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-19 11:24:15.563585] [22573] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-19 11:24:15.563607] [22575] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-19 11:24:15.563607] [22572] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-19 11:24:15.563650] [22571] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-19 11:24:15.563672] [22573] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-19 11:24:15.563683] [22573] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-19 11:24:15.563681] [22572] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-19 11:24:15.563687] [22572] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-19 11:24:15.563691] [22571] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-19 11:24:15.563698] [22571] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-19 11:24:15.563678] [22575] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-19 11:24:15.563687] [22575] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-19 11:24:16.563731] [22571] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-19 11:24:16.563764] [22573] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-19 11:24:16.564060] [22575] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-19 11:24:16.564333] [22572] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-19 11:24:16.563875] [22571] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-19 11:24:16.563901] [22571] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-19 11:24:16.564379] [22572] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-19 11:24:16.564389] [22572] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-19 11:24:16.564117] [22575] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-19 11:24:16.564127] [22575] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-19 11:24:16.563875] [22573] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-19 11:24:16.563901] [22573] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-19 11:24:17.564592] [22571] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-19 11:24:17.564591] [22575] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-19 11:24:17.564592] [22573] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-19 11:24:17.564829] [22572] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-19 11:24:17.564908] [22572] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-19 11:24:17.564928] [22572] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-19 11:24:17.564674] [22571] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-19 11:24:17.564687] [22571] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-19 11:24:17.564707] [22573] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-19 11:24:17.564715] [22573] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-19 11:24:17.564677] [22575] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-19 11:24:17.564687] [22575] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-19 11:24:18.565050] [22571] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-19 11:24:18.565050] [22573] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-19 11:24:18.565175] [22575] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-19 11:24:18.565485] [22572] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-19 11:24:18.565091] [22571] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-19 11:24:18.565098] [22571] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-19 11:24:18.565500] [22572] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-19 11:24:18.565505] [22572] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-19 11:24:18.565091] [22573] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-19 11:24:18.565098] [22573] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-19 11:24:18.565194] [22575] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-19 11:24:18.565198] [22575] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-19 11:24:19.565087] [22571] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-19 11:24:19.565408] [22573] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-19 11:24:19.565436] [22575] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-19 11:24:19.565756] [22572] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-19 11:24:19.565146] [22571] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-19 11:24:19.565154] [22571] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-19 11:24:19.565782] [22572] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-19 11:24:19.565787] [22572] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-19 11:24:19.565433] [22573] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-19 11:24:19.565438] [22573] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-19 11:24:19.565462] [22575] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-19 11:24:19.565467] [22575] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-19 11:24:21.796817] [2679] [info]ah_listener.c:74(worker_on_new_connection): new worker connected, current worker number: 1
+[2019-07-19 11:24:21.796952] [2679] [info]ah_listener.c:74(worker_on_new_connection): new worker connected, current worker number: 2
+[2019-07-19 11:24:21.796980] [2679] [info]ah_listener.c:74(worker_on_new_connection): new worker connected, current worker number: 3
+[2019-07-19 11:24:21.797959] [2679] [info]ah_listener.c:74(worker_on_new_connection): new worker connected, current worker number: 4
+[2019-07-19 11:24:23.931636] [2691] [trace]ut_http_svr.c:114(on_new_connection): new connection from: 127.0.0.1:47093
+[2019-07-19 11:24:23.931806] [2691] [debug]ah_server.c:136(on_http_request): =======> send request to 127.0.0.1:7316, cmd: 102, sequence: 1
+[2019-07-19 11:24:23.936559] [2691] [trace]ut_http_svr.c:125(on_connection_close): connection 127.0.0.1:47093 close
+[2019-07-19 11:24:24.683281] [2688] [trace]ut_http_svr.c:114(on_new_connection): new connection from: 127.0.0.1:47094
+[2019-07-19 11:24:24.683504] [2688] [debug]ah_server.c:136(on_http_request): =======> send request to 127.0.0.1:7316, cmd: 102, sequence: 1
+[2019-07-19 11:24:24.686856] [2688] [trace]ut_http_svr.c:125(on_connection_close): connection 127.0.0.1:47094 close
+[2019-07-19 11:24:25.398355] [2689] [trace]ut_http_svr.c:114(on_new_connection): new connection from: 127.0.0.1:47096
+[2019-07-19 11:24:25.398495] [2689] [debug]ah_server.c:136(on_http_request): =======> send request to 127.0.0.1:7316, cmd: 102, sequence: 1
+[2019-07-19 11:24:25.400719] [2689] [trace]ut_http_svr.c:125(on_connection_close): connection 127.0.0.1:47096 close
+[2019-07-19 11:24:27.028066] [2691] [trace]ut_http_svr.c:114(on_new_connection): new connection from: 127.0.0.1:47097
+[2019-07-19 11:24:27.028192] [2691] [debug]ah_server.c:136(on_http_request): =======> send request to 127.0.0.1:7316, cmd: 102, sequence: 2
+[2019-07-19 11:24:27.030428] [2691] [trace]ut_http_svr.c:125(on_connection_close): connection 127.0.0.1:47097 close
+[2019-07-19 11:24:28.084757] [2689] [trace]ut_http_svr.c:114(on_new_connection): new connection from: 127.0.0.1:47098
+[2019-07-19 11:24:28.084886] [2689] [debug]ah_server.c:136(on_http_request): =======> send request to 127.0.0.1:7316, cmd: 102, sequence: 2
+[2019-07-19 11:24:28.087413] [2689] [trace]ut_http_svr.c:125(on_connection_close): connection 127.0.0.1:47098 close
+[2019-07-19 11:24:28.616304] [2691] [trace]ut_http_svr.c:114(on_new_connection): new connection from: 127.0.0.1:47099
+[2019-07-19 11:24:28.616424] [2691] [debug]ah_server.c:136(on_http_request): =======> send request to 127.0.0.1:7316, cmd: 102, sequence: 3
+[2019-07-19 11:24:28.619113] [2691] [trace]ut_http_svr.c:125(on_connection_close): connection 127.0.0.1:47099 close
+[2019-07-19 11:24:28.975961] [2688] [trace]ut_http_svr.c:114(on_new_connection): new connection from: 127.0.0.1:47100
+[2019-07-19 11:24:29.190214] [2686] [trace]ut_http_svr.c:114(on_new_connection): new connection from: 127.0.0.1:47101
+[2019-07-19 11:24:28.976079] [2688] [debug]ah_server.c:136(on_http_request): =======> send request to 127.0.0.1:7316, cmd: 102, sequence: 2
+[2019-07-19 11:24:28.978809] [2688] [trace]ut_http_svr.c:125(on_connection_close): connection 127.0.0.1:47100 close
+[2019-07-19 11:24:29.190331] [2686] [debug]ah_server.c:136(on_http_request): =======> send request to 127.0.0.1:7316, cmd: 102, sequence: 1
+[2019-07-19 11:24:29.192866] [2686] [trace]ut_http_svr.c:125(on_connection_close): connection 127.0.0.1:47101 close
+[2019-07-19 11:24:29.848324] [2689] [trace]ut_http_svr.c:114(on_new_connection): new connection from: 127.0.0.1:47102
+[2019-07-19 11:24:29.848597] [2689] [debug]ah_server.c:136(on_http_request): =======> send request to 127.0.0.1:7316, cmd: 102, sequence: 3
+[2019-07-19 11:24:29.851660] [2689] [trace]ut_http_svr.c:125(on_connection_close): connection 127.0.0.1:47102 close
+[2019-07-19 11:24:30.825746] [2689] [trace]ut_http_svr.c:114(on_new_connection): new connection from: 127.0.0.1:47104
+[2019-07-19 11:24:30.825867] [2689] [debug]ah_server.c:136(on_http_request): =======> send request to 127.0.0.1:7316, cmd: 102, sequence: 4
+[2019-07-19 11:24:30.828011] [2689] [trace]ut_http_svr.c:125(on_connection_close): connection 127.0.0.1:47104 close
+[2019-07-19 11:25:03.143189] [2691] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-19 11:25:03.143191] [2688] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-19 11:25:03.143255] [2689] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-19 11:25:03.143303] [2686] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-19 11:25:04.143611] [2688] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-19 11:25:04.143749] [2689] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-19 11:25:04.143783] [2691] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-19 11:25:04.143837] [2686] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-19 11:25:09.792708] [3305] [info]ah_listener.c:74(worker_on_new_connection): new worker connected, current worker number: 1
+[2019-07-19 11:25:09.792820] [3305] [info]ah_listener.c:74(worker_on_new_connection): new worker connected, current worker number: 2
+[2019-07-19 11:25:09.793451] [3305] [info]ah_listener.c:74(worker_on_new_connection): new worker connected, current worker number: 3
+[2019-07-19 11:25:09.794061] [3305] [info]ah_listener.c:74(worker_on_new_connection): new worker connected, current worker number: 4
+[2019-07-19 11:25:43.669979] [3317] [trace]ut_http_svr.c:114(on_new_connection): new connection from: 127.0.0.1:47148
+[2019-07-19 11:25:43.670175] [3317] [debug]ah_server.c:136(on_http_request): =======> send request to 127.0.0.1:7316, cmd: 102, sequence: 1
+[2019-07-19 11:25:43.673367] [3317] [trace]ut_http_svr.c:125(on_connection_close): connection 127.0.0.1:47148 close
+[2019-07-19 11:25:44.377077] [3315] [trace]ut_http_svr.c:114(on_new_connection): new connection from: 127.0.0.1:47149
+[2019-07-19 11:25:44.377203] [3315] [debug]ah_server.c:136(on_http_request): =======> send request to 127.0.0.1:7316, cmd: 102, sequence: 1
+[2019-07-19 11:25:44.380016] [3315] [trace]ut_http_svr.c:125(on_connection_close): connection 127.0.0.1:47149 close
+[2019-07-19 11:25:59.120493] [3311] [trace]ut_http_svr.c:114(on_new_connection): new connection from: 127.0.0.1:47153
+[2019-07-19 11:25:59.120630] [3311] [debug]ah_server.c:136(on_http_request): =======> send request to 127.0.0.1:7316, cmd: 102, sequence: 1
+[2019-07-19 11:25:59.123397] [3311] [trace]ut_http_svr.c:125(on_connection_close): connection 127.0.0.1:47153 close
+[2019-07-19 11:25:59.677889] [3317] [trace]ut_http_svr.c:114(on_new_connection): new connection from: 127.0.0.1:47154
+[2019-07-19 11:25:59.705357] [3317] [debug]ah_server.c:136(on_http_request): =======> send request to 127.0.0.1:7316, cmd: 102, sequence: 2
+[2019-07-19 11:25:59.708131] [3317] [trace]ut_http_svr.c:125(on_connection_close): connection 127.0.0.1:47154 close
+[2019-07-19 11:26:00.205354] [3311] [trace]ut_http_svr.c:114(on_new_connection): new connection from: 127.0.0.1:47155
+[2019-07-19 11:26:00.205465] [3311] [debug]ah_server.c:136(on_http_request): =======> send request to 127.0.0.1:7316, cmd: 102, sequence: 2
+[2019-07-19 11:26:00.207504] [3311] [trace]ut_http_svr.c:125(on_connection_close): connection 127.0.0.1:47155 close
+[2019-07-19 11:27:13.419063] [3317] [trace]ut_http_svr.c:114(on_new_connection): new connection from: 127.0.0.1:47227
+[2019-07-19 11:27:13.421630] [3317] [trace]ut_http_svr.c:125(on_connection_close): connection 127.0.0.1:47227 close

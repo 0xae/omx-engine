@@ -132,8 +132,8 @@ static int on_http_request(nw_ses *ses, http_request_t *request) {
         pkg.body_size = strlen(pkg.body);
 
         rpc_clt_send(req->clt, &pkg);
-        // log_debug("=======> send request to %s, cmd: %u, sequence: %u",
-        //         nw_sock_human_addr(rpc_clt_peer_addr(req->clt)), pkg.command, pkg.sequence);
+        log_debug("=======> send request to %s, cmd: %u, sequence: %u",
+                nw_sock_human_addr(rpc_clt_peer_addr(req->clt)), pkg.command, pkg.sequence);
         free(pkg.body);
     }
 
