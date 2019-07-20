@@ -2604,3 +2604,15 @@
 [2019-07-19 11:27:13.421630] [3317] [trace]ut_http_svr.c:125(on_connection_close): connection 127.0.0.1:47227 close
 [2019-07-20 09:32:17.910476] [3315] [trace]ut_http_svr.c:114(on_new_connection): new connection from: 127.0.0.1:41322
 [2019-07-20 09:32:17.916744] [3315] [trace]ut_http_svr.c:125(on_connection_close): connection 127.0.0.1:41322 close
+[2019-07-20 20:04:36.890868] [3313] [trace]ut_http_svr.c:114(on_new_connection): new connection from: 127.0.0.1:48441
+[2019-07-20 20:04:36.894363] [3313] [trace]ut_http_svr.c:125(on_connection_close): connection 127.0.0.1:48441 close
+[2019-07-20 20:04:56.905078] [3311] [trace]ut_http_svr.c:114(on_new_connection): new connection from: 127.0.0.1:48446
+[2019-07-20 20:04:56.908367] [3311] [trace]ut_http_svr.c:125(on_connection_close): connection 127.0.0.1:48446 close
+[2019-07-20 20:04:57.515548] [3311] [trace]ut_http_svr.c:114(on_new_connection): new connection from: 127.0.0.1:48447
+[2019-07-20 20:04:57.518578] [3311] [trace]ut_http_svr.c:125(on_connection_close): connection 127.0.0.1:48447 close
+[2019-07-20 20:05:00.381223] [3315] [trace]ut_http_svr.c:114(on_new_connection): new connection from: 127.0.0.1:48449
+[2019-07-20 20:05:00.384748] [3315] [trace]ut_http_svr.c:125(on_connection_close): connection 127.0.0.1:48449 close
+[2019-07-20 20:05:01.405509] [3317] [trace]ut_http_svr.c:114(on_new_connection): new connection from: 127.0.0.1:48450
+[2019-07-20 20:05:01.408620] [3317] [trace]ut_http_svr.c:125(on_connection_close): connection 127.0.0.1:48450 close
+[2019-07-20 20:09:09.435613] [3315] [trace]ut_http_svr.c:114(on_new_connection): new connection from: 127.0.0.1:48498
+[2019-07-20 20:09:09.438886] [3315] [trace]ut_http_svr.c:125(on_connection_close): connection 127.0.0.1:48498 close
