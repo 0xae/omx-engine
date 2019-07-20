@@ -2602,3 +2602,5 @@
 [2019-07-19 11:26:00.207504] [3311] [trace]ut_http_svr.c:125(on_connection_close): connection 127.0.0.1:47155 close
 [2019-07-19 11:27:13.419063] [3317] [trace]ut_http_svr.c:114(on_new_connection): new connection from: 127.0.0.1:47227
 [2019-07-19 11:27:13.421630] [3317] [trace]ut_http_svr.c:125(on_connection_close): connection 127.0.0.1:47227 close
+[2019-07-20 09:32:17.910476] [3315] [trace]ut_http_svr.c:114(on_new_connection): new connection from: 127.0.0.1:41322
+[2019-07-20 09:32:17.916744] [3315] [trace]ut_http_svr.c:125(on_connection_close): connection 127.0.0.1:41322 close
