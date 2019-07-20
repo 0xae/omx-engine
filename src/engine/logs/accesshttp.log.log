@@ -2616,3 +2616,458 @@
 [2019-07-20 20:05:01.408620] [3317] [trace]ut_http_svr.c:125(on_connection_close): connection 127.0.0.1:48450 close
 [2019-07-20 20:09:09.435613] [3315] [trace]ut_http_svr.c:114(on_new_connection): new connection from: 127.0.0.1:48498
 [2019-07-20 20:09:09.438886] [3315] [trace]ut_http_svr.c:125(on_connection_close): connection 127.0.0.1:48498 close
+[2019-07-20 20:26:04.975971] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:04.976061] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:04.976175] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:04.976289] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:05.976533] [3317] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:05.976740] [3311] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:05.976814] [3315] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:05.976818] [3313] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:05.976765] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:05.976772] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:05.976848] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:05.976854] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:05.976846] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:05.976853] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:05.976641] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:05.976656] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:06.976871] [3317] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:06.977123] [3315] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:06.977579] [3311] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:06.977714] [3313] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:06.977768] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:06.977780] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:06.977662] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:06.977679] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:06.977189] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:06.977203] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:06.976987] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:06.977007] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:07.977402] [3317] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:07.977727] [3315] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:07.978520] [3311] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:07.978520] [3313] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:07.978611] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:07.978630] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:07.978612] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:07.978630] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:07.977777] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:07.977790] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:07.977502] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:07.977520] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:08.978140] [3317] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:08.978398] [3315] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:08.979324] [3313] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:08.979324] [3311] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:08.979388] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:08.979402] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:08.979388] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:08.979402] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:08.978468] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:08.978485] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:08.978264] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:08.978283] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:09.978954] [3317] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:09.979359] [3315] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:09.979984] [3313] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:09.980312] [3311] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:09.980407] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:09.980430] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:09.980076] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:09.980095] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:09.979465] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:09.979487] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:09.979110] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:09.979136] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:10.979843] [3317] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:10.980243] [3315] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:10.980417] [3313] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:10.981297] [3311] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:10.981391] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:10.981419] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:10.980537] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:10.980558] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:10.980350] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:10.980375] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:10.979979] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:10.980000] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:11.980776] [3317] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:11.980795] [3313] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:11.980958] [3315] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:11.982255] [3311] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:11.982327] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:11.982345] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:11.980852] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:11.980861] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:11.980990] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:11.980998] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:11.980849] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:11.980861] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:12.981401] [3315] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:12.981391] [3313] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:12.981519] [3317] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:12.983110] [3311] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:12.983219] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:12.983243] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:12.981526] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:12.981545] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:12.981519] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:12.981541] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:12.981583] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:12.981606] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:13.982210] [3313] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:13.982277] [3317] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:13.982298] [3315] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:13.983174] [3311] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:13.983251] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:13.983271] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:13.982340] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:13.982359] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:13.982373] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:13.982390] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:13.982340] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:13.982359] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:14.982735] [3317] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:14.983030] [3315] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:14.983203] [3313] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:14.984122] [3311] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:14.984178] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:14.984186] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:14.983277] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:14.983293] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:14.983073] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:14.983081] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:14.982851] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:14.982881] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:15.983592] [3317] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:15.984086] [3315] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:15.984114] [3313] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:15.985223] [3311] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:15.985324] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:15.985349] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:15.984173] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:15.984186] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:15.984171] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:15.984186] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:15.983721] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:15.983745] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:16.984065] [3317] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:16.984566] [3313] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:16.984809] [3315] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:16.985944] [3311] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:16.986101] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:16.986168] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:16.984884] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:16.984911] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:16.984636] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:16.984654] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:16.984192] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:16.984216] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:17.984872] [3317] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:17.985224] [3313] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:17.985804] [3315] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:17.986028] [3311] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:17.986073] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:17.986085] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:17.985296] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:17.985322] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:17.985871] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:17.985890] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:17.985003] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:17.985029] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:18.985545] [3317] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:18.986090] [3313] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:18.986283] [3315] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:18.986336] [3311] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:18.986395] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:18.986412] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:18.986153] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:18.986170] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:18.986368] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:18.986387] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:18.985667] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:18.985688] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:19.986169] [3317] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:19.986695] [3315] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:19.986807] [3313] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:19.987063] [3311] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:19.986879] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:19.986895] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:19.987128] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:19.987144] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:19.986803] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:19.986822] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:19.986291] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:19.986313] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:20.986708] [3317] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:20.987425] [3315] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:20.987581] [3313] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:20.988067] [3311] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:20.988155] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:20.988170] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:20.987626] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:20.987635] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:20.987496] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:20.987510] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:20.986814] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:20.986831] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:21.987499] [3317] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:21.988151] [3315] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:21.988147] [3313] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:21.988746] [3311] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:21.988800] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:21.988811] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:21.988231] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:21.988250] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:21.988201] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:21.988215] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:21.987664] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:21.987685] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:22.987995] [3317] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:22.988394] [3313] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:22.988650] [3315] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:22.989508] [3311] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:22.989577] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:22.989594] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:22.988529] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:22.988550] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:22.988736] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:22.988755] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:22.988139] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:22.988165] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:23.988764] [3317] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:23.989326] [3313] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:23.989364] [3315] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:23.990281] [3311] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:23.990378] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:23.990400] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:23.989382] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:23.989398] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:23.989458] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:23.989471] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:23.988923] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:23.988946] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:24.989645] [3317] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:24.990235] [3313] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:24.990252] [3315] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:24.991269] [3311] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:24.991335] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:24.991351] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:24.990290] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:24.990302] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:24.990308] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:24.990323] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:24.989750] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:24.989768] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:25.990130] [3317] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:25.990847] [3313] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:25.990847] [3315] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:25.991895] [3311] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:25.990931] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:25.990947] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:25.991992] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:25.992015] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:25.990931] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:25.990947] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:25.990273] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:25.990299] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:26.990761] [3317] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:26.991212] [3315] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:26.991682] [3313] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:26.991981] [3311] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:26.992074] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:26.992094] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:26.991752] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:26.991765] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:26.991318] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:26.991336] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:26.990819] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:26.990827] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:27.991445] [3317] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:27.991767] [3315] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:27.992514] [3313] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:27.992950] [3311] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:27.993016] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:27.993034] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:27.992615] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:27.992639] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:27.991852] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:27.991870] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:27.991585] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:27.991610] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:28.992216] [3317] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:28.992579] [3315] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:28.993304] [3313] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:28.993946] [3311] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:28.994038] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:28.994061] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:28.993358] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:28.993369] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:28.992373] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:28.992399] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:28.992673] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:28.992692] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:29.992212] [3317] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:29.993633] [3315] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:29.994048] [3311] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:29.994298] [3313] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:29.994107] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:29.994121] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:29.994391] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:29.994409] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:29.993706] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:29.993722] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:29.992346] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:29.992366] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:30.993284] [3317] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:30.994132] [3311] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:30.994347] [3315] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:30.995197] [3313] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:30.994233] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:30.994257] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:30.995315] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:30.995339] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:30.993418] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:30.993442] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:30.994411] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:30.994430] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:31.994141] [3317] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:31.994159] [3311] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:31.995355] [3315] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:31.996167] [3313] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:31.994305] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:31.994330] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:31.996260] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:31.996283] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:31.995448] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:31.995471] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:31.994295] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:31.994320] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:32.995164] [3311] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:32.995155] [3317] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:32.996259] [3315] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:32.996303] [3313] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:32.995255] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:32.995273] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:32.996368] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:32.996384] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:32.996341] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:32.996356] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:32.995260] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:32.995275] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:33.995967] [3317] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:33.996007] [3311] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:33.996694] [3315] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:33.996702] [3313] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:33.996107] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:33.996126] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:33.996770] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:33.996789] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:33.996773] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:33.996786] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:33.996104] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:33.996127] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:34.996479] [3311] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:34.996488] [3317] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:34.997251] [3315] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:34.997262] [3313] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:34.996540] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:34.996551] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:34.997297] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:34.997306] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:34.997297] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:34.997306] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:34.996550] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:34.996557] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:35.997043] [3317] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:35.997086] [3311] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:35.997827] [3315] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:35.997869] [3313] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:35.997941] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:35.997961] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:35.997208] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:35.997232] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:35.997909] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:35.997929] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:35.997197] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:35.997222] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:36.997780] [3317] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:36.998113] [3311] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:36.998566] [3315] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:36.998606] [3313] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:36.998236] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:36.998260] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:36.998647] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:36.998667] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:36.998675] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:36.998694] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:36.997936] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:36.997979] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:37.998355] [3317] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:37.998985] [3311] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:37.999081] [3315] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:37.999150] [3313] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:37.999071] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:37.999090] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:37.999251] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:37.999279] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:37.999152] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:37.999171] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:37.998499] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:37.998526] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:38.999060] [3317] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:38.999769] [3315] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:38.999924] [3313] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:39.000077] [3311] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:38.999997] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:39.000014] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:39.000146] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:39.000162] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:38.999824] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:38.999840] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:38.999178] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:38.999199] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:39.999858] [3315] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:39.999864] [3317] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:40.000644] [3313] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:40.000713] [3311] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:40.000785] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:40.000802] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:40.000723] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:40.000739] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:39.999990] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:40.000011] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:40.000004] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:40.000038] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:41.000430] [3317] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:41.000459] [3315] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:41.001576] [3313] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:41.001720] [3311] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:41.001792] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:41.001807] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:41.000581] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:41.000600] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:41.001657] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:41.001676] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:41.000571] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:41.000592] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:42.001260] [3315] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:42.001393] [3317] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:42.001575] [3313] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:42.002745] [3311] [info]ah_server.c:224(on_listener_connect): connect listener fail
+[2019-07-20 20:26:42.002827] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:42.002844] [3311] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:42.001644] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:42.001660] [3313] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:42.001346] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:42.001360] [3315] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:42.001439] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:42.001450] [3317] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-20 20:26:46.548112] [5245] [info]ah_listener.c:74(worker_on_new_connection): new worker connected, current worker number: 1
+[2019-07-20 20:26:46.548138] [5245] [info]ah_listener.c:74(worker_on_new_connection): new worker connected, current worker number: 2
+[2019-07-20 20:26:46.548781] [5245] [info]ah_listener.c:74(worker_on_new_connection): new worker connected, current worker number: 3
+[2019-07-20 20:26:46.549908] [5245] [info]ah_listener.c:74(worker_on_new_connection): new worker connected, current worker number: 4
+[2019-07-20 20:26:52.246545] [5257] [trace]ut_http_svr.c:114(on_new_connection): new connection from: 127.0.0.1:48710
+[2019-07-20 20:26:52.246688] [5257] [debug]ah_server.c:111(on_http_request): method = ping
+[2019-07-20 20:26:52.249726] [5257] [trace]ut_http_svr.c:125(on_connection_close): connection 127.0.0.1:48710 close

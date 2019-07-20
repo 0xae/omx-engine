@@ -105,8 +105,11 @@ static int on_http_request(nw_ses *ses, http_request_t *request) {
         goto decode_error;
     }
 
-    dict_entry *entry = dict_find(methods, json_string_value(method));
+    char *method_ptr=json_string_value(method);
+    dict_entry *entry = dict_find(methods, method_ptr);
     if (entry == NULL) {
+        log_debug("method = %s", method_ptr);
+
         reply_not_found(ses, json_integer_value(id));
     } else {
         struct request_info *req = entry->val;
@@ -132,7 +135,6 @@ static int on_http_request(nw_ses *ses, http_request_t *request) {
         pkg.body_size = strlen(pkg.body);
 
         rpc_clt_send(req->clt, &pkg);
-
         free(pkg.body);
     }
 
