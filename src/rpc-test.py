@@ -19,9 +19,13 @@
 from rpc import EngineRPC
 from conf import getHttpConf
 import json
+import pprint
 
 HTTPSERVER_CONF="engine/httpserver/config.json"
 host, port = getHttpConf(HTTPSERVER_CONF)
+
+pp = pprint.PrettyPrinter(indent=4)
+
 
 if __name__ == '__main__':
   engine = EngineRPC(
@@ -31,5 +35,6 @@ if __name__ == '__main__':
       'p123'
   )
 
-  result = engine.rpc('ping', [])
-  print "RPC[Response] = %s" % (json.dumps(result))
+  result = engine.rpc('asset.list', [])
+  print "RPC[Response] = "
+  print json.dumps(result)
