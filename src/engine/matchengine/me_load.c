@@ -57,7 +57,8 @@ int load_orders(MYSQL *conn, const char *table)
 
             if (!order->market || !order->price || !order->amount || 
                 !order->taker_fee || !order->maker_fee || !order->left ||
-                !order->freeze || !order->deal_stock || !order->deal_money || !order->deal_fee) {
+                !order->freeze || !order->deal_stock || !order->deal_money || !order->deal_fee) 
+            {
                 log_error("get order detail of order id: %"PRIu64" fail", order->id);
                 mysql_free_result(result);
                 return -__LINE__;
@@ -65,10 +66,12 @@ int load_orders(MYSQL *conn, const char *table)
 
             market_put_order(market, order);
         }
+
         mysql_free_result(result);
 
-        if (num_rows < query_limit)
+        if (num_rows < query_limit) {
             break;
+        }
     }
 
     return 0;
@@ -99,7 +102,6 @@ int load_balance(MYSQL *conn, const char *table)
             uint32_t user_id = strtoul(row[1], NULL, 0);
             const char *asset = row[2];
             if (!asset_exist(asset)) {
-                printf("====> [load_balance] asset %s does not exist\n", asset);
                 continue;
             }
 
@@ -130,10 +132,12 @@ static int load_update_balance(json_t *params)
     // asset
     if (!json_is_string(json_array_get(params, 1)))
         return -__LINE__;
+
     const char *asset = json_string_value(json_array_get(params, 1));
     int prec = asset_prec(asset);
-    if (prec < 0)
+    if (prec < 0) {
         return 0;
+    }
 
     // business
     if (!json_is_string(json_array_get(params, 2)))
