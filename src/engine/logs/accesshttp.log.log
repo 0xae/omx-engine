@@ -1446,3 +1446,17 @@
 [2019-07-22 04:20:57.548550] [7959] [info]ah_listener.c:77(worker_on_new_connection): worker connected, current worker number: 2
 [2019-07-22 04:20:57.549301] [7959] [info]ah_listener.c:77(worker_on_new_connection): worker connected, current worker number: 3
 [2019-07-22 04:20:57.549499] [7959] [info]ah_listener.c:77(worker_on_new_connection): worker connected, current worker number: 4
+[2019-07-22 05:41:19.727208] [7967] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-22 05:41:19.727250] [7969] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-22 05:41:19.727359] [7971] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-22 05:41:19.728178] [7968] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-22 05:41:52.086894] [25021] [debug]ah_server.c:113(on_http_request): Bad API request. Method 'asset.summari' not found!
+[2019-07-22 05:42:21.282158] [25023] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-22 05:42:21.282197] [25021] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-22 05:42:21.282234] [25020] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-22 05:42:21.282347] [25018] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-22 05:42:22.282591] [25018] [info]ah_server.c:228(on_listener_connect): connect listener fail
+[2019-07-22 05:42:22.282673] [25020] [info]ah_server.c:228(on_listener_connect): connect listener fail
+[2019-07-22 05:42:22.282799] [25023] [info]ah_server.c:228(on_listener_connect): connect listener fail
+[2019-07-22 05:42:22.283104] [25021] [info]ah_server.c:228(on_listener_connect): connect listener fail
+[2019-07-22 05:42:26.001497] [25546] [warn]ah_server.c:113(on_http_request): Bad API request. Method 'asset.summari' not found!

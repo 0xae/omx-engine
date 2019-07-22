@@ -108,8 +108,9 @@ static int on_http_request(nw_ses *ses, http_request_t *request) {
 
     char *method_ptr=json_string_value(method);
     dict_entry *entry = dict_find(methods, method_ptr);
+
     if (entry == NULL) {
-        log_debug("method = %s", method_ptr);
+        log_warn("Bad API request. Method '%s' not found!", method_ptr);
         reply_not_found(ses, json_integer_value(id));
 
     } else {
@@ -128,11 +129,11 @@ static int on_http_request(nw_ses *ses, http_request_t *request) {
 
         rpc_pkg pkg;
         memset(&pkg, 0, sizeof(pkg));
-        pkg.pkg_type  = RPC_PKG_TYPE_REQUEST;
-        pkg.command   = req->cmd;
-        pkg.sequence  = entry->id;
-        pkg.req_id    = json_integer_value(id);
-        pkg.body      = json_dumps(params, 0);
+        pkg.pkg_type = RPC_PKG_TYPE_REQUEST;
+        pkg.command = req->cmd;
+        pkg.sequence = entry->id;
+        pkg.req_id = json_integer_value(id);
+        pkg.body = json_dumps(params, 0);
         pkg.body_size = strlen(pkg.body);
 
         rpc_clt_send(req->clt, &pkg);
@@ -249,8 +250,10 @@ static int init_listener_clt(void)
     cfg.name = strdup("listener");
     cfg.addr_count = 1;
     cfg.addr_arr = &addr;
-    if (nw_sock_cfg_parse(AH_LISTENER_BIND, &addr, &cfg.sock_type) < 0)
+
+    if (nw_sock_cfg_parse(AH_LISTENER_BIND, &addr, &cfg.sock_type) < 0){
         return -__LINE__;
+    }
     cfg.max_pkg_size = 1024;
 
     rpc_clt_type type;
@@ -260,19 +263,28 @@ static int init_listener_clt(void)
     type.on_recv_fd  = on_listener_recv_fd;
 
     listener = rpc_clt_create(&cfg, &type);
-    if (listener == NULL)
+    if (listener == NULL){
         return -__LINE__;
-    if (rpc_clt_start(listener) < 0)
+    }
+
+    if (rpc_clt_start(listener) < 0) {
         return -__LINE__;
+    }
 
     return 0;
 }
 
 static int add_handler(char *method, rpc_clt *clt, uint32_t cmd)
 {
-    struct request_info info = { .clt = clt, .cmd = cmd };
-    if (dict_add(methods, method, &info) == NULL)
+    struct request_info info = { 
+        .clt=clt, 
+        .cmd=cmd 
+    };
+
+    if (dict_add(methods, method, &info) == NULL) {
         return __LINE__;
+    }
+
     return 0;
 }
 
@@ -281,43 +293,7 @@ static int init_methods_handler(void)
     // assets
     ERR_RET_LN(add_handler("asset.list", matchengine, CMD_ASSET_LIST));
     ERR_RET_LN(add_handler("asset.summary", matchengine, CMD_ASSET_SUMMARY));
-    ERR_RET_LN(add_handler("asset.create", matchengine, CMD_ASSET_CREATE));
-
-    // balance
-    ERR_RET_LN(add_handler("balance.query", matchengine, CMD_BALANCE_QUERY));
-    ERR_RET_LN(add_handler("balance.update", matchengine, CMD_BALANCE_UPDATE));
-    ERR_RET_LN(add_handler("balance.history", readhistory, CMD_BALANCE_HISTORY));
-
-    // order
-    ERR_RET_LN(add_handler("order.put_limit", matchengine, CMD_ORDER_PUT_LIMIT));
-    ERR_RET_LN(add_handler("order.put_market", matchengine, CMD_ORDER_PUT_MARKET));
-    ERR_RET_LN(add_handler("order.cancel", matchengine, CMD_ORDER_CANCEL));
-    ERR_RET_LN(add_handler("order.book", matchengine, CMD_ORDER_BOOK));
-    ERR_RET_LN(add_handler("order.depth", matchengine, CMD_ORDER_BOOK_DEPTH));
-    ERR_RET_LN(add_handler("order.pending", matchengine, CMD_ORDER_QUERY));
-    ERR_RET_LN(add_handler("order.pending_detail", matchengine, CMD_ORDER_DETAIL));
-    ERR_RET_LN(add_handler("order.deals", readhistory, CMD_ORDER_DEALS));
-    ERR_RET_LN(add_handler("order.finished", readhistory, CMD_ORDER_HISTORY));
-    ERR_RET_LN(add_handler("order.finished_detail", readhistory, CMD_ORDER_DETAIL_FINISHED));
-
-    // market
     ERR_RET_LN(add_handler("market.last", marketprice, CMD_MARKET_LAST));
-    ERR_RET_LN(add_handler("market.deals", marketprice, CMD_MARKET_DEALS));
-    ERR_RET_LN(add_handler("market.kline", marketprice, CMD_MARKET_KLINE));
-    ERR_RET_LN(add_handler("market.status", marketprice, CMD_MARKET_STATUS));
-    ERR_RET_LN(add_handler("market.status_today", marketprice, CMD_MARKET_STATUS_TODAY));
-    ERR_RET_LN(add_handler("market.user_deals", readhistory, CMD_MARKET_USER_DEALS));
-    ERR_RET_LN(add_handler("market.list", matchengine, CMD_MARKET_LIST));
-    ERR_RET_LN(add_handler("market.summary", matchengine, CMD_MARKET_SUMMARY));
-
-    // @date 2019-04-03
-    // @author ayrton
-    ERR_RET_LN(add_handler("matcher.add_market", matchengine, CMD_MARKET_CREATE));
-    // ERR_RET_LN(add_handler("matcher.asset", matchengine, CMD_ASSET_CREATE));
-
-    // @date 2019-04-04
-    // @author ayrton
-    ERR_RET_LN(add_handler("market.add_market", marketprice, CMD_MARKET_CREATE));
 
     return 0;
 }
@@ -347,38 +323,44 @@ int init_server(void)
     memset(&ct, 0, sizeof(ct));
     ct.on_connect = on_backend_connect;
     ct.on_recv_pkg = on_backend_recv_pkg;
+
     matchengine = rpc_clt_create(&settings.matchengine, &ct);
-    if (matchengine == NULL)
+
+    if (matchengine == NULL){
         return -__LINE__;
-    if (rpc_clt_start(matchengine) < 0)
+    }
+
+    if (rpc_clt_start(matchengine) < 0){
         return -__LINE__;
+    }
 
     marketprice = rpc_clt_create(&settings.marketprice, &ct);
     if (marketprice == NULL) {
-        printf("======> Could not [create] marketprice rpc server\n");
+        log_error("Could not [create] marketprice rpc client\n");
         return -__LINE__;
     }
+
     if (rpc_clt_start(marketprice) < 0) {
-        printf("======> Could not [start] marketprice rpc server\n");
+        log_error("Could not [start] marketprice rpc client\n");
         return -__LINE__;
     }
 
     readhistory = rpc_clt_create(&settings.readhistory, &ct);
-    if (readhistory == NULL){
+    if (readhistory == NULL) {
         return -__LINE__;
     }
 
-    if (rpc_clt_start(readhistory) < 0){
+    if (rpc_clt_start(readhistory) < 0) {
         return -__LINE__;
     }
 
     svr = http_svr_create(&settings.svr, on_http_request);
-    if (svr == NULL)
+    if (svr == NULL) {
         return -__LINE__;
+    }
 
     ERR_RET(init_methods_handler());
     ERR_RET(init_listener_clt());
-
     return 0;
 }
 
