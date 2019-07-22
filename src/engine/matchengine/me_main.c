@@ -107,26 +107,32 @@ int main(int argc, char *argv[])
     if (ret < 0) {
         error(EXIT_FAILURE, errno, "init from db fail: %d", ret);
     }
+
     ret = init_operlog();
     if (ret < 0) {
         error(EXIT_FAILURE, errno, "init oper log fail: %d", ret);
     }
+
     ret = init_history();
     if (ret < 0) {
         error(EXIT_FAILURE, errno, "init history fail: %d", ret);
     }
+
     ret = init_message();
     if (ret < 0) {
         error(EXIT_FAILURE, errno, "init message fail: %d", ret);
     }
+
     ret = init_persist();
     if (ret < 0) {
         error(EXIT_FAILURE, errno, "init persist fail: %d", ret);
     }
+
     ret = init_cli();
     if (ret < 0) {
         error(EXIT_FAILURE, errno, "init cli fail: %d", ret);
     }
+
     ret = init_server();
     if (ret < 0) {
         error(EXIT_FAILURE, errno, "init server fail: %d", ret);
@@ -136,10 +142,11 @@ int main(int argc, char *argv[])
     nw_timer_start(&cron_timer);
 
     log_vip("server start");
-    log_stderr("server start");
+    // log_stderr("server start");
     nw_loop_run();
-    log_vip("server stop");
 
+
+    log_vip("server stop");
     fini_message();
     fini_history();
     fini_operlog();

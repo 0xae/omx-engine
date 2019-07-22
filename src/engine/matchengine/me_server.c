@@ -3,23 +3,23 @@
  *     History: yang@haipo.me, 2017/03/16, create
  */
 
-# include "me_config.h"
-# include "me_server.h"
-# include "me_balance.h"
-# include "me_update.h"
-# include "me_market.h"
-# include "me_trade.h"
-# include "me_operlog.h"
-# include "me_history.h"
-# include "me_message.h"
+#include "me_config.h"
+#include "me_server.h"
+#include "me_balance.h"
+#include "me_update.h"
+#include "me_market.h"
+#include "me_trade.h"
+#include "me_operlog.h"
+#include "me_history.h"
+#include "me_message.h"
 
 static rpc_svr *svr;
 static dict_t *dict_cache;
 static nw_timer cache_timer;
 
 struct cache_val {
-    double      time;
-    json_t      *result;
+    double time;
+    json_t *result;
 };
 
 static int reply_json(nw_ses *ses, rpc_pkg *pkg, const json_t *json)
@@ -30,8 +30,11 @@ static int reply_json(nw_ses *ses, rpc_pkg *pkg, const json_t *json)
     } else {
         message_data = json_dumps(json, 0);
     }
-    if (message_data == NULL)
+
+    if (message_data == NULL) {
         return -__LINE__;
+    }
+
     log_trace("connection: %s send: %s", nw_sock_human_addr(&ses->peer_addr), message_data);
 
     rpc_pkg reply;
@@ -40,6 +43,7 @@ static int reply_json(nw_ses *ses, rpc_pkg *pkg, const json_t *json)
     reply.body = message_data;
     reply.body_size = strlen(message_data);
     rpc_send(ses, &reply);
+
     free(message_data);
 
     return 0;
@@ -381,8 +385,8 @@ static int on_cmd_order_put_limit(nw_ses *ses, rpc_pkg *pkg, json_t *params)
     if (side != MARKET_ORDER_SIDE_ASK && side != MARKET_ORDER_SIDE_BID)
         return reply_error_invalid_argument(ses, pkg);
 
-    mpd_t *amount    = NULL;
-    mpd_t *price     = NULL;
+    mpd_t *amount = NULL;
+    mpd_t *price = NULL;
     mpd_t *taker_fee = NULL;
     mpd_t *maker_fee = NULL;
 
