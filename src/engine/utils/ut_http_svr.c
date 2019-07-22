@@ -111,7 +111,8 @@ static void on_error_msg(nw_ses *ses, const char *msg)
 
 static void on_new_connection(nw_ses *ses)
 {
-    log_trace("new connection from: %s", nw_sock_human_addr(&ses->peer_addr));
+    // log_trace("new connection from: %s", nw_sock_human_addr(&ses->peer_addr));
+
     struct clt_info *info = ses->privdata;
     memset(info, 0, sizeof(struct clt_info));
     info->ses = ses;
@@ -122,7 +123,7 @@ static void on_new_connection(nw_ses *ses)
 
 static void on_connection_close(nw_ses *ses)
 {
-    log_trace("connection %s close", nw_sock_human_addr(&ses->peer_addr));
+    // log_trace("connection %s close", nw_sock_human_addr(&ses->peer_addr));
 }
 
 static void *on_privdata_alloc(void *svr)

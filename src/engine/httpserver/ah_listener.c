@@ -28,15 +28,18 @@ static int listener_on_accept(nw_ses *ses, int sockfd, nw_addr_t *peer_addr)
         log_error("no available worker");
         return -1;
     }
+
     int worker = rand() % worker_svr->raw_svr->clt_count;
     nw_ses *curr = worker_svr->raw_svr->clt_list_head;
     for (int i = 0; i < worker && curr; ++i) {
         curr = curr->next;
     }
+
     if (!curr) {
         log_error("choice worker fail");
         return -1;
     }
+
     if (nw_ses_send_fd(curr, sockfd) < 0) {
         log_error("send sockfd fail: %s", strerror(errno));
         return -1;
@@ -71,11 +74,11 @@ static void worker_on_recv_pkg(nw_ses *ses, rpc_pkg *pkg)
 }
 static void worker_on_new_connection(nw_ses *ses)
 {
-    log_info("new worker connected, current worker number: %u", worker_svr->raw_svr->clt_count);
+    // log_info("worker connected, current worker number: %u", worker_svr->raw_svr->clt_count);
 }
 static void worker_on_connection_close(nw_ses *ses)
 {
-    log_info("worker close, current worker number: %u", worker_svr->raw_svr->clt_count - 1);
+    // log_info("worker close, current worker number: %u", worker_svr->raw_svr->clt_count - 1);
 }
 
 static int init_worker_svr(void)

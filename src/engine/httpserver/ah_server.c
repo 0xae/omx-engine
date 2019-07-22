@@ -67,6 +67,7 @@ static void reply_time_out(nw_ses *ses, int64_t id)
     reply_error(ses, id, 5, "service timeout", 504);
 }
 
+// OPTIONS http request
 static void reply_options_ok(nw_ses *ses, http_request_t *request) {
     http_response_t *response = http_response_new();
     http_response_set_header(response, "Access-Control-Allow-Origin", "*");
@@ -109,8 +110,8 @@ static int on_http_request(nw_ses *ses, http_request_t *request) {
     dict_entry *entry = dict_find(methods, method_ptr);
     if (entry == NULL) {
         log_debug("method = %s", method_ptr);
-
         reply_not_found(ses, json_integer_value(id));
+
     } else {
         struct request_info *req = entry->val;
         if (!rpc_clt_connected(req->clt)) {
