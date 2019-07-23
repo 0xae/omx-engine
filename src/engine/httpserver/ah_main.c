@@ -52,11 +52,6 @@ static int init_log(void)
 
 int main(int argc, char *argv[])
 {
-    printf("===================================\n");
-    printf("OMX HTTP ENGINE  \n", __version__);
-    printf("[process: %s] [version: %s] [compile date: %s %s]\n", __process__, __version__, __DATE__, __TIME__);
-    printf("===================================\n");
-
     if (argc < 2) {
         printf("usage: %s config.json\n", argv[0]);
         exit(EXIT_FAILURE);
@@ -101,6 +96,11 @@ int main(int argc, char *argv[])
             goto run;
         }
     }
+
+    printf("===================================\n");
+    printf("OMX HTTP ENGINE  \n", __version__);
+    printf("[process: %s] [version: %s] [compile date: %s %s]\n", __process__, __version__, __DATE__, __TIME__);
+    printf("===================================\n");
 
     process_title_set("%s_listener", __process__);
     // daemon(1, 1);

@@ -158,3 +158,60 @@
 [2019-07-23 10:36:21.730059] [24117] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:45133
 [2019-07-23 10:36:21.730978] [24117] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:45135
 [2019-07-23 10:36:21.731003] [24117] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:45136
+[2019-07-23 10:47:48.079257] [30975] [trace]me_persist.c:33(get_last_slice): exec sql: SELECT `time`, `end_oper_id`, `end_order_id`, `end_deals_id` from `slice_history` ORDER BY `id` DESC LIMIT 1
+[2019-07-23 10:47:48.079511] [30975] [info]me_persist.c:133(init_from_db): last_slice_time: 1563879600, last_oper_id: 2453, last_order_id: 1823, last_deals_id: 1465
+[2019-07-23 10:47:48.079548] [30975] [trace]me_load.c:21(load_orders): exec sql: SELECT `id`, `t`, `side`, `create_time`, `update_time`, `user_id`, `market`, `price`, `amount`, `taker_fee`, `maker_fee`, `left`, `freeze`, `deal_stock`, `deal_money`, `deal_fee` FROM `slice_order_1563879600` WHERE `id` > 0 ORDER BY `id` LIMIT 1000
+[2019-07-23 10:47:48.079912] [30975] [trace]me_load.c:88(load_balance): exec sql: SELECT `id`, `user_id`, `asset`, `t`, `balance` FROM `slice_balance_1563879600` WHERE `id` > 0 ORDER BY id LIMIT 1000
+[2019-07-23 10:47:48.080328] [30975] [trace]ut_mysql.c:36(is_table_exists): exec sql: SHOW TABLES LIKE 'operlog_20190723'
+[2019-07-23 10:47:48.081863] [30975] [error]me_persist.c:96(load_operlog_from_db): table operlog_20190723 not exist
+[2019-07-23 10:47:48.088623] [30975] [vip]me_main.c:148(main): server start
+[2019-07-23 10:47:48.937064] [30975] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:45356
+[2019-07-23 10:47:48.937198] [30975] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:45357
+[2019-07-23 10:47:48.937224] [30975] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:45358
+[2019-07-23 10:47:48.937291] [30975] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:45360
+[2019-07-23 10:51:02.280928] [30975] [trace]me_server.c:1301(svr_on_connection_close): connection: 127.0.0.1:45357 close
+[2019-07-23 10:51:02.280996] [30975] [trace]me_server.c:1301(svr_on_connection_close): connection: 127.0.0.1:45360 close
+[2019-07-23 10:51:02.281233] [30975] [trace]me_server.c:1301(svr_on_connection_close): connection: 127.0.0.1:45358 close
+[2019-07-23 10:51:02.284155] [30975] [trace]me_server.c:1301(svr_on_connection_close): connection: 127.0.0.1:45356 close
+[2019-07-23 10:51:03.135192] [30975] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:45401
+[2019-07-23 10:51:03.135376] [30975] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:45404
+[2019-07-23 10:51:03.135382] [30975] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:45405
+[2019-07-23 10:51:03.135528] [30975] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:45410
+[2019-07-23 10:53:39.736890] [30975] [trace]me_server.c:1301(svr_on_connection_close): connection: 127.0.0.1:45410 close
+[2019-07-23 10:53:39.736963] [30975] [trace]me_server.c:1301(svr_on_connection_close): connection: 127.0.0.1:45404 close
+[2019-07-23 10:53:39.736984] [30975] [trace]me_server.c:1301(svr_on_connection_close): connection: 127.0.0.1:45405 close
+[2019-07-23 10:53:39.737004] [30975] [trace]me_server.c:1301(svr_on_connection_close): connection: 127.0.0.1:45401 close
+[2019-07-23 10:53:41.040655] [30975] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:46118
+[2019-07-23 10:53:41.041380] [30975] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:46122
+[2019-07-23 10:53:41.041632] [30975] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:46125
+[2019-07-23 10:53:41.041660] [30975] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:46117
+[2019-07-23 10:53:57.406002] [30975] [trace]me_server.c:1301(svr_on_connection_close): connection: 127.0.0.1:46117 close
+[2019-07-23 10:53:57.406145] [30975] [trace]me_server.c:1301(svr_on_connection_close): connection: 127.0.0.1:46118 close
+[2019-07-23 10:53:57.406624] [30975] [trace]me_server.c:1301(svr_on_connection_close): connection: 127.0.0.1:46125 close
+[2019-07-23 10:53:57.406674] [30975] [trace]me_server.c:1301(svr_on_connection_close): connection: 127.0.0.1:46122 close
+[2019-07-23 10:53:58.110573] [30975] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:46208
+[2019-07-23 10:53:58.110666] [30975] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:46209
+[2019-07-23 10:53:58.110680] [30975] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:46211
+[2019-07-23 10:53:58.111011] [30975] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:46214
+[2019-07-23 10:54:28.779361] [2845] [trace]me_persist.c:33(get_last_slice): exec sql: SELECT `time`, `end_oper_id`, `end_order_id`, `end_deals_id` from `slice_history` ORDER BY `id` DESC LIMIT 1
+[2019-07-23 10:54:28.779695] [2845] [info]me_persist.c:133(init_from_db): last_slice_time: 1563879600, last_oper_id: 2453, last_order_id: 1823, last_deals_id: 1465
+[2019-07-23 10:54:28.779765] [2845] [trace]me_load.c:21(load_orders): exec sql: SELECT `id`, `t`, `side`, `create_time`, `update_time`, `user_id`, `market`, `price`, `amount`, `taker_fee`, `maker_fee`, `left`, `freeze`, `deal_stock`, `deal_money`, `deal_fee` FROM `slice_order_1563879600` WHERE `id` > 0 ORDER BY `id` LIMIT 1000
+[2019-07-23 10:54:28.780329] [2845] [trace]me_load.c:88(load_balance): exec sql: SELECT `id`, `user_id`, `asset`, `t`, `balance` FROM `slice_balance_1563879600` WHERE `id` > 0 ORDER BY id LIMIT 1000
+[2019-07-23 10:54:28.781165] [2845] [trace]ut_mysql.c:36(is_table_exists): exec sql: SHOW TABLES LIKE 'operlog_20190723'
+[2019-07-23 10:54:28.782930] [2845] [error]me_persist.c:96(load_operlog_from_db): table operlog_20190723 not exist
+[2019-07-23 10:54:28.798433] [2845] [vip]me_main.c:148(main): server start
+[2019-07-23 10:54:28.949272] [2845] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:46375
+[2019-07-23 10:54:28.949409] [2845] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:46374
+[2019-07-23 10:54:28.949435] [2845] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:46377
+[2019-07-23 10:54:28.949668] [2845] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:46378
+[2019-07-23 10:55:14.684724] [3335] [trace]me_persist.c:33(get_last_slice): exec sql: SELECT `time`, `end_oper_id`, `end_order_id`, `end_deals_id` from `slice_history` ORDER BY `id` DESC LIMIT 1
+[2019-07-23 10:55:14.685200] [3335] [info]me_persist.c:133(init_from_db): last_slice_time: 1563879600, last_oper_id: 2453, last_order_id: 1823, last_deals_id: 1465
+[2019-07-23 10:55:14.686343] [3335] [trace]me_load.c:21(load_orders): exec sql: SELECT `id`, `t`, `side`, `create_time`, `update_time`, `user_id`, `market`, `price`, `amount`, `taker_fee`, `maker_fee`, `left`, `freeze`, `deal_stock`, `deal_money`, `deal_fee` FROM `slice_order_1563879600` WHERE `id` > 0 ORDER BY `id` LIMIT 1000
+[2019-07-23 10:55:14.689280] [3335] [trace]me_load.c:88(load_balance): exec sql: SELECT `id`, `user_id`, `asset`, `t`, `balance` FROM `slice_balance_1563879600` WHERE `id` > 0 ORDER BY id LIMIT 1000
+[2019-07-23 10:55:14.690441] [3335] [trace]ut_mysql.c:36(is_table_exists): exec sql: SHOW TABLES LIKE 'operlog_20190723'
+[2019-07-23 10:55:14.692678] [3335] [error]me_persist.c:96(load_operlog_from_db): table operlog_20190723 not exist
+[2019-07-23 10:55:14.747199] [3335] [vip]me_main.c:148(main): server start
+[2019-07-23 10:55:15.601886] [3335] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:46808
+[2019-07-23 10:55:15.601984] [3335] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:46809
+[2019-07-23 10:55:15.602132] [3335] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:46810
+[2019-07-23 10:55:15.602313] [3335] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:46811

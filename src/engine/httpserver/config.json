@@ -15,7 +15,7 @@
     },
     "svr": {
         "bind": [
-            "tcp@0.0.0.0:7575"
+            "tcp@0.0.0.0:8585"
         ],
         "max_pkg_size": 102400
     },
@@ -35,7 +35,7 @@
     "marketprice": {
         "name": "marketprice",
         "addr": [
-            "tcp@127.0.0.1:7416"
+            "tcp@127.0.0.1:8416"
         ],
         "max_pkg_size": 2000000
     },

@@ -1,0 +1,35 @@
+[2019-07-23 10:50:50.844655] [410] [fatal]mp_message.c:324(send_market_list_req): curl_easy_perform fail: Couldn't connect to server
+[2019-07-23 10:50:50.844764] [410] [error]mp_message.c:375(init_market): get market list fail
+[2019-07-23 10:51:48.792589] [1058] [error]mp_message.c:334(send_market_list_req): get market list fail: {"error": {"code": 4, "message": "method not found"}, "result": null, "id": 1563882708}
+[2019-07-23 10:51:48.792657] [1058] [error]mp_message.c:375(init_market): get market list fail
+[2019-07-23 10:52:45.452716] [1656] [error]mp_message.c:334(send_market_list_req): get market list fail: {"error": {"code": 4, "message": "method not found"}, "result": null, "id": 1563882765}
+[2019-07-23 10:52:45.452797] [1656] [error]mp_message.c:375(init_market): get market list fail
+[2019-07-23 10:53:01.069437] [1867] [vip]mp_main.c:105(main): marketprice server start
+[2019-07-23 10:53:01.220809] [1867] [trace]mp_server.c:430(svr_on_new_connection): new connection: 127.0.0.1:47976
+[2019-07-23 10:53:01.220877] [1867] [trace]mp_server.c:430(svr_on_new_connection): new connection: 127.0.0.1:47977
+[2019-07-23 10:53:01.221708] [1867] [trace]mp_server.c:430(svr_on_new_connection): new connection: 127.0.0.1:47978
+[2019-07-23 10:53:01.225102] [1867] [trace]mp_server.c:430(svr_on_new_connection): new connection: 127.0.0.1:47979
+[2019-07-23 10:53:06.415413] [1903] [vip]mp_main.c:105(main): marketprice server start
+[2019-07-23 10:53:06.579748] [1903] [trace]mp_server.c:430(svr_on_new_connection): new connection: 127.0.0.1:47983
+[2019-07-23 10:53:06.579820] [1903] [trace]mp_server.c:430(svr_on_new_connection): new connection: 127.0.0.1:47984
+[2019-07-23 10:53:06.579830] [1903] [trace]mp_server.c:430(svr_on_new_connection): new connection: 127.0.0.1:47985
+[2019-07-23 10:53:06.579837] [1903] [trace]mp_server.c:430(svr_on_new_connection): new connection: 127.0.0.1:47986
+[2019-07-23 10:53:07.817130] [1922] [vip]mp_main.c:105(main): marketprice server start
+[2019-07-23 10:53:08.173147] [1922] [trace]mp_server.c:430(svr_on_new_connection): new connection: 127.0.0.1:47989
+[2019-07-23 10:53:08.173286] [1922] [trace]mp_server.c:430(svr_on_new_connection): new connection: 127.0.0.1:47990
+[2019-07-23 10:53:08.173302] [1922] [trace]mp_server.c:430(svr_on_new_connection): new connection: 127.0.0.1:47991
+[2019-07-23 10:53:08.174119] [1922] [trace]mp_server.c:430(svr_on_new_connection): new connection: 127.0.0.1:47993
+[2019-07-23 10:53:15.477047] [2048] [error]mp_message.c:334(send_market_list_req): get market list fail: {"error": {"code": 4, "message": "method not found"}, "result": null, "id": 1563882795}
+[2019-07-23 10:53:15.477123] [2048] [error]mp_message.c:375(init_market): get market list fail
+[2019-07-23 10:53:44.024893] [2365] [error]mp_message.c:334(send_market_list_req): get market list fail: {"error": {"code": 4, "message": "method not found"}, "result": null, "id": 1563882824}
+[2019-07-23 10:53:44.024947] [2365] [error]mp_message.c:375(init_market): get market list fail
+[2019-07-23 10:53:50.989517] [2434] [fatal]mp_message.c:324(send_market_list_req): curl_easy_perform fail: Couldn't connect to server
+[2019-07-23 10:53:50.989620] [2434] [error]mp_message.c:375(init_market): get market list fail
+[2019-07-23 10:53:53.422715] [2450] [fatal]mp_message.c:324(send_market_list_req): curl_easy_perform fail: Couldn't connect to server
+[2019-07-23 10:53:53.422805] [2450] [error]mp_message.c:375(init_market): get market list fail
+[2019-07-23 10:55:19.128751] [3422] [error]mp_message.c:334(send_market_list_req): get market list fail: {"result": null, "error": {"code": 4, "message": "method not found"}, "id": 1563882919}
+[2019-07-23 10:55:19.128854] [3422] [error]mp_message.c:375(init_market): get market list fail
+[2019-07-23 10:56:21.319292] [4081] [error]mp_message.c:334(send_market_list_req): get market list fail: {"result": null, "error": {"code": 4, "message": "method not found"}, "id": 1563882981}
+[2019-07-23 10:56:21.319407] [4081] [error]mp_message.c:375(init_market): get market list fail
+[2019-07-23 10:56:23.877992] [4123] [error]mp_message.c:334(send_market_list_req): get market list fail: {"result": null, "error": {"code": 4, "message": "method not found"}, "id": 1563882983}
+[2019-07-23 10:56:23.878088] [4123] [error]mp_message.c:375(init_market): get market list fail

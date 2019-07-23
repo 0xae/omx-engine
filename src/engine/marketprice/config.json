@@ -5,7 +5,7 @@
         "core_limit": 1000000000
     },
     "log": {
-        "path": "./trade/marketprice",
+        "path": "./logs/marketprice",
         "flag": "fatal,error,warn,info,debug,trace",
         "num": 10
     },
@@ -15,8 +15,8 @@
     },
     "svr": {
         "bind": [
-            "tcp@0.0.0.0:7416",
-            "udp@0.0.0.0:7416"
+            "tcp@0.0.0.0:8416",
+            "udp@0.0.0.0:8416"
         ],
         "buf_limit": 100,
         "max_pkg_size": 1000000,
@@ -24,7 +24,7 @@
     },
     "deals": {
         "brokers": "127.0.0.1:9092",
-        "topic": "deals",
+        "topic": "omx-deals",
         "partition": 0
     },
     "redis": {
@@ -33,5 +33,5 @@
             "localhost:6379"
         ]
     },
-    "accesshttp": "http://127.0.0.1:8080"
+    "accesshttp": "http://127.0.0.1:8585"
 }

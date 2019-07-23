@@ -7,7 +7,7 @@
 # include "mp_message.h"
 # include "mp_server.h"
 
-const char *__process__ = "marketprice";
+const char *__process__ = "omxmarketprice";
 const char *__version__ = "0.1.0";
 
 nw_timer cron_timer;
@@ -84,8 +84,8 @@ int main(int argc, char *argv[])
         error(EXIT_FAILURE, errno, "init log fail: %d", ret);
     }
 
-    daemon(1, 1);
-    process_keepalive();
+    // daemon(1, 1);
+    // process_keepalive();
 
     ret = init_message();
     if (ret < 0) {

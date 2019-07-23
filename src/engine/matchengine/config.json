@@ -37,12 +37,22 @@
     },
     "assets": [
         {
-            "name": "BCH",
+            "name": "ETH",
             "prec_save": 20,
             "prec_show": 8
         }, 
         {
-            "name": "USD",
+            "name": "DAI",
+            "prec_save": 20,
+            "prec_show": 8
+        }, 
+        {
+            "name": "USDT",
+            "prec_save": 20,
+            "prec_show": 8
+        }, 
+        {
+            "name": "USDc",
             "prec_save": 20,
             "prec_show": 8
         }, 
@@ -50,141 +60,39 @@
             "name": "BTC",
             "prec_save": 12,
             "prec_show": 8
-        }, {
-            "name": "LTC",
-            "prec_save": 12,
-            "prec_show": 8
-        }, {
-            "name": "ETH",
-            "prec_save": 12,
-            "prec_show": 8
-        }, {
-            "name": "ETC",
-            "prec_save": 12,
-            "prec_show": 8
-        }, {
-            "name": "WAVES",
-            "prec_save": 12,
-            "prec_show": 8
-        },{
-            "name": "USDT",
-            "prec_save": 12,
-            "prec_show": 8
-        },{
-            "name": "XRP",
-            "prec_save": 12,
-            "prec_show": 8
-        },{
+        }, 
+        {
             "name": "BTCXETF",
+            "prec_save": 12,
+            "prec_show": 8
+        },
+        {
+            "name": "RSTFND",
             "prec_save": 12,
             "prec_show": 8
         }
     ],
     "markets": [
         {
-            "name": "BTCXETF-USDT",
+            "name": "BTCXETF-USDc",
             "stock": {
                 "name": "BTCXETF",
                 "prec": 5
             },
             "money": {
-                "name": "USDT",
+                "name": "USDc",
                 "prec": 5
             },
             "min_amount": "0.001"
         },
         {
-            "name": "BTC-USD",
+            "name": "RSTFND-DAI",
             "stock": {
-                "name": "BTC",
+                "name": "RSTFND",
                 "prec": 5
             },
             "money": {
-                "name": "USD",
-                "prec": 5
-            },
-            "min_amount": "0.001"
-        },
-        {
-            "name": "BTC-USDT",
-            "stock": {
-                "name": "BTC",
-                "prec": 5
-            },
-            "money": {
-                "name": "USDT",
-                "prec": 5
-            },
-            "min_amount": "0.001"
-        },
-        {
-            "name": "ETH-USDT",
-            "stock": {
-                "name": "ETH",
-                "prec": 5
-            },
-            "money": {
-                "name": "USDT",
-                "prec": 5
-            },
-            "min_amount": "0.001"
-        },
-        {
-            "name": "BCH-USDT",
-            "stock": {
-                "name": "BCH",
-                "prec": 5
-            },
-            "money": {
-                "name": "USDT",
-                "prec": 5
-            },
-            "min_amount": "0.001"
-        },
-        {
-            "name": "BTC-ETH",
-            "stock": {
-                "name": "BTC",
-                "prec": 5
-            },
-            "money": {
-                "name": "ETH",
-                "prec": 5
-            },
-            "min_amount": "0.001"
-        },
-        {
-            "name": "ETH-BTC",
-            "stock": {
-                "name": "ETH",
-                "prec": 5
-            },
-            "money": {
-                "name": "BTC",
-                "prec": 5
-            },
-            "min_amount": "0.001"
-        },
-        {
-            "name": "BCH-BTC",
-            "stock": {
-                "name": "BCH",
-                "prec": 5
-            },
-            "money": {
-                "name": "BTC",
-                "prec": 5
-            },
-            "min_amount": "0.001"
-        },
-        {
-            "name": "USDT-BTC",
-            "stock": {
-                "name": "USDT",
-                "prec": 5
-            },
-            "money": {
-                "name": "BTC",
+                "name": "DAI",
                 "prec": 5
             },
             "min_amount": "0.001"
