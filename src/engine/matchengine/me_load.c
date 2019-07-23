@@ -130,8 +130,9 @@ static int load_update_balance(json_t *params)
     uint32_t user_id = json_integer_value(json_array_get(params, 0));
 
     // asset
-    if (!json_is_string(json_array_get(params, 1)))
+    if (!json_is_string(json_array_get(params, 1))) {
         return -__LINE__;
+    }
 
     const char *asset = json_string_value(json_array_get(params, 1));
     int prec = asset_prec(asset);

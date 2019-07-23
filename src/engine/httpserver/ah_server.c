@@ -115,6 +115,7 @@ static int on_http_request(nw_ses *ses, http_request_t *request) {
 
     } else {
         struct request_info *req = entry->val;
+
         if (!rpc_clt_connected(req->clt)) {
             reply_internal_with_error(ses, 503, "Server not available");
             json_decref(body);
