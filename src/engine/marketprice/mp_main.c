@@ -52,7 +52,11 @@ static int init_log(void)
 
 int main(int argc, char *argv[])
 {
-    printf("PROCESS-INIT: %s version: %s, compile date: %s %s\n", __process__, __version__, __DATE__, __TIME__);
+    // printf("PROCESS-INIT: %s version: %s, compile date: %s %s\n", __process__, __version__, __DATE__, __TIME__);
+    printf("===================================\n");
+    printf("OMX MARKET PRICE FEED  \n", __version__);
+    printf("[process: %s] [version: %s] [compile date: %s %s]\n", __process__, __version__, __DATE__, __TIME__);
+    printf("===================================\n\n");
 
     if (argc < 2) {
         printf("usage: %s config.json\n", argv[0]);
@@ -96,8 +100,6 @@ int main(int argc, char *argv[])
     if (ret < 0) {
         error(EXIT_FAILURE, errno, "init server fail: %d", ret);
     }
-
-    printf("===> Server start\n");
 
     nw_timer_set(&cron_timer, 0.5, true, on_cron_check, NULL);
     nw_timer_start(&cron_timer);

@@ -361,18 +361,13 @@ static int init_market()
     type.key_destructor = dict_sds_key_free;
     dict_market = dict_create(&type, 64);
 
-    printf("init_market() [0]\n");
-
     if (dict_market == NULL) {
         return -__LINE__;
     }
 
-    printf("init_market() [1]\n");
-    printf("init_market() [2]\n");
-
     json_t *r = send_market_list_req();
     if (r == NULL) {
-        log_error("get market list fail");
+        log_stderr("get market list fail");
         // redisFree(context);
         return -__LINE__;
     }

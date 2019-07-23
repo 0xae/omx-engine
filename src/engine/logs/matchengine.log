@@ -215,3 +215,301 @@
 [2019-07-23 10:55:15.601984] [3335] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:46809
 [2019-07-23 10:55:15.602132] [3335] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:46810
 [2019-07-23 10:55:15.602313] [3335] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:46811
+[2019-07-23 10:58:08.562375] [3335] [trace]me_server.c:1301(svr_on_connection_close): connection: 127.0.0.1:46808 close
+[2019-07-23 10:58:08.562436] [3335] [trace]me_server.c:1301(svr_on_connection_close): connection: 127.0.0.1:46809 close
+[2019-07-23 10:58:08.562601] [3335] [trace]me_server.c:1301(svr_on_connection_close): connection: 127.0.0.1:46810 close
+[2019-07-23 10:58:08.562876] [3335] [trace]me_server.c:1301(svr_on_connection_close): connection: 127.0.0.1:46811 close
+[2019-07-23 10:58:09.970091] [3335] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:47614
+[2019-07-23 10:58:09.970219] [3335] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:47615
+[2019-07-23 10:58:09.970851] [3335] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:47620
+[2019-07-23 10:58:09.971498] [3335] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:47623
+[2019-07-23 10:58:18.735431] [3335] [trace]me_server.c:1301(svr_on_connection_close): connection: 127.0.0.1:47623 close
+[2019-07-23 10:58:18.735494] [3335] [trace]me_server.c:1301(svr_on_connection_close): connection: 127.0.0.1:47620 close
+[2019-07-23 10:58:18.735518] [3335] [trace]me_server.c:1301(svr_on_connection_close): connection: 127.0.0.1:47615 close
+[2019-07-23 10:58:18.735533] [3335] [trace]me_server.c:1301(svr_on_connection_close): connection: 127.0.0.1:47614 close
+[2019-07-23 10:58:20.125081] [3335] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:47667
+[2019-07-23 10:58:20.125627] [3335] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:47670
+[2019-07-23 10:58:20.126843] [3335] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:47673
+[2019-07-23 10:58:20.127461] [3335] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:47676
+[2019-07-23 10:58:24.855558] [3335] [trace]me_server.c:1301(svr_on_connection_close): connection: 127.0.0.1:47676 close
+[2019-07-23 10:58:24.855651] [3335] [trace]me_server.c:1301(svr_on_connection_close): connection: 127.0.0.1:47673 close
+[2019-07-23 10:58:24.855690] [3335] [trace]me_server.c:1301(svr_on_connection_close): connection: 127.0.0.1:47667 close
+[2019-07-23 10:58:24.855731] [3335] [trace]me_server.c:1301(svr_on_connection_close): connection: 127.0.0.1:47670 close
+[2019-07-23 10:58:36.791002] [3335] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:47701
+[2019-07-23 10:58:36.791105] [3335] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:47702
+[2019-07-23 10:58:36.791840] [3335] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:47707
+[2019-07-23 10:58:36.791850] [3335] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:47708
+[2019-07-23 11:00:00.986554] [6609] [info]me_persist.c:231(dump_to_db): start dump slice, timestamp: 1563883200
+[2019-07-23 11:00:00.986717] [6609] [info]me_persist.c:177(dump_order_to_db): dump order to: slice_order_1563883200
+[2019-07-23 11:00:00.986731] [6609] [trace]me_dump.c:86(dump_orders): exec sql: DROP TABLE IF EXISTS `slice_order_1563883200`
+[2019-07-23 11:00:01.593603] [6609] [trace]me_dump.c:96(dump_orders): exec sql: CREATE TABLE IF NOT EXISTS `slice_order_1563883200` LIKE `slice_order_example`
+[2019-07-23 11:00:02.681469] [6609] [info]me_persist.c:193(dump_balance_to_db): dump balance to: slice_balance_1563883200
+[2019-07-23 11:00:02.681526] [6609] [trace]me_dump.c:181(dump_balance): exec sql: DROP TABLE IF EXISTS `slice_balance_1563883200`
+[2019-07-23 11:00:03.220960] [6609] [trace]me_dump.c:191(dump_balance): exec sql: CREATE TABLE IF NOT EXISTS `slice_balance_1563883200` LIKE `slice_balance_example`
+[2019-07-23 11:00:03.844084] [6609] [trace]me_dump.c:164(dump_balance_dict): exec sql: INSERT INTO `slice_balance_1563883200` (`id`, `user_id`, `asset`, `t`, `balance`) VALUES (NULL, 6, 'BTCXETF', 2, '173.654600000000'), (NULL, 6, 'USDT', 2, '3297.30000000000000000000'), (NULL, 9, 'USDT', 1, '798214.89299150000000000000'), (NULL, 111, 'BTCXETF', 2, '56.394220000000'), (NULL, 6, 'USDT', 1, '18198.26141415050000000000'), (NULL, 73, 'BTC', 1, '100000.000000000000'), (NULL, 9, 'BTC', 1, '124779.431330800000'), (NULL, 111, 'BTCXETF', 1, '1995620.723650000000'), (NULL, 9, 'BTC', 2, '56844.480000000000'), (NULL, 105, 'BTCXETF', 1, '88.000000000000'), (NULL, 72, 'BTC', 1, '25896.000000000000'), (NULL, 9, 'USDT', 2, '5727.64600000000000000000'), (NULL, 72, 'BTCXETF', 1, '1.000000000000'), (NULL, 6, 'BTCXETF', 1, '854.316393650000'), (NULL, 111, 'USDT', 1, '4173812.92000745140000000000'), (NULL, 72, 'USDT', 1, '6.43856000000000000000'), (NULL, 6, 'BTC', 1, '10706907.852374861600'), (NULL, 9, 'BTCXETF', 1, '3205.910790950000')
+[2019-07-23 11:00:04.126522] [6609] [info]me_persist.c:210(update_slice_history): update slice history to: 1563883200
+[2019-07-23 11:00:04.126600] [6609] [trace]me_persist.c:211(update_slice_history): exec sql: INSERT INTO `slice_history` (`id`, `time`, `end_oper_id`, `end_order_id`, `end_deals_id`) VALUES (NULL, 1563883200, 2453, 1823, 1465)
+[2019-07-23 11:00:04.275682] [6609] [info]me_persist.c:249(dump_to_db): dump success
+[2019-07-23 11:00:04.276654] [6609] [trace]me_persist.c:263(slice_count): exec sql: SELECT COUNT(*) FROM `slice_history` WHERE `time` >= 1563624000
+[2019-07-23 11:03:29.350011] [3335] [trace]me_server.c:1301(svr_on_connection_close): connection: 127.0.0.1:47702 close
+[2019-07-23 11:03:29.350151] [3335] [trace]me_server.c:1301(svr_on_connection_close): connection: 127.0.0.1:47707 close
+[2019-07-23 11:03:29.350196] [3335] [trace]me_server.c:1301(svr_on_connection_close): connection: 127.0.0.1:47701 close
+[2019-07-23 11:03:29.350242] [3335] [trace]me_server.c:1301(svr_on_connection_close): connection: 127.0.0.1:47708 close
+[2019-07-23 11:03:30.258918] [3335] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:49009
+[2019-07-23 11:03:30.260491] [3335] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:49012
+[2019-07-23 11:03:30.260513] [3335] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:49015
+[2019-07-23 11:03:30.261059] [3335] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:49018
+[2019-07-23 11:03:32.469290] [3335] [trace]me_server.c:1248(svr_on_recv_pkg): from: 127.0.0.1:49018 cmd market list, sequence: 1 params: []
+[2019-07-23 11:03:32.469459] [3335] [trace]me_server.c:38(reply_json): connection: 127.0.0.1:49018 send: {
+    "id": 1563883412,
+    "error": null,
+    "result": [
+        {
+            "money_prec": 5,
+            "name": "BTCXETF-USDc",
+            "stock_prec": 5,
+            "stock": "BTCXETF",
+            "min_amount": "0.001",
+            "money": "USDc",
+            "fee_prec": 4
+        },
+        {
+            "money_prec": 5,
+            "name": "RSTFND-DAI",
+            "stock_prec": 5,
+            "stock": "RSTFND",
+            "min_amount": "0.001",
+            "money": "DAI",
+            "fee_prec": 4
+        }
+    ]
+}
+[2019-07-23 11:03:35.343278] [3335] [trace]me_server.c:1248(svr_on_recv_pkg): from: 127.0.0.1:49015 cmd market list, sequence: 1 params: []
+[2019-07-23 11:03:35.343454] [3335] [trace]me_server.c:38(reply_json): connection: 127.0.0.1:49015 send: {
+    "id": 1563883415,
+    "error": null,
+    "result": [
+        {
+            "money_prec": 5,
+            "name": "BTCXETF-USDc",
+            "stock_prec": 5,
+            "stock": "BTCXETF",
+            "min_amount": "0.001",
+            "money": "USDc",
+            "fee_prec": 4
+        },
+        {
+            "money_prec": 5,
+            "name": "RSTFND-DAI",
+            "stock_prec": 5,
+            "stock": "RSTFND",
+            "min_amount": "0.001",
+            "money": "DAI",
+            "fee_prec": 4
+        }
+    ]
+}
+[2019-07-23 11:03:36.816631] [3335] [trace]me_server.c:1248(svr_on_recv_pkg): from: 127.0.0.1:49012 cmd market list, sequence: 1 params: []
+[2019-07-23 11:03:36.816788] [3335] [trace]me_server.c:38(reply_json): connection: 127.0.0.1:49012 send: {
+    "id": 1563883416,
+    "error": null,
+    "result": [
+        {
+            "money_prec": 5,
+            "name": "BTCXETF-USDc",
+            "stock_prec": 5,
+            "stock": "BTCXETF",
+            "min_amount": "0.001",
+            "money": "USDc",
+            "fee_prec": 4
+        },
+        {
+            "money_prec": 5,
+            "name": "RSTFND-DAI",
+            "stock_prec": 5,
+            "stock": "RSTFND",
+            "min_amount": "0.001",
+            "money": "DAI",
+            "fee_prec": 4
+        }
+    ]
+}
+[2019-07-23 11:03:38.068771] [3335] [trace]me_server.c:1248(svr_on_recv_pkg): from: 127.0.0.1:49018 cmd market list, sequence: 2 params: []
+[2019-07-23 11:03:38.068872] [3335] [trace]me_server.c:38(reply_json): connection: 127.0.0.1:49018 send: {
+    "id": 1563883418,
+    "error": null,
+    "result": [
+        {
+            "money_prec": 5,
+            "name": "BTCXETF-USDc",
+            "stock_prec": 5,
+            "stock": "BTCXETF",
+            "min_amount": "0.001",
+            "money": "USDc",
+            "fee_prec": 4
+        },
+        {
+            "money_prec": 5,
+            "name": "RSTFND-DAI",
+            "stock_prec": 5,
+            "stock": "RSTFND",
+            "min_amount": "0.001",
+            "money": "DAI",
+            "fee_prec": 4
+        }
+    ]
+}
+[2019-07-23 11:03:39.731605] [3335] [trace]me_server.c:1248(svr_on_recv_pkg): from: 127.0.0.1:49012 cmd market list, sequence: 2 params: []
+[2019-07-23 11:03:39.731696] [3335] [trace]me_server.c:38(reply_json): connection: 127.0.0.1:49012 send: {
+    "id": 1563883419,
+    "error": null,
+    "result": [
+        {
+            "money_prec": 5,
+            "name": "BTCXETF-USDc",
+            "stock_prec": 5,
+            "stock": "BTCXETF",
+            "min_amount": "0.001",
+            "money": "USDc",
+            "fee_prec": 4
+        },
+        {
+            "money_prec": 5,
+            "name": "RSTFND-DAI",
+            "stock_prec": 5,
+            "stock": "RSTFND",
+            "min_amount": "0.001",
+            "money": "DAI",
+            "fee_prec": 4
+        }
+    ]
+}
+[2019-07-23 11:03:40.794346] [3335] [trace]me_server.c:1248(svr_on_recv_pkg): from: 127.0.0.1:49018 cmd market list, sequence: 3 params: []
+[2019-07-23 11:03:40.794516] [3335] [trace]me_server.c:38(reply_json): connection: 127.0.0.1:49018 send: {
+    "id": 1563883420,
+    "error": null,
+    "result": [
+        {
+            "money_prec": 5,
+            "name": "BTCXETF-USDc",
+            "stock_prec": 5,
+            "stock": "BTCXETF",
+            "min_amount": "0.001",
+            "money": "USDc",
+            "fee_prec": 4
+        },
+        {
+            "money_prec": 5,
+            "name": "RSTFND-DAI",
+            "stock_prec": 5,
+            "stock": "RSTFND",
+            "min_amount": "0.001",
+            "money": "DAI",
+            "fee_prec": 4
+        }
+    ]
+}
+[2019-07-23 11:03:41.952786] [3335] [trace]me_server.c:1248(svr_on_recv_pkg): from: 127.0.0.1:49015 cmd market list, sequence: 2 params: []
+[2019-07-23 11:03:41.952934] [3335] [trace]me_server.c:38(reply_json): connection: 127.0.0.1:49015 send: {
+    "id": 1563883421,
+    "error": null,
+    "result": [
+        {
+            "money_prec": 5,
+            "name": "BTCXETF-USDc",
+            "stock_prec": 5,
+            "stock": "BTCXETF",
+            "min_amount": "0.001",
+            "money": "USDc",
+            "fee_prec": 4
+        },
+        {
+            "money_prec": 5,
+            "name": "RSTFND-DAI",
+            "stock_prec": 5,
+            "stock": "RSTFND",
+            "min_amount": "0.001",
+            "money": "DAI",
+            "fee_prec": 4
+        }
+    ]
+}
+[2019-07-23 11:04:45.174050] [3335] [trace]me_server.c:1248(svr_on_recv_pkg): from: 127.0.0.1:49009 cmd market list, sequence: 1 params: []
+[2019-07-23 11:04:45.174168] [3335] [trace]me_server.c:38(reply_json): connection: 127.0.0.1:49009 send: {
+    "id": 1563883485,
+    "error": null,
+    "result": [
+        {
+            "money_prec": 5,
+            "name": "BTCXETF-USDc",
+            "stock_prec": 5,
+            "stock": "BTCXETF",
+            "min_amount": "0.001",
+            "money": "USDc",
+            "fee_prec": 4
+        },
+        {
+            "money_prec": 5,
+            "name": "RSTFND-DAI",
+            "stock_prec": 5,
+            "stock": "RSTFND",
+            "min_amount": "0.001",
+            "money": "DAI",
+            "fee_prec": 4
+        }
+    ]
+}
+[2019-07-23 11:04:51.380728] [3335] [trace]me_server.c:1248(svr_on_recv_pkg): from: 127.0.0.1:49012 cmd market list, sequence: 3 params: []
+[2019-07-23 11:04:51.380881] [3335] [trace]me_server.c:38(reply_json): connection: 127.0.0.1:49012 send: {
+    "id": 1563883491,
+    "error": null,
+    "result": [
+        {
+            "money_prec": 5,
+            "name": "BTCXETF-USDc",
+            "stock_prec": 5,
+            "stock": "BTCXETF",
+            "min_amount": "0.001",
+            "money": "USDc",
+            "fee_prec": 4
+        },
+        {
+            "money_prec": 5,
+            "name": "RSTFND-DAI",
+            "stock_prec": 5,
+            "stock": "RSTFND",
+            "min_amount": "0.001",
+            "money": "DAI",
+            "fee_prec": 4
+        }
+    ]
+}
+[2019-07-23 11:05:14.322041] [3335] [trace]me_server.c:1248(svr_on_recv_pkg): from: 127.0.0.1:49012 cmd market list, sequence: 4 params: []
+[2019-07-23 11:05:14.322204] [3335] [trace]me_server.c:38(reply_json): connection: 127.0.0.1:49012 send: {
+    "id": 1563883514,
+    "error": null,
+    "result": [
+        {
+            "money_prec": 5,
+            "name": "BTCXETF-USDc",
+            "stock_prec": 5,
+            "stock": "BTCXETF",
+            "min_amount": "0.001",
+            "money": "USDc",
+            "fee_prec": 4
+        },
+        {
+            "money_prec": 5,
+            "name": "RSTFND-DAI",
+            "stock_prec": 5,
+            "stock": "RSTFND",
+            "min_amount": "0.001",
+            "money": "DAI",
+            "fee_prec": 4
+        }
+    ]
+}
+[2019-07-23 11:05:15.036046] [3335] [error]me_message.c:35(on_logger): RDKAFKA-3-FAIL: rdkafka#producer-1: [thrd:127.0.0.1:9092/bootstrap]: 127.0.0.1:9092/bootstrap: Receive failed: Disconnected
+
+[2019-07-23 11:05:15.036188] [3335] [error]me_message.c:35(on_logger): RDKAFKA-3-ERROR: rdkafka#producer-1: [thrd:127.0.0.1:9092/bootstrap]: 127.0.0.1:9092/bootstrap: Receive failed: Disconnected
+

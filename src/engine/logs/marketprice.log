@@ -33,3 +33,72 @@
 [2019-07-23 10:56:21.319407] [4081] [error]mp_message.c:375(init_market): get market list fail
 [2019-07-23 10:56:23.877992] [4123] [error]mp_message.c:334(send_market_list_req): get market list fail: {"result": null, "error": {"code": 4, "message": "method not found"}, "id": 1563882983}
 [2019-07-23 10:56:23.878088] [4123] [error]mp_message.c:375(init_market): get market list fail
+[2019-07-23 10:57:36.318721] [5015] [error]mp_message.c:334(send_market_list_req): get market list fail: {"result": null, "error": {"code": 4, "message": "method not found"}, "id": 1563883056}
+[2019-07-23 10:57:36.318959] [5015] [error]mp_message.c:375(init_market): get market list fail
+[2019-07-23 10:58:13.311150] [5448] [error]mp_message.c:334(send_market_list_req): get market list fail: {"error": {"code": 4, "message": "method not found"}, "id": 1563883093, "result": null}
+[2019-07-23 10:58:13.311248] [5448] [error]mp_message.c:375(init_market): get market list fail
+[2019-07-23 10:58:14.412931] [5457] [error]mp_message.c:334(send_market_list_req): get market list fail: {"error": {"code": 4, "message": "method not found"}, "id": 1563883094, "result": null}
+[2019-07-23 10:58:14.413001] [5457] [error]mp_message.c:375(init_market): get market list fail
+[2019-07-23 10:58:15.331651] [5467] [error]mp_message.c:334(send_market_list_req): get market list fail: {"error": {"code": 4, "message": "method not found"}, "id": 1563883095, "result": null}
+[2019-07-23 10:58:15.331760] [5467] [error]mp_message.c:375(init_market): get market list fail
+[2019-07-23 10:58:22.787060] [5569] [error]mp_message.c:334(send_market_list_req): get market list fail: {"error": {"message": "method not found", "code": 4}, "result": null, "id": 1563883102}
+[2019-07-23 10:58:22.787174] [5569] [error]mp_message.c:375(init_market): get market list fail
+[2019-07-23 10:58:38.506647] [5764] [error]mp_message.c:334(send_market_list_req): get market list fail: {"error": {"code": 4, "message": "method not found"}, "id": 1563883118, "result": null}
+[2019-07-23 10:58:38.506899] [5764] [error]mp_message.c:375(init_market): get market list fail
+[2019-07-23 11:00:00.829871] [6614] [error]mp_message.c:334(send_market_list_req): get market list fail: {"error": {"code": 4, "message": "method not found"}, "id": 1563883200, "result": null}
+[2019-07-23 11:00:20.767164] [6790] [error]mp_message.c:334(send_market_list_req): get market list fail: {"error": {"code": 4, "message": "method not found"}, "id": 1563883220, "result": null}
+[2019-07-23 11:03:16.896648] [8626] [error]mp_message.c:334(send_market_list_req): get market list fail: {"error": {"code": 4, "message": "method not found"}, "id": 1563883396, "result": null}
+[2019-07-23 11:03:32.471723] [8851] [vip]mp_main.c:105(main): marketprice server start
+[2019-07-23 11:03:33.262550] [8851] [trace]mp_server.c:430(svr_on_new_connection): new connection: 127.0.0.1:51055
+[2019-07-23 11:03:33.262656] [8851] [trace]mp_server.c:430(svr_on_new_connection): new connection: 127.0.0.1:51056
+[2019-07-23 11:03:33.263031] [8851] [trace]mp_server.c:430(svr_on_new_connection): new connection: 127.0.0.1:51057
+[2019-07-23 11:03:33.263544] [8851] [trace]mp_server.c:430(svr_on_new_connection): new connection: 127.0.0.1:51058
+[2019-07-23 11:03:35.345829] [8881] [vip]mp_main.c:105(main): marketprice server start
+[2019-07-23 11:03:36.149839] [8881] [trace]mp_server.c:430(svr_on_new_connection): new connection: 127.0.0.1:51065
+[2019-07-23 11:03:36.818624] [8897] [vip]mp_main.c:105(main): marketprice server start
+[2019-07-23 11:03:37.209846] [8897] [trace]mp_server.c:430(svr_on_new_connection): new connection: 127.0.0.1:51071
+[2019-07-23 11:03:37.210005] [8897] [trace]mp_server.c:430(svr_on_new_connection): new connection: 127.0.0.1:51072
+[2019-07-23 11:03:37.210049] [8897] [trace]mp_server.c:430(svr_on_new_connection): new connection: 127.0.0.1:51074
+[2019-07-23 11:03:37.212069] [8897] [trace]mp_server.c:430(svr_on_new_connection): new connection: 127.0.0.1:51075
+[2019-07-23 11:03:38.069945] [8906] [vip]mp_main.c:105(main): marketprice server start
+[2019-07-23 11:03:38.517982] [8906] [trace]mp_server.c:430(svr_on_new_connection): new connection: 127.0.0.1:51079
+[2019-07-23 11:03:38.518105] [8906] [trace]mp_server.c:430(svr_on_new_connection): new connection: 127.0.0.1:51080
+[2019-07-23 11:03:38.518143] [8906] [trace]mp_server.c:430(svr_on_new_connection): new connection: 127.0.0.1:51081
+[2019-07-23 11:03:38.518167] [8906] [trace]mp_server.c:430(svr_on_new_connection): new connection: 127.0.0.1:51082
+[2019-07-23 11:03:39.732782] [8953] [vip]mp_main.c:105(main): marketprice server start
+[2019-07-23 11:03:39.904137] [8953] [trace]mp_server.c:430(svr_on_new_connection): new connection: 127.0.0.1:51085
+[2019-07-23 11:03:39.904260] [8953] [trace]mp_server.c:430(svr_on_new_connection): new connection: 127.0.0.1:51086
+[2019-07-23 11:03:39.904292] [8953] [trace]mp_server.c:430(svr_on_new_connection): new connection: 127.0.0.1:51087
+[2019-07-23 11:03:39.906156] [8953] [trace]mp_server.c:430(svr_on_new_connection): new connection: 127.0.0.1:51088
+[2019-07-23 11:03:40.796510] [8967] [vip]mp_main.c:105(main): marketprice server start
+[2019-07-23 11:03:41.306415] [8967] [trace]mp_server.c:430(svr_on_new_connection): new connection: 127.0.0.1:51091
+[2019-07-23 11:03:41.954699] [8975] [vip]mp_main.c:105(main): marketprice server start
+[2019-07-23 11:03:42.351552] [8975] [trace]mp_server.c:430(svr_on_new_connection): new connection: 127.0.0.1:51097
+[2019-07-23 11:03:42.351716] [8975] [trace]mp_server.c:430(svr_on_new_connection): new connection: 127.0.0.1:51098
+[2019-07-23 11:03:42.351749] [8975] [trace]mp_server.c:430(svr_on_new_connection): new connection: 127.0.0.1:51099
+[2019-07-23 11:03:42.351762] [8975] [trace]mp_server.c:430(svr_on_new_connection): new connection: 127.0.0.1:51100
+[2019-07-23 11:03:51.953499] [8975] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-23 11:04:01.953991] [8975] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-23 11:04:11.953589] [8975] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-23 11:04:21.954357] [8975] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-23 11:04:31.954210] [8975] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-23 11:04:41.954198] [8975] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-23 11:04:45.175908] [9626] [vip]mp_main.c:109(main): marketprice server start
+[2019-07-23 11:04:45.484586] [9626] [trace]mp_server.c:430(svr_on_new_connection): new connection: 127.0.0.1:51120
+[2019-07-23 11:04:45.484688] [9626] [trace]mp_server.c:430(svr_on_new_connection): new connection: 127.0.0.1:51121
+[2019-07-23 11:04:45.484726] [9626] [trace]mp_server.c:430(svr_on_new_connection): new connection: 127.0.0.1:51123
+[2019-07-23 11:04:45.484749] [9626] [trace]mp_server.c:430(svr_on_new_connection): new connection: 127.0.0.1:51124
+[2019-07-23 11:04:51.383642] [9714] [vip]mp_main.c:109(main): marketprice server start
+[2019-07-23 11:04:52.175685] [9714] [trace]mp_server.c:430(svr_on_new_connection): new connection: 127.0.0.1:51134
+[2019-07-23 11:04:52.175840] [9714] [trace]mp_server.c:430(svr_on_new_connection): new connection: 127.0.0.1:51137
+[2019-07-23 11:04:52.175924] [9714] [trace]mp_server.c:430(svr_on_new_connection): new connection: 127.0.0.1:51133
+[2019-07-23 11:04:52.175944] [9714] [trace]mp_server.c:430(svr_on_new_connection): new connection: 127.0.0.1:51135
+[2019-07-23 11:05:01.382554] [9714] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-23 11:05:11.382467] [9714] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-23 11:05:14.324695] [9960] [vip]mp_main.c:107(main): marketprice server start
+[2019-07-23 11:05:15.324044] [9960] [trace]mp_server.c:430(svr_on_new_connection): new connection: 127.0.0.1:51152
+[2019-07-23 11:05:15.324181] [9960] [trace]mp_server.c:430(svr_on_new_connection): new connection: 127.0.0.1:51153
+[2019-07-23 11:05:15.324403] [9960] [trace]mp_server.c:430(svr_on_new_connection): new connection: 127.0.0.1:51154
+[2019-07-23 11:05:15.324479] [9960] [trace]mp_server.c:430(svr_on_new_connection): new connection: 127.0.0.1:51155
+[2019-07-23 11:05:24.323643] [9960] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-23 11:05:34.323707] [9960] [info]mp_message.c:814(on_market_timer): flush_market() disabled
