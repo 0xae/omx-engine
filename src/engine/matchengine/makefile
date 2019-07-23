@@ -1,4 +1,4 @@
-TARGET  := matchengine
+TARGET  := omxmatchengine
 
 INCS = -I ../network -I ../utils
 

@@ -1460,3 +1460,601 @@
 [2019-07-22 05:42:22.282799] [25023] [info]ah_server.c:228(on_listener_connect): connect listener fail
 [2019-07-22 05:42:22.283104] [25021] [info]ah_server.c:228(on_listener_connect): connect listener fail
 [2019-07-22 05:42:26.001497] [25546] [warn]ah_server.c:113(on_http_request): Bad API request. Method 'asset.summari' not found!
+[2019-07-23 10:03:15.700170] [25546] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-23 10:03:15.702682] [25545] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-23 10:03:15.702683] [25543] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-23 10:03:15.702686] [25542] [error]ut_rpc_clt.c:48(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-23 10:03:16.668836] [25546] [info]ah_server.c:228(on_listener_connect): connect listener fail
+[2019-07-23 10:03:16.668868] [25545] [info]ah_server.c:228(on_listener_connect): connect listener fail
+[2019-07-23 10:03:16.668935] [25543] [info]ah_server.c:228(on_listener_connect): connect listener fail
+[2019-07-23 10:03:16.669018] [25542] [info]ah_server.c:228(on_listener_connect): connect listener fail
+[2019-07-23 10:04:04.813191] [2275] [error]ut_rpc_clt.c:30(on_error_msg): peer: 127.0.0.1:7316: read error: Connection reset by peer
+[2019-07-23 10:04:04.813191] [2271] [error]ut_rpc_clt.c:30(on_error_msg): peer: 127.0.0.1:7316: read error: Connection reset by peer
+[2019-07-23 10:04:04.813185] [2272] [error]ut_rpc_clt.c:30(on_error_msg): peer: 127.0.0.1:7316: read error: Connection reset by peer
+[2019-07-23 10:04:04.813309] [2273] [error]ut_rpc_clt.c:30(on_error_msg): peer: 127.0.0.1:7316: read error: Connection reset by peer
+[2019-07-23 10:04:04.813260] [2275] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:04.813260] [2271] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:04.813273] [2272] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:04.813341] [2273] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:05.813850] [2273] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:05.813876] [2275] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:05.813922] [2271] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:05.814175] [2272] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:05.813934] [2273] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:05.814023] [2271] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:05.814272] [2272] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:05.813934] [2275] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:06.814178] [2271] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:06.814275] [2273] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:06.814402] [2275] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:06.814742] [2272] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:06.814768] [2272] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:06.814232] [2271] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:06.814429] [2275] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:06.814306] [2273] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:07.814993] [2271] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:07.815119] [2273] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:07.815287] [2275] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:07.815680] [2272] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:07.815767] [2272] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:07.815156] [2271] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:07.815224] [2273] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:07.815344] [2275] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:08.815308] [2271] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:08.815421] [2273] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:08.815694] [2275] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:08.816410] [2272] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:08.815403] [2271] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:08.816433] [2272] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:08.815454] [2273] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:08.815727] [2275] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:09.816156] [2273] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:09.816204] [2271] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:09.816522] [2275] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:09.817178] [2272] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:09.816230] [2273] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:09.817229] [2272] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:09.816254] [2271] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:09.816578] [2275] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:10.816965] [2273] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:10.816999] [2275] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:10.817140] [2271] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:10.817803] [2272] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:10.817857] [2272] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:10.817059] [2273] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:10.817169] [2271] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:10.817059] [2275] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:11.817476] [2275] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:11.817670] [2273] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:11.818222] [2272] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:11.818241] [2271] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:11.817743] [2273] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:11.818310] [2272] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:11.818347] [2271] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:11.817608] [2275] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:12.818353] [2275] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:12.818491] [2273] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:12.818834] [2272] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:12.819009] [2271] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:12.818573] [2273] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:12.818914] [2272] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:12.819088] [2271] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:12.818482] [2275] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:13.819217] [2275] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:13.819431] [2273] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:13.819730] [2272] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:13.819754] [2271] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:13.819483] [2273] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:13.819803] [2271] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:13.819797] [2272] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:13.819317] [2275] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:14.819790] [2275] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:14.820029] [2271] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:14.820031] [2273] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:14.820311] [2272] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:14.820058] [2271] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:14.820061] [2273] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:14.820347] [2272] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:14.819852] [2275] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:15.820612] [2273] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:15.820661] [2272] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:15.821068] [2275] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:15.821068] [2271] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:15.820708] [2272] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:15.820678] [2273] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:15.821122] [2271] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:15.821122] [2275] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:16.821048] [2272] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:16.821362] [2275] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:16.821595] [2273] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:16.821942] [2271] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:16.821637] [2273] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:16.822023] [2271] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:16.821237] [2272] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:16.821415] [2275] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:17.821615] [2272] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:17.821866] [2275] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:17.821943] [2273] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:17.822157] [2271] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:17.821685] [2272] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:17.821996] [2273] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:17.822201] [2271] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:17.821901] [2275] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:18.822142] [2273] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:18.822288] [2272] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:18.822480] [2271] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:18.822532] [2275] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:18.822539] [2271] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:18.822238] [2273] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:18.822343] [2272] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:18.822568] [2275] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:19.822663] [2271] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:19.857677] [2271] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:19.822801] [2275] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:19.857768] [2275] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:19.822897] [2272] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:19.822981] [2273] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:19.857834] [2272] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:19.857844] [2273] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:20.823305] [2273] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:20.823393] [2271] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:20.823393] [2275] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:20.823496] [2272] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:20.823436] [2271] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:20.823528] [2272] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:20.823436] [2275] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:20.823381] [2273] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:21.823615] [2275] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:21.823615] [2273] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:21.824036] [2272] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:21.824046] [2271] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:21.823680] [2273] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:21.824070] [2271] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:21.824059] [2272] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:21.823679] [2275] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:22.824078] [2275] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:22.824296] [2272] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:22.824474] [2271] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:22.824667] [2273] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:22.824520] [2271] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:22.824711] [2273] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:22.824360] [2272] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:22.824184] [2275] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:23.824726] [2271] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:23.824726] [2272] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:23.824726] [2275] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:23.825146] [2273] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:23.824806] [2271] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:23.824805] [2272] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:23.825193] [2273] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:23.824813] [2275] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:24.825300] [2271] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:24.844940] [2271] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:24.825348] [2273] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:24.825349] [2275] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:24.845051] [2273] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:24.845109] [2275] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:24.825385] [2272] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:24.845194] [2272] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:25.825395] [2271] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:25.825554] [2273] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:25.825572] [2272] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:25.826452] [2275] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:25.825453] [2271] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:25.825591] [2273] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:25.825598] [2272] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:25.826482] [2275] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:26.826309] [2272] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:26.826309] [2273] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:26.826309] [2271] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:26.827263] [2275] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:26.826424] [2271] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:26.827341] [2275] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:26.826414] [2273] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:26.826414] [2272] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:27.826782] [2273] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:27.826782] [2272] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:27.827039] [2271] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:27.827835] [2275] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:27.826890] [2273] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:27.826894] [2272] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:27.827114] [2271] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:27.827950] [2275] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:28.827788] [2271] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:28.827788] [2273] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:28.827788] [2272] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:28.828665] [2275] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:28.827903] [2271] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:28.827916] [2272] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:28.827908] [2273] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:28.828733] [2275] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:29.828680] [2271] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:29.828702] [2273] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:29.844245] [2271] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:29.844276] [2273] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:29.828699] [2272] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:29.844372] [2272] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:29.829287] [2275] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:29.844435] [2275] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:30.828819] [2273] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:30.828835] [2271] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:30.828835] [2272] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:30.829556] [2275] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:30.828906] [2273] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:30.828912] [2271] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:30.828916] [2272] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:30.829626] [2275] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:31.829506] [2271] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:31.829786] [2272] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:31.830047] [2273] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:31.830269] [2275] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:31.829613] [2271] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:31.829866] [2272] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:31.830126] [2273] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:31.830328] [2275] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:32.830327] [2271] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:32.830327] [2273] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:32.830575] [2272] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:32.830940] [2275] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:32.830449] [2271] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:32.830449] [2273] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:32.830635] [2272] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:32.831007] [2275] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:33.831060] [2273] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:33.831060] [2271] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:33.831060] [2272] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:33.831546] [2275] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:7316 fail
+[2019-07-23 10:04:33.831173] [2272] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:33.831163] [2273] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:33.831163] [2271] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:04:33.831589] [2275] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:7316 close
+[2019-07-23 10:24:19.343125] [2273] [warn]ah_server.c:113(on_http_request): Bad API request. Method 'engine.pingx' not found!
+[2019-07-23 10:25:01.642881] [2275] [error]ut_rpc_clt.c:47(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-23 10:25:01.642921] [2273] [error]ut_rpc_clt.c:47(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-23 10:25:01.642961] [2271] [error]ut_rpc_clt.c:47(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-23 10:25:01.643895] [2272] [error]ut_rpc_clt.c:47(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-23 10:25:08.642990] [15925] [error]ah_server.c:191(on_state_timeout): state id: 1 timeout
+[2019-07-23 10:25:11.997253] [15928] [error]ah_server.c:191(on_state_timeout): state id: 1 timeout
+[2019-07-23 10:25:17.536299] [15926] [error]ah_server.c:191(on_state_timeout): state id: 1 timeout
+[2019-07-23 10:25:30.510784] [15925] [warn]ah_server.c:113(on_http_request): Bad API request. Method 'asset.summari' not found!
+[2019-07-23 10:26:25.244354] [15928] [error]ah_server.c:191(on_state_timeout): state id: 2 timeout
+[2019-07-23 10:29:02.221193] [15925] [error]ut_rpc_clt.c:47(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-23 10:29:02.221325] [15928] [error]ut_rpc_clt.c:47(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-23 10:29:02.222510] [15926] [error]ut_rpc_clt.c:47(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-23 10:29:02.222652] [15924] [error]ut_rpc_clt.c:47(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-23 10:29:03.222225] [15925] [info]ah_server.c:229(on_listener_connect): connect listener fail
+[2019-07-23 10:29:03.222189] [15928] [info]ah_server.c:229(on_listener_connect): connect listener fail
+[2019-07-23 10:29:03.222533] [15926] [info]ah_server.c:229(on_listener_connect): connect listener fail
+[2019-07-23 10:29:03.223675] [15924] [info]ah_server.c:229(on_listener_connect): connect listener fail
+[2019-07-23 10:29:04.463109] [18336] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:04.463115] [18336] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:04.463353] [18337] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:04.463362] [18337] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:04.463011] [18335] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:04.463020] [18335] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:04.464162] [18339] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:04.464170] [18339] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:05.463820] [18337] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:05.463820] [18336] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:05.464001] [18335] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:05.464663] [18339] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:05.464013] [18336] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:05.464076] [18335] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:05.463952] [18337] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:05.464729] [18339] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:06.464984] [18335] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:06.465005] [18336] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:06.465005] [18337] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:06.465417] [18339] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:06.465114] [18335] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:06.465124] [18336] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:06.465129] [18337] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:06.465480] [18339] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:07.243002] [18339] [error]ut_rpc_clt.c:47(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-23 10:29:07.243084] [18337] [error]ut_rpc_clt.c:47(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-23 10:29:07.243182] [18336] [error]ut_rpc_clt.c:47(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-23 10:29:07.243268] [18335] [error]ut_rpc_clt.c:47(on_close): connection listener -> unix:/tmp/accesshttp_listener.sock close
+[2019-07-23 10:29:07.465937] [18337] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:07.465937] [18339] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:07.465937] [18335] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:07.466251] [18336] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:07.466009] [18335] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:07.466278] [18336] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:07.465996] [18337] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:07.466005] [18339] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:08.243167] [18339] [info]ah_server.c:229(on_listener_connect): connect listener fail
+[2019-07-23 10:29:08.243753] [18337] [info]ah_server.c:229(on_listener_connect): connect listener fail
+[2019-07-23 10:29:08.244090] [18335] [info]ah_server.c:229(on_listener_connect): connect listener fail
+[2019-07-23 10:29:08.244207] [18336] [info]ah_server.c:229(on_listener_connect): connect listener fail
+[2019-07-23 10:29:12.595204] [18446] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:12.595214] [18446] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:12.595640] [18448] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:12.595648] [18448] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:12.596914] [18450] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:12.596921] [18450] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:12.597084] [18452] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:12.597093] [18452] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:13.595969] [18448] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:13.595962] [18446] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:13.597354] [18450] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:13.597354] [18452] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:13.596062] [18446] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:13.596045] [18448] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:13.597455] [18450] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:13.597462] [18452] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:14.596726] [18446] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:14.596731] [18448] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:14.598005] [18450] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:14.598005] [18452] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:14.596813] [18446] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:14.596817] [18448] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:14.598059] [18452] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:14.598051] [18450] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:15.597830] [18448] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:15.597830] [18446] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:15.598353] [18450] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:15.598561] [18452] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:15.597931] [18446] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:15.597924] [18448] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:15.598611] [18452] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:15.598408] [18450] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:16.598675] [18446] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:16.598684] [18448] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:16.599021] [18452] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:16.599178] [18450] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:16.598772] [18446] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:16.598780] [18448] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:16.599223] [18450] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:16.599072] [18452] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:17.599491] [18448] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:17.599514] [18446] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:17.599812] [18452] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:17.600055] [18450] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:17.599599] [18448] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:17.599622] [18446] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:17.600125] [18450] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:17.599856] [18452] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:18.600263] [18452] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:18.600316] [18446] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:18.600316] [18448] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:18.600697] [18450] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:18.600401] [18448] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:18.600397] [18446] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:18.600392] [18452] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:18.600756] [18450] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:19.600846] [18448] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:19.601083] [18446] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:19.601242] [18452] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:19.601307] [18450] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:19.601132] [18446] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:19.600955] [18448] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:19.601324] [18452] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:19.601366] [18450] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:20.602044] [18450] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:20.602043] [18448] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:20.602044] [18446] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:20.602455] [18452] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:20.602206] [18446] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:20.602192] [18448] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:20.602189] [18450] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:20.602547] [18452] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:21.603050] [18450] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:21.603050] [18448] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:21.603050] [18446] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:21.603337] [18452] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:21.603210] [18446] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:21.603204] [18448] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:21.603196] [18450] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:21.603389] [18452] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:22.603457] [18446] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:22.603453] [18448] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:22.603961] [18450] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:22.603991] [18452] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:22.603527] [18448] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:22.603523] [18446] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:22.604070] [18450] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:22.604070] [18452] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:23.604337] [18446] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:23.604337] [18448] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:23.604474] [18452] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:23.604740] [18450] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:23.604399] [18448] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:23.604399] [18446] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:23.604780] [18450] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:23.604503] [18452] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:24.605090] [18448] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:24.605090] [18452] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:24.605090] [18450] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:24.605343] [18446] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:24.605406] [18446] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:24.605215] [18448] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:24.605231] [18450] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:24.605215] [18452] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:25.605383] [18448] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:25.605842] [18452] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:25.605991] [18450] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:25.606152] [18446] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:25.606260] [18446] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:25.605501] [18448] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:25.606037] [18450] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:25.605893] [18452] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:26.606245] [18452] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:26.606245] [18448] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:26.606296] [18450] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:26.606977] [18446] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:26.607020] [18446] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:26.606328] [18448] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:26.606318] [18452] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:26.606333] [18450] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:27.606919] [18448] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:27.606919] [18452] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:27.606919] [18450] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:27.607794] [18446] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:27.607852] [18446] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:27.607029] [18448] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:27.607029] [18452] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:27.607046] [18450] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:28.607669] [18452] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:28.607720] [18450] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:28.608057] [18448] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:28.608595] [18446] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:28.608646] [18446] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:28.608163] [18448] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:28.607763] [18450] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:28.607750] [18452] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:29.607888] [18448] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:29.608250] [18450] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:29.608595] [18452] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:29.608771] [18446] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:29.608827] [18446] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:29.608036] [18448] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:29.608325] [18450] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:29.608696] [18452] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:30.608881] [18448] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:30.608992] [18452] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:30.609026] [18450] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:30.609488] [18446] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:30.609553] [18446] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:30.609007] [18448] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:30.609080] [18450] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:30.609043] [18452] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:31.609812] [18450] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:31.609783] [18448] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:31.609900] [18452] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:31.610469] [18446] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:31.610530] [18446] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:31.609917] [18448] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:31.609907] [18450] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:31.609959] [18452] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:32.610292] [18448] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:32.610599] [18452] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:32.610619] [18450] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:32.611544] [18446] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:32.611625] [18446] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:32.610360] [18448] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:32.610665] [18450] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:32.610636] [18452] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:33.611101] [18452] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:33.611101] [18448] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:33.611321] [18450] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:33.612322] [18446] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:33.612396] [18446] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:33.611209] [18448] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:33.611207] [18452] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:33.611367] [18450] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:34.611734] [18448] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:34.611961] [18450] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:34.612000] [18452] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:34.612887] [18446] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:34.612941] [18446] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:34.611902] [18448] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:34.612008] [18450] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:34.612033] [18452] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:35.612313] [18450] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:35.612313] [18448] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:35.612466] [18452] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:35.613708] [18446] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:35.612399] [18448] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:35.613772] [18446] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:35.612493] [18452] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:35.612395] [18450] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:36.613099] [18450] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:36.613101] [18452] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:36.613093] [18448] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:36.614666] [18446] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:36.614762] [18446] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:36.613225] [18448] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:36.613207] [18452] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:36.613207] [18450] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:37.613619] [18448] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:37.613728] [18452] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:37.613782] [18450] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:37.615523] [18446] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:29:37.615575] [18446] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:37.613719] [18448] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:37.613836] [18450] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:29:37.613782] [18452] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:35:39.859041] [23686] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:35:39.859051] [23686] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:35:39.858837] [23684] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:35:39.858849] [23684] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:35:39.859943] [23688] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:35:39.859950] [23688] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:35:39.860112] [23689] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:35:39.860119] [23689] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:35:40.859293] [23686] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:35:40.859652] [23684] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:35:40.860268] [23689] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:35:40.860394] [23688] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:35:40.859712] [23684] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:35:40.859414] [23686] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:35:40.860343] [23689] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:35:40.860484] [23688] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:35:41.860038] [23684] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:35:41.860172] [23686] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:35:41.860871] [23689] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:35:41.861114] [23688] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:35:41.860258] [23686] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:35:41.860146] [23684] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:35:41.860931] [23689] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:35:41.861182] [23688] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:35:42.860422] [23686] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:35:42.860877] [23684] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:35:42.861559] [23689] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:35:42.861713] [23688] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:35:42.860917] [23684] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:35:42.860503] [23686] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:35:42.861631] [23689] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:35:42.861778] [23688] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:35:43.860716] [23686] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:35:43.861856] [23684] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:35:43.862438] [23689] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:35:43.862725] [23688] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:35:43.860848] [23686] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:35:43.861936] [23684] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:35:43.862821] [23688] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:35:43.862555] [23689] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:35:44.861573] [23686] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:35:44.862689] [23684] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:35:44.863182] [23689] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:35:44.863492] [23688] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:35:44.862800] [23684] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:35:44.861713] [23686] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:35:44.863242] [23689] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:35:44.863549] [23688] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:36:16.727150] [23688] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:36:16.727158] [23689] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:36:16.727497] [23686] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:36:16.727592] [23684] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:36:17.727940] [23688] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:36:17.727940] [23689] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:36:17.728028] [23686] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:36:17.728148] [23684] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:36:17.728170] [23684] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:36:17.728050] [23686] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:36:17.727998] [23689] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:36:17.727995] [23688] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:36:18.728477] [23684] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:36:18.728478] [23688] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:36:18.728511] [23689] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:36:18.728687] [23686] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:36:18.728537] [23684] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:36:18.728712] [23686] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:36:18.728545] [23689] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:36:18.728541] [23688] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:36:19.729080] [23688] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:36:19.729086] [23689] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:36:19.729520] [23686] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:36:19.729578] [23684] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:36:19.729578] [23686] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:36:19.729651] [23684] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:36:19.729162] [23688] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:36:19.729192] [23689] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:36:20.729169] [23689] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:36:20.729227] [23688] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:36:20.730160] [23686] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:36:20.730264] [23684] [info]ah_server.c:204(on_backend_connect): connect matchengine:127.0.0.1:8316 fail
+[2019-07-23 10:36:20.730188] [23686] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:36:20.730292] [23684] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:36:20.729253] [23688] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close
+[2019-07-23 10:36:20.729232] [23689] [error]ut_rpc_clt.c:47(on_close): connection matchengine -> 127.0.0.1:8316 close

@@ -390,8 +390,7 @@ enum header_states
   , h_connection_upgrade
   };
 
-enum http_host_state
-  {
+enum http_host_state {
     s_http_host_dead = 1
   , s_http_userinfo_start
   , s_http_userinfo

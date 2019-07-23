@@ -65,17 +65,19 @@ int init_config(const char *path)
         printf("json_load_file from: %s fail: %s in line: %d\n", path, error.text, error.line);
         return -__LINE__;
     }
+
     if (!json_is_object(root)) {
         json_decref(root);
         return -__LINE__;
     }
+
     int ret = read_config_from_json(root);
     if (ret < 0) {
         json_decref(root);
         return ret;
     }
-    json_decref(root);
 
+    json_decref(root);
     return 0;
 }
 

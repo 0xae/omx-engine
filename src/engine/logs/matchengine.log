@@ -1,0 +1,160 @@
+[2019-07-23 10:29:36.865931] [18693] [trace]me_persist.c:33(get_last_slice): exec sql: SELECT `time`, `end_oper_id`, `end_order_id`, `end_deals_id` from `slice_history` ORDER BY `id` DESC LIMIT 1
+[2019-07-23 10:29:36.866932] [18693] [info]me_persist.c:133(init_from_db): last_slice_time: 1563879600, last_oper_id: 2453, last_order_id: 1823, last_deals_id: 1465
+[2019-07-23 10:29:36.867073] [18693] [trace]me_load.c:21(load_orders): exec sql: SELECT `id`, `t`, `side`, `create_time`, `update_time`, `user_id`, `market`, `price`, `amount`, `taker_fee`, `maker_fee`, `left`, `freeze`, `deal_stock`, `deal_money`, `deal_fee` FROM `slice_order_1563879600` WHERE `id` > 0 ORDER BY `id` LIMIT 1000
+[2019-07-23 10:29:36.874650] [18693] [trace]me_load.c:88(load_balance): exec sql: SELECT `id`, `user_id`, `asset`, `t`, `balance` FROM `slice_balance_1563879600` WHERE `id` > 0 ORDER BY id LIMIT 1000
+[2019-07-23 10:29:36.875762] [18693] [trace]ut_mysql.c:36(is_table_exists): exec sql: SHOW TABLES LIKE 'operlog_20190723'
+[2019-07-23 10:29:36.947006] [18693] [error]me_persist.c:96(load_operlog_from_db): table operlog_20190723 not exist
+[2019-07-23 10:29:37.850998] [18693] [vip]me_main.c:144(main): server start
+[2019-07-23 10:29:38.614255] [18693] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:44455
+[2019-07-23 10:29:38.614444] [18693] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:44456
+[2019-07-23 10:29:38.614823] [18693] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:44457
+[2019-07-23 10:29:38.616508] [18693] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:44458
+[2019-07-23 10:29:40.744827] [18693] [trace]me_server.c:1128(svr_on_recv_pkg): from: 127.0.0.1:44457 cmd balance query, sequence: 1 params: ["BTC"]
+[2019-07-23 10:29:40.744941] [18693] [trace]me_server.c:38(reply_json): connection: 127.0.0.1:44457 send: {
+    "error": null,
+    "result": "pong",
+    "id": 2
+}
+[2019-07-23 10:29:42.898259] [18693] [trace]me_server.c:1128(svr_on_recv_pkg): from: 127.0.0.1:44456 cmd balance query, sequence: 1 params: ["BTC"]
+[2019-07-23 10:29:42.898325] [18693] [trace]me_server.c:38(reply_json): connection: 127.0.0.1:44456 send: {
+    "error": null,
+    "result": "pong",
+    "id": 2
+}
+[2019-07-23 10:29:43.591428] [18693] [trace]me_server.c:1128(svr_on_recv_pkg): from: 127.0.0.1:44457 cmd balance query, sequence: 2 params: ["BTC"]
+[2019-07-23 10:29:43.591494] [18693] [trace]me_server.c:38(reply_json): connection: 127.0.0.1:44457 send: {
+    "error": null,
+    "result": "pong",
+    "id": 2
+}
+[2019-07-23 10:29:44.128627] [18693] [trace]me_server.c:1128(svr_on_recv_pkg): from: 127.0.0.1:44455 cmd balance query, sequence: 1 params: ["BTC"]
+[2019-07-23 10:29:44.128680] [18693] [trace]me_server.c:38(reply_json): connection: 127.0.0.1:44455 send: {
+    "error": null,
+    "result": "pong",
+    "id": 2
+}
+[2019-07-23 10:29:44.726053] [18693] [trace]me_server.c:1128(svr_on_recv_pkg): from: 127.0.0.1:44458 cmd balance query, sequence: 1 params: ["BTC"]
+[2019-07-23 10:29:44.726099] [18693] [trace]me_server.c:38(reply_json): connection: 127.0.0.1:44458 send: {
+    "error": null,
+    "result": "pong",
+    "id": 2
+}
+[2019-07-23 10:29:45.103386] [18693] [trace]me_server.c:1128(svr_on_recv_pkg): from: 127.0.0.1:44456 cmd balance query, sequence: 2 params: ["BTC"]
+[2019-07-23 10:29:45.103446] [18693] [trace]me_server.c:38(reply_json): connection: 127.0.0.1:44456 send: {
+    "error": null,
+    "result": "pong",
+    "id": 2
+}
+[2019-07-23 10:29:45.814561] [18693] [trace]me_server.c:1128(svr_on_recv_pkg): from: 127.0.0.1:44456 cmd balance query, sequence: 3 params: ["BTC"]
+[2019-07-23 10:29:45.814598] [18693] [trace]me_server.c:38(reply_json): connection: 127.0.0.1:44456 send: {
+    "error": null,
+    "result": "pong",
+    "id": 2
+}
+[2019-07-23 10:29:46.307187] [18693] [trace]me_server.c:1128(svr_on_recv_pkg): from: 127.0.0.1:44455 cmd balance query, sequence: 2 params: ["BTC"]
+[2019-07-23 10:29:46.307253] [18693] [trace]me_server.c:38(reply_json): connection: 127.0.0.1:44455 send: {
+    "error": null,
+    "result": "pong",
+    "id": 2
+}
+[2019-07-23 10:31:46.074977] [18693] [trace]me_server.c:1301(svr_on_connection_close): connection: 127.0.0.1:44457 close
+[2019-07-23 10:31:46.075082] [18693] [trace]me_server.c:1301(svr_on_connection_close): connection: 127.0.0.1:44456 close
+[2019-07-23 10:31:46.075112] [18693] [trace]me_server.c:1301(svr_on_connection_close): connection: 127.0.0.1:44458 close
+[2019-07-23 10:31:46.075361] [18693] [trace]me_server.c:1301(svr_on_connection_close): connection: 127.0.0.1:44455 close
+[2019-07-23 10:34:18.428513] [22409] [trace]me_persist.c:33(get_last_slice): exec sql: SELECT `time`, `end_oper_id`, `end_order_id`, `end_deals_id` from `slice_history` ORDER BY `id` DESC LIMIT 1
+[2019-07-23 10:34:18.428877] [22409] [info]me_persist.c:133(init_from_db): last_slice_time: 1563879600, last_oper_id: 2453, last_order_id: 1823, last_deals_id: 1465
+[2019-07-23 10:34:18.428913] [22409] [trace]me_load.c:21(load_orders): exec sql: SELECT `id`, `t`, `side`, `create_time`, `update_time`, `user_id`, `market`, `price`, `amount`, `taker_fee`, `maker_fee`, `left`, `freeze`, `deal_stock`, `deal_money`, `deal_fee` FROM `slice_order_1563879600` WHERE `id` > 0 ORDER BY `id` LIMIT 1000
+[2019-07-23 10:34:18.436092] [22409] [trace]me_load.c:88(load_balance): exec sql: SELECT `id`, `user_id`, `asset`, `t`, `balance` FROM `slice_balance_1563879600` WHERE `id` > 0 ORDER BY id LIMIT 1000
+[2019-07-23 10:34:18.436519] [22409] [trace]ut_mysql.c:36(is_table_exists): exec sql: SHOW TABLES LIKE 'operlog_20190723'
+[2019-07-23 10:34:18.503214] [22409] [error]me_persist.c:96(load_operlog_from_db): table operlog_20190723 not exist
+[2019-07-23 10:34:18.524207] [22409] [vip]me_main.c:148(main): server start
+[2019-07-23 10:35:06.648429] [23018] [trace]me_persist.c:33(get_last_slice): exec sql: SELECT `time`, `end_oper_id`, `end_order_id`, `end_deals_id` from `slice_history` ORDER BY `id` DESC LIMIT 1
+[2019-07-23 10:35:06.648933] [23018] [info]me_persist.c:133(init_from_db): last_slice_time: 1563879600, last_oper_id: 2453, last_order_id: 1823, last_deals_id: 1465
+[2019-07-23 10:35:06.648985] [23018] [trace]me_load.c:21(load_orders): exec sql: SELECT `id`, `t`, `side`, `create_time`, `update_time`, `user_id`, `market`, `price`, `amount`, `taker_fee`, `maker_fee`, `left`, `freeze`, `deal_stock`, `deal_money`, `deal_fee` FROM `slice_order_1563879600` WHERE `id` > 0 ORDER BY `id` LIMIT 1000
+[2019-07-23 10:35:06.649670] [23018] [trace]me_load.c:88(load_balance): exec sql: SELECT `id`, `user_id`, `asset`, `t`, `balance` FROM `slice_balance_1563879600` WHERE `id` > 0 ORDER BY id LIMIT 1000
+[2019-07-23 10:35:06.650309] [23018] [trace]ut_mysql.c:36(is_table_exists): exec sql: SHOW TABLES LIKE 'operlog_20190723'
+[2019-07-23 10:35:06.652444] [23018] [error]me_persist.c:96(load_operlog_from_db): table operlog_20190723 not exist
+[2019-07-23 10:35:06.705673] [23018] [vip]me_main.c:148(main): server start
+[2019-07-23 10:35:09.615371] [23117] [trace]me_persist.c:33(get_last_slice): exec sql: SELECT `time`, `end_oper_id`, `end_order_id`, `end_deals_id` from `slice_history` ORDER BY `id` DESC LIMIT 1
+[2019-07-23 10:35:09.615770] [23117] [info]me_persist.c:133(init_from_db): last_slice_time: 1563879600, last_oper_id: 2453, last_order_id: 1823, last_deals_id: 1465
+[2019-07-23 10:35:09.615857] [23117] [trace]me_load.c:21(load_orders): exec sql: SELECT `id`, `t`, `side`, `create_time`, `update_time`, `user_id`, `market`, `price`, `amount`, `taker_fee`, `maker_fee`, `left`, `freeze`, `deal_stock`, `deal_money`, `deal_fee` FROM `slice_order_1563879600` WHERE `id` > 0 ORDER BY `id` LIMIT 1000
+[2019-07-23 10:35:09.616401] [23117] [trace]me_load.c:88(load_balance): exec sql: SELECT `id`, `user_id`, `asset`, `t`, `balance` FROM `slice_balance_1563879600` WHERE `id` > 0 ORDER BY id LIMIT 1000
+[2019-07-23 10:35:09.617376] [23117] [trace]ut_mysql.c:36(is_table_exists): exec sql: SHOW TABLES LIKE 'operlog_20190723'
+[2019-07-23 10:35:09.620561] [23117] [error]me_persist.c:96(load_operlog_from_db): table operlog_20190723 not exist
+[2019-07-23 10:35:09.628411] [23117] [vip]me_main.c:148(main): server start
+[2019-07-23 10:35:11.531517] [23156] [trace]me_persist.c:33(get_last_slice): exec sql: SELECT `time`, `end_oper_id`, `end_order_id`, `end_deals_id` from `slice_history` ORDER BY `id` DESC LIMIT 1
+[2019-07-23 10:35:11.603000] [23156] [info]me_persist.c:133(init_from_db): last_slice_time: 1563879600, last_oper_id: 2453, last_order_id: 1823, last_deals_id: 1465
+[2019-07-23 10:35:11.603124] [23156] [trace]me_load.c:21(load_orders): exec sql: SELECT `id`, `t`, `side`, `create_time`, `update_time`, `user_id`, `market`, `price`, `amount`, `taker_fee`, `maker_fee`, `left`, `freeze`, `deal_stock`, `deal_money`, `deal_fee` FROM `slice_order_1563879600` WHERE `id` > 0 ORDER BY `id` LIMIT 1000
+[2019-07-23 10:35:11.628801] [23156] [trace]me_load.c:88(load_balance): exec sql: SELECT `id`, `user_id`, `asset`, `t`, `balance` FROM `slice_balance_1563879600` WHERE `id` > 0 ORDER BY id LIMIT 1000
+[2019-07-23 10:35:11.629332] [23156] [trace]ut_mysql.c:36(is_table_exists): exec sql: SHOW TABLES LIKE 'operlog_20190723'
+[2019-07-23 10:35:11.793955] [23156] [error]me_persist.c:96(load_operlog_from_db): table operlog_20190723 not exist
+[2019-07-23 10:35:11.805006] [23156] [vip]me_main.c:148(main): server start
+[2019-07-23 10:35:13.891598] [23197] [trace]me_persist.c:33(get_last_slice): exec sql: SELECT `time`, `end_oper_id`, `end_order_id`, `end_deals_id` from `slice_history` ORDER BY `id` DESC LIMIT 1
+[2019-07-23 10:35:13.892019] [23197] [info]me_persist.c:133(init_from_db): last_slice_time: 1563879600, last_oper_id: 2453, last_order_id: 1823, last_deals_id: 1465
+[2019-07-23 10:35:13.892061] [23197] [trace]me_load.c:21(load_orders): exec sql: SELECT `id`, `t`, `side`, `create_time`, `update_time`, `user_id`, `market`, `price`, `amount`, `taker_fee`, `maker_fee`, `left`, `freeze`, `deal_stock`, `deal_money`, `deal_fee` FROM `slice_order_1563879600` WHERE `id` > 0 ORDER BY `id` LIMIT 1000
+[2019-07-23 10:35:13.892646] [23197] [trace]me_load.c:88(load_balance): exec sql: SELECT `id`, `user_id`, `asset`, `t`, `balance` FROM `slice_balance_1563879600` WHERE `id` > 0 ORDER BY id LIMIT 1000
+[2019-07-23 10:35:13.893262] [23197] [trace]ut_mysql.c:36(is_table_exists): exec sql: SHOW TABLES LIKE 'operlog_20190723'
+[2019-07-23 10:35:13.895056] [23197] [error]me_persist.c:96(load_operlog_from_db): table operlog_20190723 not exist
+[2019-07-23 10:35:13.951599] [23197] [vip]me_main.c:148(main): server start
+[2019-07-23 10:35:16.685514] [23236] [trace]me_persist.c:33(get_last_slice): exec sql: SELECT `time`, `end_oper_id`, `end_order_id`, `end_deals_id` from `slice_history` ORDER BY `id` DESC LIMIT 1
+[2019-07-23 10:35:16.686459] [23236] [info]me_persist.c:133(init_from_db): last_slice_time: 1563879600, last_oper_id: 2453, last_order_id: 1823, last_deals_id: 1465
+[2019-07-23 10:35:16.686569] [23236] [trace]me_load.c:21(load_orders): exec sql: SELECT `id`, `t`, `side`, `create_time`, `update_time`, `user_id`, `market`, `price`, `amount`, `taker_fee`, `maker_fee`, `left`, `freeze`, `deal_stock`, `deal_money`, `deal_fee` FROM `slice_order_1563879600` WHERE `id` > 0 ORDER BY `id` LIMIT 1000
+[2019-07-23 10:35:16.687628] [23236] [trace]me_load.c:88(load_balance): exec sql: SELECT `id`, `user_id`, `asset`, `t`, `balance` FROM `slice_balance_1563879600` WHERE `id` > 0 ORDER BY id LIMIT 1000
+[2019-07-23 10:35:16.688772] [23236] [trace]ut_mysql.c:36(is_table_exists): exec sql: SHOW TABLES LIKE 'operlog_20190723'
+[2019-07-23 10:35:16.742353] [23236] [error]me_persist.c:96(load_operlog_from_db): table operlog_20190723 not exist
+[2019-07-23 10:35:16.751952] [23236] [vip]me_main.c:148(main): server start
+[2019-07-23 10:35:19.041579] [23294] [trace]me_persist.c:33(get_last_slice): exec sql: SELECT `time`, `end_oper_id`, `end_order_id`, `end_deals_id` from `slice_history` ORDER BY `id` DESC LIMIT 1
+[2019-07-23 10:35:19.041877] [23294] [info]me_persist.c:133(init_from_db): last_slice_time: 1563879600, last_oper_id: 2453, last_order_id: 1823, last_deals_id: 1465
+[2019-07-23 10:35:19.041949] [23294] [trace]me_load.c:21(load_orders): exec sql: SELECT `id`, `t`, `side`, `create_time`, `update_time`, `user_id`, `market`, `price`, `amount`, `taker_fee`, `maker_fee`, `left`, `freeze`, `deal_stock`, `deal_money`, `deal_fee` FROM `slice_order_1563879600` WHERE `id` > 0 ORDER BY `id` LIMIT 1000
+[2019-07-23 10:35:19.042697] [23294] [trace]me_load.c:88(load_balance): exec sql: SELECT `id`, `user_id`, `asset`, `t`, `balance` FROM `slice_balance_1563879600` WHERE `id` > 0 ORDER BY id LIMIT 1000
+[2019-07-23 10:35:19.043429] [23294] [trace]ut_mysql.c:36(is_table_exists): exec sql: SHOW TABLES LIKE 'operlog_20190723'
+[2019-07-23 10:35:19.094150] [23294] [error]me_persist.c:96(load_operlog_from_db): table operlog_20190723 not exist
+[2019-07-23 10:35:19.159620] [23294] [vip]me_main.c:148(main): server start
+[2019-07-23 10:35:28.719838] [23466] [trace]me_persist.c:33(get_last_slice): exec sql: SELECT `time`, `end_oper_id`, `end_order_id`, `end_deals_id` from `slice_history` ORDER BY `id` DESC LIMIT 1
+[2019-07-23 10:35:28.720271] [23466] [info]me_persist.c:133(init_from_db): last_slice_time: 1563879600, last_oper_id: 2453, last_order_id: 1823, last_deals_id: 1465
+[2019-07-23 10:35:28.720295] [23466] [trace]me_load.c:21(load_orders): exec sql: SELECT `id`, `t`, `side`, `create_time`, `update_time`, `user_id`, `market`, `price`, `amount`, `taker_fee`, `maker_fee`, `left`, `freeze`, `deal_stock`, `deal_money`, `deal_fee` FROM `slice_order_1563879600` WHERE `id` > 0 ORDER BY `id` LIMIT 1000
+[2019-07-23 10:35:28.720943] [23466] [trace]me_load.c:88(load_balance): exec sql: SELECT `id`, `user_id`, `asset`, `t`, `balance` FROM `slice_balance_1563879600` WHERE `id` > 0 ORDER BY id LIMIT 1000
+[2019-07-23 10:35:28.721399] [23466] [trace]ut_mysql.c:36(is_table_exists): exec sql: SHOW TABLES LIKE 'operlog_20190723'
+[2019-07-23 10:35:28.799157] [23466] [error]me_persist.c:96(load_operlog_from_db): table operlog_20190723 not exist
+[2019-07-23 10:35:29.117297] [23466] [vip]me_main.c:148(main): server start
+[2019-07-23 10:35:30.331837] [23554] [trace]me_persist.c:33(get_last_slice): exec sql: SELECT `time`, `end_oper_id`, `end_order_id`, `end_deals_id` from `slice_history` ORDER BY `id` DESC LIMIT 1
+[2019-07-23 10:35:30.332358] [23554] [info]me_persist.c:133(init_from_db): last_slice_time: 1563879600, last_oper_id: 2453, last_order_id: 1823, last_deals_id: 1465
+[2019-07-23 10:35:30.332460] [23554] [trace]me_load.c:21(load_orders): exec sql: SELECT `id`, `t`, `side`, `create_time`, `update_time`, `user_id`, `market`, `price`, `amount`, `taker_fee`, `maker_fee`, `left`, `freeze`, `deal_stock`, `deal_money`, `deal_fee` FROM `slice_order_1563879600` WHERE `id` > 0 ORDER BY `id` LIMIT 1000
+[2019-07-23 10:35:30.342445] [23554] [trace]me_load.c:88(load_balance): exec sql: SELECT `id`, `user_id`, `asset`, `t`, `balance` FROM `slice_balance_1563879600` WHERE `id` > 0 ORDER BY id LIMIT 1000
+[2019-07-23 10:35:30.343402] [23554] [trace]ut_mysql.c:36(is_table_exists): exec sql: SHOW TABLES LIKE 'operlog_20190723'
+[2019-07-23 10:35:30.346003] [23554] [error]me_persist.c:96(load_operlog_from_db): table operlog_20190723 not exist
+[2019-07-23 10:35:30.611743] [23554] [vip]me_main.c:148(main): server start
+[2019-07-23 10:35:45.566530] [23736] [trace]me_persist.c:33(get_last_slice): exec sql: SELECT `time`, `end_oper_id`, `end_order_id`, `end_deals_id` from `slice_history` ORDER BY `id` DESC LIMIT 1
+[2019-07-23 10:35:45.567008] [23736] [info]me_persist.c:133(init_from_db): last_slice_time: 1563879600, last_oper_id: 2453, last_order_id: 1823, last_deals_id: 1465
+[2019-07-23 10:35:45.567079] [23736] [trace]me_load.c:21(load_orders): exec sql: SELECT `id`, `t`, `side`, `create_time`, `update_time`, `user_id`, `market`, `price`, `amount`, `taker_fee`, `maker_fee`, `left`, `freeze`, `deal_stock`, `deal_money`, `deal_fee` FROM `slice_order_1563879600` WHERE `id` > 0 ORDER BY `id` LIMIT 1000
+[2019-07-23 10:35:45.567891] [23736] [trace]me_load.c:88(load_balance): exec sql: SELECT `id`, `user_id`, `asset`, `t`, `balance` FROM `slice_balance_1563879600` WHERE `id` > 0 ORDER BY id LIMIT 1000
+[2019-07-23 10:35:45.568759] [23736] [trace]ut_mysql.c:36(is_table_exists): exec sql: SHOW TABLES LIKE 'operlog_20190723'
+[2019-07-23 10:35:45.571806] [23736] [error]me_persist.c:96(load_operlog_from_db): table operlog_20190723 not exist
+[2019-07-23 10:35:45.694639] [23736] [vip]me_main.c:148(main): server start
+[2019-07-23 10:35:45.862791] [23736] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:45086
+[2019-07-23 10:35:45.863700] [23736] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:45087
+[2019-07-23 10:35:45.863852] [23736] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:45088
+[2019-07-23 10:35:45.864212] [23736] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:45089
+[2019-07-23 10:35:51.703897] [23736] [trace]me_server.c:1128(svr_on_recv_pkg): from: 127.0.0.1:45089 cmd balance query, sequence: 1 params: ["BTC"]
+[2019-07-23 10:35:51.703976] [23736] [trace]me_server.c:38(reply_json): connection: 127.0.0.1:45089 send: {
+    "error": null,
+    "id": 2,
+    "result": "pong"
+}
+[2019-07-23 10:36:12.031566] [23736] [trace]me_server.c:1128(svr_on_recv_pkg): from: 127.0.0.1:45086 cmd balance query, sequence: 1 params: ["BTC"]
+[2019-07-23 10:36:12.031647] [23736] [trace]me_server.c:38(reply_json): connection: 127.0.0.1:45086 send: {
+    "error": null,
+    "id": 2,
+    "result": "pong"
+}
+[2019-07-23 10:36:20.999059] [24117] [trace]me_persist.c:33(get_last_slice): exec sql: SELECT `time`, `end_oper_id`, `end_order_id`, `end_deals_id` from `slice_history` ORDER BY `id` DESC LIMIT 1
+[2019-07-23 10:36:20.999684] [24117] [info]me_persist.c:133(init_from_db): last_slice_time: 1563879600, last_oper_id: 2453, last_order_id: 1823, last_deals_id: 1465
+[2019-07-23 10:36:20.999825] [24117] [trace]me_load.c:21(load_orders): exec sql: SELECT `id`, `t`, `side`, `create_time`, `update_time`, `user_id`, `market`, `price`, `amount`, `taker_fee`, `maker_fee`, `left`, `freeze`, `deal_stock`, `deal_money`, `deal_fee` FROM `slice_order_1563879600` WHERE `id` > 0 ORDER BY `id` LIMIT 1000
+[2019-07-23 10:36:21.000957] [24117] [trace]me_load.c:88(load_balance): exec sql: SELECT `id`, `user_id`, `asset`, `t`, `balance` FROM `slice_balance_1563879600` WHERE `id` > 0 ORDER BY id LIMIT 1000
+[2019-07-23 10:36:21.002177] [24117] [trace]ut_mysql.c:36(is_table_exists): exec sql: SHOW TABLES LIKE 'operlog_20190723'
+[2019-07-23 10:36:21.006002] [24117] [error]me_persist.c:96(load_operlog_from_db): table operlog_20190723 not exist
+[2019-07-23 10:36:21.053963] [24117] [vip]me_main.c:148(main): server start
+[2019-07-23 10:36:21.729988] [24117] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:45132
+[2019-07-23 10:36:21.730059] [24117] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:45133
+[2019-07-23 10:36:21.730978] [24117] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:45135
+[2019-07-23 10:36:21.731003] [24117] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:45136

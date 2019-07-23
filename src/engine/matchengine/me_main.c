@@ -15,7 +15,7 @@
 #include "me_cli.h"
 #include "me_server.h"
 
-const char *__process__="matchengine";
+const char *__process__="omxmatchengine";
 const char *__version__="0.1.0";
 
 nw_timer cron_timer;
@@ -36,6 +36,7 @@ static int init_process(void)
             return -__LINE__;
         }
     }
+
     if (settings.process.core_limit) {
         if (set_core_limit(settings.process.core_limit) < 0) {
             return -__LINE__;
@@ -48,11 +49,14 @@ static int init_process(void)
 static int init_log(void)
 {
     default_dlog = dlog_init(settings.log.path, settings.log.shift, settings.log.max, settings.log.num, settings.log.keep);
-    if (default_dlog == NULL)
+    if (default_dlog == NULL) {
         return -__LINE__;
+    }
+
     default_dlog_flag = dlog_read_flag(settings.log.flag);
-    if (alert_init(&settings.alert) < 0)
+    if (alert_init(&settings.alert) < 0) {
         return -__LINE__;
+    }
 
     return 0;
 }
@@ -100,8 +104,8 @@ int main(int argc, char *argv[])
         error(EXIT_FAILURE, errno, "init trade fail: %d", ret);
     }
 
-    daemon(1, 1);
-    process_keepalive();
+    // daemon(1, 1);
+    // process_keepalive();
 
     ret = init_from_db();
     if (ret < 0) {

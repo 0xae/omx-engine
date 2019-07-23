@@ -5,7 +5,7 @@
         "core_limit": 10000
     },
     "log": {
-        "path": "./trade/matchengine",
+        "path": "./logs/matchengine",
         "flag": "fatal,error,warn,info,debug,trace",
         "num": 10
     },
@@ -15,14 +15,14 @@
     },
     "svr": {
         "bind": [
-            "tcp@0.0.0.0:7316",
-            "udp@0.0.0.0:7316"
+            "tcp@0.0.0.0:8316",
+            "udp@0.0.0.0:8316"
         ],
         "buf_limit": 100,
         "max_pkg_size": 10240,
         "heartbeat_check": false
     },
-    "cli": "tcp@127.0.0.1:7317",
+    "cli": "tcp@127.0.0.1:8317",
     "db_log": {
         "host": "127.0.0.1",
         "user": "root",

@@ -255,6 +255,7 @@ static int init_listener_clt(void)
     if (nw_sock_cfg_parse(AH_LISTENER_BIND, &addr, &cfg.sock_type) < 0){
         return -__LINE__;
     }
+
     cfg.max_pkg_size = 1024;
 
     rpc_clt_type type;
@@ -292,6 +293,7 @@ static int add_handler(char *method, rpc_clt *clt, uint32_t cmd)
 static int init_methods_handler(void)
 {
     ERR_RET_LN(add_handler("asset.list", matchengine, CMD_ASSET_LIST));
+    ERR_RET_LN(add_handler("engine.ping", matchengine, CMD_PING));
     ERR_RET_LN(add_handler("asset.summary", matchengine, CMD_ASSET_SUMMARY));
     ERR_RET_LN(add_handler("market.last", marketprice, CMD_MARKET_LAST));
 
@@ -309,15 +311,17 @@ int init_server(void)
     dt.key_destructor = dict_key_free;
     dt.val_destructor = dict_val_free;
     methods = dict_create(&dt, 64);
-    if (methods == NULL)
+    if (methods == NULL) {
         return -__LINE__;
+    }
 
     nw_state_type st;
     memset(&st, 0, sizeof(st));
     st.on_timeout = on_state_timeout;
     state = nw_state_create(&st, sizeof(struct state_info));
-    if (state == NULL)
+    if (state == NULL) {
         return -__LINE__;
+    }
 
     rpc_clt_type ct;
     memset(&ct, 0, sizeof(ct));

@@ -28,7 +28,7 @@
     "matchengine": {
         "name": "matchengine",
         "addr": [
-            "tcp@127.0.0.1:7316"
+            "tcp@127.0.0.1:8316"
         ],
         "max_pkg_size": 2000000
     },

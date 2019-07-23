@@ -35,6 +35,6 @@ if __name__ == '__main__':
       'p123'
   )
 
-  result = engine.rpc('asset.summari', ["BTC"])
+  result = engine.rpc('engine.ping', ["BTC"])
   print "RPC[Response] = "
   print json.dumps(result)

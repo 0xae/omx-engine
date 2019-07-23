@@ -3,13 +3,12 @@
  *     History: yang@haipo.me, 2016/03/30, create
  */
 
-# include <assert.h>
-
-# include "ut_rpc_clt.h"
-# include "ut_misc.h"
-# include "ut_pack.h"
-# include "ut_log.h"
-# include "nw_sock.h"
+#include <assert.h>
+#include "ut_rpc_clt.h"
+#include "ut_misc.h"
+#include "ut_pack.h"
+#include "ut_log.h"
+#include "nw_sock.h"
 
 static void on_recv_pkg(nw_ses *ses, void *data, size_t size)
 {

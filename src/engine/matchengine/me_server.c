@@ -1106,6 +1106,14 @@ invalid_argument:
     return reply_error_invalid_argument(ses, pkg);
 }
 
+static int on_cmd_ping(nw_ses *ses, rpc_pkg *pkg, json_t *params)
+{
+    json_t *result = json_string("pong");
+    int ret = reply_result(ses, pkg, result);
+    json_decref(result);
+    return ret;
+}
+
 static void svr_on_recv_pkg(nw_ses *ses, rpc_pkg *pkg)
 {
     json_t *params = json_loadb(pkg->body, pkg->body_size, 0, NULL);
@@ -1116,13 +1124,22 @@ static void svr_on_recv_pkg(nw_ses *ses, rpc_pkg *pkg)
 
     int ret;
     switch (pkg->command) {
+    case CMD_PING:
+        log_trace("from: %s cmd balance query, sequence: %u params: %s", nw_sock_human_addr(&ses->peer_addr), pkg->sequence, params_str);
+        ret = on_cmd_ping(ses, pkg, params);
+        if (ret < 0) {
+            log_error("on_cmd_ping %s fail: %d", params_str, ret);
+        }
+    break;
+
     case CMD_BALANCE_QUERY:
         log_trace("from: %s cmd balance query, sequence: %u params: %s", nw_sock_human_addr(&ses->peer_addr), pkg->sequence, params_str);
         ret = on_cmd_balance_query(ses, pkg, params);
         if (ret < 0) {
             log_error("on_cmd_balance_query %s fail: %d", params_str, ret);
         }
-        break;
+    break;
+
     case CMD_BALANCE_UPDATE:
         if (is_operlog_block() || is_history_block() || is_message_block()) {
             log_fatal("service unavailable, operlog: %d, history: %d, message: %d",
@@ -1135,21 +1152,24 @@ static void svr_on_recv_pkg(nw_ses *ses, rpc_pkg *pkg)
         if (ret < 0) {
             log_error("on_cmd_balance_update %s fail: %d", params_str, ret);
         }
-        break;
+    break;
+
     case CMD_ASSET_LIST:
         log_trace("from: %s cmd asset list, sequence: %u params: %s", nw_sock_human_addr(&ses->peer_addr), pkg->sequence, params_str);
         ret = on_cmd_asset_list(ses, pkg, params);
         if (ret < 0) {
             log_error("on_cmd_asset_list %s fail: %d", params_str, ret);
         }
-        break;
+    break;
+
     case CMD_ASSET_SUMMARY:
         log_trace("from: %s cmd asset summary, sequence: %u params: %s", nw_sock_human_addr(&ses->peer_addr), pkg->sequence, params_str);
         ret = on_cmd_asset_summary(ses, pkg, params);
         if (ret < 0) {
             log_error("on_cmd_asset_summary %s fail: %d", params_str, ret);
         }
-        break;
+    break;
+    
     case CMD_ORDER_PUT_LIMIT:
         if (is_operlog_block() || is_history_block() || is_message_block()) {
             log_fatal("service unavailable, operlog: %d, history: %d, message: %d",
@@ -1162,7 +1182,8 @@ static void svr_on_recv_pkg(nw_ses *ses, rpc_pkg *pkg)
         if (ret < 0) {
             log_error("on_cmd_order_put_limit %s fail: %d", params_str, ret);
         }
-        break;
+    break;
+    
     case CMD_ORDER_PUT_MARKET:
         if (is_operlog_block() || is_history_block() || is_message_block()) {
             log_fatal("service unavailable, operlog: %d, history: %d, message: %d",
@@ -1175,14 +1196,16 @@ static void svr_on_recv_pkg(nw_ses *ses, rpc_pkg *pkg)
         if (ret < 0) {
             log_error("on_cmd_order_put_market %s fail: %d", params_str, ret);
         }
-        break;
+    break;
+
     case CMD_ORDER_QUERY:
         log_trace("from: %s cmd order query, sequence: %u params: %s", nw_sock_human_addr(&ses->peer_addr), pkg->sequence, params_str);
         ret = on_cmd_order_query(ses, pkg, params);
         if (ret < 0) {
             log_error("on_cmd_order_query %s fail: %d", params_str, ret);
         }
-        break;
+    break;
+
     case CMD_ORDER_CANCEL:
         if (is_operlog_block() || is_history_block() || is_message_block()) {
             log_fatal("service unavailable, operlog: %d, history: %d, message: %d",
@@ -1195,49 +1218,55 @@ static void svr_on_recv_pkg(nw_ses *ses, rpc_pkg *pkg)
         if (ret < 0) {
             log_error("on_cmd_order_cancel %s fail: %d", params_str, ret);
         }
-        break;
+    break;
+
     case CMD_ORDER_BOOK:
         log_trace("from: %s cmd order book, sequence: %u params: %s", nw_sock_human_addr(&ses->peer_addr), pkg->sequence, params_str);
         ret = on_cmd_order_book(ses, pkg, params);
         if (ret < 0) {
             log_error("on_cmd_order_book %s fail: %d", params_str, ret);
         }
-        break;
+    break;
+
     case CMD_ORDER_BOOK_DEPTH:
         log_trace("from: %s cmd order book depth, sequence: %u params: %s", nw_sock_human_addr(&ses->peer_addr), pkg->sequence, params_str);
         ret = on_cmd_order_book_depth(ses, pkg, params);
         if (ret < 0) {
             log_error("on_cmd_order_book_depth %s fail: %d", params_str, ret);
         }
-        break;
+    break;
+
     case CMD_ORDER_DETAIL:
         log_trace("from: %s cmd order detail, sequence: %u params: %s", nw_sock_human_addr(&ses->peer_addr), pkg->sequence, params_str);
         ret = on_cmd_order_detail(ses, pkg, params);
         if (ret < 0) {
             log_error("on_cmd_order_detail %s fail: %d", params_str, ret);
         }
-        break;
+    break;
+
     case CMD_MARKET_LIST:
         log_trace("from: %s cmd market list, sequence: %u params: %s", nw_sock_human_addr(&ses->peer_addr), pkg->sequence, params_str);
         ret = on_cmd_market_list(ses, pkg, params);
         if (ret < 0) {
             log_error("on_cmd_market_list %s fail: %d", params_str, ret);
         }
-        break;
+    break;
+
     case CMD_MARKET_CREATE:
         log_trace("from: %s cmd market_create, sequence: %u params: %s", nw_sock_human_addr(&ses->peer_addr), pkg->sequence, params_str);
         ret = on_cmd_market_create(ses, pkg, params);
         if (ret < 0) {
             log_error("on_cmd_market_create %s fail: %d", params_str, ret);
         }
-        break;
+    break;
+
     case CMD_ASSET_CREATE:
         log_trace("from: %s cmd asset_create, sequence: %u params: %s", nw_sock_human_addr(&ses->peer_addr), pkg->sequence, params_str);
         ret = on_cmd_asset_create(ses, pkg, params);
         if (ret < 0) {
             log_error("on_cmd_asset_create %s fail: %d", params_str, ret);
         }
-        break;
+    break;
 
     default:
         log_error("from: %s unknown command: %u", nw_sock_human_addr(&ses->peer_addr), pkg->command);
