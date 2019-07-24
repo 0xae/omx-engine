@@ -1,13 +1,11 @@
 /*
  * Description: 
  *     History: yang@haipo.me, 2017/04/16, create
- */
-
-# include <curl/curl.h>
-
-# include "mp_config.h"
-# include "mp_message.h"
-# include "mp_kline.h"
+*/
+#include <curl/curl.h>
+#include "mp_config.h"
+#include "mp_message.h"
+#include "mp_kline.h"
 
 enum {
     KLINE_SEC,
@@ -115,8 +113,10 @@ static int load_market_kline(redisContext *context, sds key, dict_t *dict, time_
 
     for (size_t i = 0; i < reply->elements; i += 2) {
         time_t timestamp = strtol(reply->element[i]->str, NULL, 0);
-        if (start && timestamp < start)
+        if (start && timestamp < start) {
             continue;
+        }
+
         struct kline_info *info = kline_from_str(reply->element[i + 1]->str);
         if (info) {
             dict_add(dict, &timestamp, info);
@@ -130,7 +130,6 @@ static int load_market_kline(redisContext *context, sds key, dict_t *dict, time_
 static int load_market_deals(redisContext *context, sds key, struct market_info *info)
 {
     log_info("request to redis");
-    printf("request to redis\n");
 
     redisReply *reply = redisCmd(context, "LRANGE %s 0 %d", key, MARKET_DEALS_MAX - 1);
 

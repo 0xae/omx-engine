@@ -12,8 +12,8 @@ static dict_t *dict_cache;
 static nw_timer cache_timer;
 
 struct cache_val {
-    double      time;
-    json_t      *result;
+    double time;
+    json_t *result;
 };
 
 static int reply_json(nw_ses *ses, rpc_pkg *pkg, const json_t *json)
@@ -122,22 +122,28 @@ static int add_cache(sds cache_key, json_t *result)
 
 static int on_cmd_market_status(nw_ses *ses, rpc_pkg *pkg, json_t *params)
 {
-    if (json_array_size(params) != 2)
+    if (json_array_size(params) != 2) {
         return reply_error_invalid_argument(ses, pkg);
+    }
 
     const char *market = json_string_value(json_array_get(params, 0));
-    if (!market)
+    if (!market) {
         return reply_error_invalid_argument(ses, pkg);
-    if (!market_exist(market))
+    }
+
+    if (!market_exist(market)){
         return reply_error_invalid_argument(ses, pkg);
+    }
 
     int period = json_integer_value(json_array_get(params, 1));
-    if (period <= 0 || period > settings.sec_max)
+    if (period <= 0 || period > settings.sec_max) {
         return reply_error_invalid_argument(ses, pkg);
+    }
 
     sds cache_key = NULL;
-    if (process_cache(ses, pkg, &cache_key))
+    if (process_cache(ses, pkg, &cache_key)) {
         return 0;
+    }
 
     json_t *result = get_market_status(market, period);
     if (result == NULL) {
