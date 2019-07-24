@@ -2,7 +2,7 @@
 
 import sys
 import json
-from conf import getConf
+from conf import getHttpConf
 
 HTTPSERVER_CONF="engine/httpserver/config.json"
 host,port = getHttpConf(HTTPSERVER_CONF)
