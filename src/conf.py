@@ -6,6 +6,7 @@ def getHttpConf(path):
 
     json_raw = conf.read()
     json_obj = json.loads(json_raw)
+
     # print("[INFO] httpserver config is loaded")
 
     server_address = json_obj['svr']['bind'][0]
