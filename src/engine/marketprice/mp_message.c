@@ -129,7 +129,8 @@ static int load_market_kline(redisContext *context, sds key, dict_t *dict, time_
 
 static int load_market_deals(redisContext *context, sds key, struct market_info *info)
 {
-    log_info("request to redis");
+    // XXX: connect to Hazelcast here
+    log_info("=== request to redis ===");
 
     redisReply *reply = redisCmd(context, "LRANGE %s 0 %d", key, MARKET_DEALS_MAX - 1);
 
