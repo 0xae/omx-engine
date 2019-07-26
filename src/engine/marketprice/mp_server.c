@@ -3,9 +3,9 @@
  *     History: yang@haipo.me, 2017/04/18, create
  */
 
-# include "mp_config.h"
-# include "mp_server.h"
-# include "mp_message.h"
+#include "mp_config.h"
+#include "mp_server.h"
+#include "mp_message.h"
 
 static rpc_svr *svr;
 static dict_t *dict_cache;
@@ -27,7 +27,7 @@ static int reply_json(nw_ses *ses, rpc_pkg *pkg, const json_t *json)
     if (message_data == NULL)
         return -__LINE__;
 
-    log_trace("connection: %s send: %s", nw_sock_human_addr(&ses->peer_addr), message_data);
+    // log_trace("connection: %s send: %s", nw_sock_human_addr(&ses->peer_addr), message_data);
 
     rpc_pkg reply;
     memcpy(&reply, pkg, sizeof(reply));
@@ -71,7 +71,7 @@ static int reply_result(nw_ses *ses, rpc_pkg *pkg, json_t *result)
 {
     json_t *reply = json_object();
     json_object_set_new(reply, "error", json_null());
-    json_object_set    (reply, "result", result);
+    json_object_set(reply, "result", result);
     json_object_set_new(reply, "id", json_integer(pkg->req_id));
 
     int ret = reply_json(ses, pkg, reply);

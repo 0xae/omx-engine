@@ -3,9 +3,9 @@
  *     History: yang@haipo.me, 2017/04/16, create
  */
 
-# include "mp_config.h"
-# include "mp_message.h"
-# include "mp_server.h"
+#include "mp_config.h"
+#include "mp_message.h"
+#include "mp_server.h"
 
 const char *__process__ = "omxmarketprice";
 const char *__version__ = "0.1.0";

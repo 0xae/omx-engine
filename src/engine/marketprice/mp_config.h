@@ -37,23 +37,23 @@
 # include "ut_rpc_cmd.h"
 
 struct settings {
-    bool                debug;
-    process_cfg         process;
-    log_cfg             log;
-    alert_cfg           alert;
-    rpc_svr_cfg         svr;
-    kafka_consumer_cfg  deals;
-    redis_sentinel_cfg  redis;
-    int                 timezone;
-    int                 sec_max;
-    int                 min_max;
-    int                 hour_max;
-    double              cache_timeout;
-    char                *accesshttp;
+    bool debug;
+    process_cfg process;
+    log_cfg log;
+    alert_cfg alert;
+    rpc_svr_cfg svr;
+    kafka_consumer_cfg deals;
+    redis_sentinel_cfg redis;
+    int timezone;
+    int sec_max;
+    int min_max;
+    int hour_max;
+    double cache_timeout;
+    char *accesshttp;
 };
 
 extern struct settings settings;
 int init_config(const char *path);
 
-# endif
+#endif
 
