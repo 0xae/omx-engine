@@ -2,5 +2,5 @@
 *.swo
 *.o
 *.a
-*.log.*
-engine/logs
+*.log
+src/engine/logs

@@ -42,7 +42,7 @@ if __name__ == '__main__':
     user_id=sys.argv[1]
     instrument, amount, biz_id = sys.argv[2].split(',')
 
-    print("Deposit %s of %s on account of #%s" % (amount, instrument, user_id))
+    print("Deposit %s %s on account of #%s" % (amount, instrument, user_id))
 
     result = engine.rpc('balance.update', [int(user_id), instrument, "deposit", int(biz_id), amount, {}])
     print "RPC[Response] = "
