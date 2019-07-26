@@ -27,13 +27,13 @@
         "host": "127.0.0.1",
         "user": "root",
         "pass": "",
-        "name": "r10k"
+        "name": "omx"
     },
     "db_history": {
         "host": "127.0.0.1",
         "user": "root",
         "pass": "",
-        "name": "r10k"
+        "name": "omx"
     },
     "assets": [
         {

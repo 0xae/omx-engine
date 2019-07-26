@@ -17649,3 +17649,62 @@
 [2019-07-24 11:01:44.323682] [9960] [info]mp_message.c:814(on_market_timer): flush_market() disabled
 [2019-07-24 11:01:54.323573] [9960] [info]mp_message.c:814(on_market_timer): flush_market() disabled
 [2019-07-24 11:02:04.323946] [9960] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-26 09:16:35.808284] [13360] [fatal]mp_message.c:324(send_market_list_req): curl_easy_perform fail: Couldn't connect to server
+[2019-07-26 09:16:43.225081] [13472] [fatal]mp_message.c:324(send_market_list_req): curl_easy_perform fail: Couldn't connect to server
+[2019-07-26 09:16:48.461831] [13578] [vip]mp_main.c:107(main): marketprice server start
+[2019-07-26 09:16:48.899638] [13578] [trace]mp_server.c:436(svr_on_new_connection): new connection: 127.0.0.1:37498
+[2019-07-26 09:16:48.899791] [13578] [trace]mp_server.c:436(svr_on_new_connection): new connection: 127.0.0.1:37499
+[2019-07-26 09:16:48.899870] [13578] [trace]mp_server.c:436(svr_on_new_connection): new connection: 127.0.0.1:37500
+[2019-07-26 09:16:48.899985] [13578] [trace]mp_server.c:436(svr_on_new_connection): new connection: 127.0.0.1:37501
+[2019-07-26 09:16:58.462129] [13578] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-26 09:17:08.462000] [13578] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-26 09:17:18.462249] [13578] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-26 09:17:28.461928] [13578] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-26 09:17:38.461975] [13578] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-26 09:17:48.461372] [13578] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-26 09:17:58.461363] [13578] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-26 09:18:08.461442] [13578] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-26 09:18:18.461924] [13578] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-26 09:18:28.462272] [13578] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-26 09:18:38.461529] [13578] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-26 09:18:48.461303] [13578] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-26 09:18:58.461234] [13578] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-26 09:19:08.461363] [13578] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-26 09:19:18.461907] [13578] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-26 09:19:28.461361] [13578] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-26 09:19:38.461319] [13578] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-26 09:19:48.461453] [13578] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-26 09:19:58.461914] [13578] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-26 09:20:08.461273] [13578] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-26 09:20:18.462109] [13578] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-26 09:20:28.461366] [13578] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-26 09:20:38.461864] [13578] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-26 09:20:48.462140] [13578] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-26 09:20:58.462003] [13578] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-26 09:21:08.462212] [13578] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-26 09:21:18.461898] [13578] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-26 09:21:28.461225] [13578] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-26 09:21:28.689181] [13578] [trace]mp_server.c:441(svr_on_connection_close): connection: 127.0.0.1:37498 close
+[2019-07-26 09:21:28.689283] [13578] [trace]mp_server.c:441(svr_on_connection_close): connection: 127.0.0.1:37501 close
+[2019-07-26 09:21:28.689324] [13578] [trace]mp_server.c:441(svr_on_connection_close): connection: 127.0.0.1:37500 close
+[2019-07-26 09:21:28.689360] [13578] [trace]mp_server.c:441(svr_on_connection_close): connection: 127.0.0.1:37499 close
+[2019-07-26 09:21:30.181057] [13578] [trace]mp_server.c:436(svr_on_new_connection): new connection: 127.0.0.1:37588
+[2019-07-26 09:21:30.181164] [13578] [trace]mp_server.c:436(svr_on_new_connection): new connection: 127.0.0.1:37589
+[2019-07-26 09:21:30.181796] [13578] [trace]mp_server.c:436(svr_on_new_connection): new connection: 127.0.0.1:37593
+[2019-07-26 09:21:30.182483] [13578] [trace]mp_server.c:436(svr_on_new_connection): new connection: 127.0.0.1:37596
+[2019-07-26 09:21:38.462067] [13578] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-26 09:21:48.462016] [13578] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-26 09:21:58.461693] [13578] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-26 09:22:08.462096] [13578] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-26 09:22:18.461427] [13578] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-26 09:22:28.461396] [13578] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-26 09:22:38.461401] [13578] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-26 09:22:48.461827] [13578] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-26 09:22:58.462239] [13578] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-26 09:23:08.461857] [13578] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-26 09:23:18.461445] [13578] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-26 09:23:28.461949] [13578] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-26 09:23:38.461380] [13578] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-26 09:23:48.461640] [13578] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-26 09:23:58.462209] [13578] [info]mp_message.c:814(on_market_timer): flush_market() disabled
+[2019-07-26 09:24:08.461711] [13578] [info]mp_message.c:814(on_market_timer): flush_market() disabled

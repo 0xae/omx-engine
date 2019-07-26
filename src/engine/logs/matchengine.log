@@ -12160,3 +12160,152 @@
 
 [2019-07-24 11:01:40.071314] [3335] [error]me_message.c:35(on_logger): RDKAFKA-3-ERROR: rdkafka#producer-1: [thrd:thinkpad:9092/0]: thinkpad:9092/0: 3 request(s) timed out: disconnect (average rtt 28.135ms)
 
+[2019-07-26 09:16:40.530848] [13399] [trace]me_persist.c:33(get_last_slice): exec sql: SELECT `time`, `end_oper_id`, `end_order_id`, `end_deals_id` from `slice_history` ORDER BY `id` DESC LIMIT 1
+[2019-07-26 09:16:40.531602] [13399] [info]me_persist.c:133(init_from_db): last_slice_time: 1564135200, last_oper_id: 2510, last_order_id: 1855, last_deals_id: 1489
+[2019-07-26 09:16:40.531724] [13399] [trace]me_load.c:21(load_orders): exec sql: SELECT `id`, `t`, `side`, `create_time`, `update_time`, `user_id`, `market`, `price`, `amount`, `taker_fee`, `maker_fee`, `left`, `freeze`, `deal_stock`, `deal_money`, `deal_fee` FROM `slice_order_1564135200` WHERE `id` > 0 ORDER BY `id` LIMIT 1000
+[2019-07-26 09:16:40.539227] [13399] [trace]me_load.c:88(load_balance): exec sql: SELECT `id`, `user_id`, `asset`, `t`, `balance` FROM `slice_balance_1564135200` WHERE `id` > 0 ORDER BY id LIMIT 1000
+[2019-07-26 09:16:40.540755] [13399] [trace]ut_mysql.c:36(is_table_exists): exec sql: SHOW TABLES LIKE 'operlog_20190726'
+[2019-07-26 09:16:40.582332] [13399] [error]me_persist.c:96(load_operlog_from_db): table operlog_20190726 not exist
+[2019-07-26 09:16:40.627838] [13399] [vip]me_main.c:148(main): server start
+[2019-07-26 09:16:46.898214] [13399] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:35457
+[2019-07-26 09:16:46.898301] [13399] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:35458
+[2019-07-26 09:16:46.898457] [13399] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:35463
+[2019-07-26 09:16:46.898595] [13399] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:35465
+[2019-07-26 09:16:48.460881] [13399] [trace]me_server.c:1248(svr_on_recv_pkg): from: 127.0.0.1:35465 cmd market list, sequence: 1 params: []
+[2019-07-26 09:16:48.460970] [13399] [trace]me_server.c:38(reply_json): connection: 127.0.0.1:35465 send: {
+    "result": [
+        {
+            "money": "USDc",
+            "name": "BTCXETF-USDc",
+            "stock": "BTCXETF",
+            "money_prec": 5,
+            "stock_prec": 5,
+            "fee_prec": 4,
+            "min_amount": "0.001"
+        },
+        {
+            "money": "DAI",
+            "name": "RSTFND-DAI",
+            "stock": "RSTFND",
+            "money_prec": 5,
+            "stock_prec": 5,
+            "fee_prec": 4,
+            "min_amount": "0.001"
+        }
+    ],
+    "error": null,
+    "id": 1564136208
+}
+[2019-07-26 09:19:42.763484] [15631] [trace]me_persist.c:33(get_last_slice): exec sql: SELECT `time`, `end_oper_id`, `end_order_id`, `end_deals_id` from `slice_history` ORDER BY `id` DESC LIMIT 1
+[2019-07-26 09:19:42.763998] [15631] [info]me_persist.c:133(init_from_db): last_slice_time: 1564135200, last_oper_id: 2510, last_order_id: 1855, last_deals_id: 1489
+[2019-07-26 09:19:42.764124] [15631] [trace]me_load.c:21(load_orders): exec sql: SELECT `id`, `t`, `side`, `create_time`, `update_time`, `user_id`, `market`, `price`, `amount`, `taker_fee`, `maker_fee`, `left`, `freeze`, `deal_stock`, `deal_money`, `deal_fee` FROM `slice_order_1564135200` WHERE `id` > 0 ORDER BY `id` LIMIT 1000
+[2019-07-26 09:19:42.765035] [15631] [trace]me_load.c:88(load_balance): exec sql: SELECT `id`, `user_id`, `asset`, `t`, `balance` FROM `slice_balance_1564135200` WHERE `id` > 0 ORDER BY id LIMIT 1000
+[2019-07-26 09:19:42.766568] [15631] [trace]ut_mysql.c:36(is_table_exists): exec sql: SHOW TABLES LIKE 'operlog_20190726'
+[2019-07-26 09:19:42.771122] [15631] [error]me_persist.c:96(load_operlog_from_db): table operlog_20190726 not exist
+[2019-07-26 09:19:42.781699] [15631] [vip]me_main.c:148(main): server start
+[2019-07-26 09:19:43.179540] [15631] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:35533
+[2019-07-26 09:19:43.180240] [15631] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:35534
+[2019-07-26 09:19:43.180273] [15631] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:35535
+[2019-07-26 09:19:43.180855] [15631] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:35536
+[2019-07-26 09:21:28.689552] [15631] [trace]me_server.c:1301(svr_on_connection_close): connection: 127.0.0.1:35536 close
+[2019-07-26 09:21:28.689642] [15631] [trace]me_server.c:1301(svr_on_connection_close): connection: 127.0.0.1:35534 close
+[2019-07-26 09:21:28.689678] [15631] [trace]me_server.c:1301(svr_on_connection_close): connection: 127.0.0.1:35535 close
+[2019-07-26 09:21:28.689711] [15631] [trace]me_server.c:1301(svr_on_connection_close): connection: 127.0.0.1:35533 close
+[2019-07-26 09:21:30.180847] [15631] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:35563
+[2019-07-26 09:21:30.180976] [15631] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:35564
+[2019-07-26 09:21:30.182053] [15631] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:35569
+[2019-07-26 09:21:30.182307] [15631] [trace]me_server.c:1296(svr_on_new_connection): new connection: 127.0.0.1:35572
+[2019-07-26 09:22:05.080507] [15631] [trace]me_server.c:1150(svr_on_recv_pkg): from: 127.0.0.1:35564 cmd balance update, sequence: 1 params: [190, "BTC", "deposit", 1, "1500", {}]
+[2019-07-26 09:22:05.080671] [15631] [debug]me_operlog.c:164(append_operlog): add log: {"method": "update_balance", "params": [190, "BTC", "deposit", 1, "1500", {"id": 1}]}
+[2019-07-26 09:22:05.080682] [15631] [trace]me_server.c:38(reply_json): connection: 127.0.0.1:35564 send: {
+    "error": null,
+    "result": {
+        "status": "success"
+    },
+    "id": 2
+}
+[2019-07-26 09:22:05.159030] [15631] [trace]me_operlog.c:31(on_job): exec sql: CREATE TABLE IF NOT EXISTS `operlog_20190726` like `operlog_example`
+[2019-07-26 09:22:05.159116] [15631] [debug]me_operlog.c:100(flush_log): flush oper log count: 25650321
+[2019-07-26 09:22:05.159139] [15631] [debug]me_history.c:94(on_timer): flush history count: 1
+[2019-07-26 09:22:05.159144] [15631] [trace]me_history.c:59(on_job): exec sql: INSERT INTO `balance_history_90` (`id`, `time`, `user_id`, `asset`, `business`, `change`, `balance`, `detail`) VALUES (NULL, 1564136525.080589, 190, 'BTC', 'deposit', '1500.00000000', '1500.000000000000', '{\"id\": 1}')
+[2019-07-26 09:22:05.159158] [15631] [trace]me_message.c:29(on_delivery): Message delivered (topic: balances, 60 bytes, partition 0)
+[2019-07-26 09:22:05.529770] [15631] [trace]me_operlog.c:31(on_job): exec sql: INSERT INTO `operlog_20190726` (`id`, `time`, `detail`) VALUES (2511, 1564136525.080660, '{\"method\": \"update_balance\", \"params\": [190, \"BTC\", \"deposit\", 1, \"1500\", {\"id\": 1}]}')
+[2019-07-26 09:22:11.053115] [15631] [trace]me_server.c:1150(svr_on_recv_pkg): from: 127.0.0.1:35572 cmd balance update, sequence: 1 params: [190, "BTC", "deposit", 1, "1500", {}]
+[2019-07-26 09:22:11.053192] [15631] [trace]me_server.c:38(reply_json): connection: 127.0.0.1:35572 send: {
+    "error": {
+        "message": "repeat update",
+        "code": 10
+    },
+    "result": null,
+    "id": 2
+}
+[2019-07-26 09:23:38.800752] [15631] [trace]me_server.c:1136(svr_on_recv_pkg): from: 127.0.0.1:35564 cmd balance query, sequence: 2 params: [190]
+[2019-07-26 09:23:38.800914] [15631] [trace]me_server.c:38(reply_json): connection: 127.0.0.1:35564 send: {
+    "error": null,
+    "result": {
+        "USDc": {
+            "available": "0",
+            "freeze": "0"
+        },
+        "USDT": {
+            "available": "0",
+            "freeze": "0"
+        },
+        "DAI": {
+            "available": "0",
+            "freeze": "0"
+        },
+        "ETH": {
+            "available": "0",
+            "freeze": "0"
+        },
+        "BTC": {
+            "available": "1500",
+            "freeze": "0"
+        },
+        "BTCXETF": {
+            "available": "0",
+            "freeze": "0"
+        },
+        "RSTFND": {
+            "available": "0",
+            "freeze": "0"
+        }
+    },
+    "id": 2
+}
+[2019-07-26 09:23:50.472490] [15631] [trace]me_server.c:1136(svr_on_recv_pkg): from: 127.0.0.1:35569 cmd balance query, sequence: 1 params: [190]
+[2019-07-26 09:23:50.472644] [15631] [trace]me_server.c:38(reply_json): connection: 127.0.0.1:35569 send: {
+    "error": null,
+    "result": {
+        "USDc": {
+            "available": "0",
+            "freeze": "0"
+        },
+        "USDT": {
+            "available": "0",
+            "freeze": "0"
+        },
+        "DAI": {
+            "available": "0",
+            "freeze": "0"
+        },
+        "ETH": {
+            "available": "0",
+            "freeze": "0"
+        },
+        "BTC": {
+            "available": "1500",
+            "freeze": "0"
+        },
+        "BTCXETF": {
+            "available": "0",
+            "freeze": "0"
+        },
+        "RSTFND": {
+            "available": "0",
+            "freeze": "0"
+        }
+    },
+    "id": 2
+}

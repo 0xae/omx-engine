@@ -292,11 +292,50 @@ static int add_handler(char *method, rpc_clt *clt, uint32_t cmd)
 
 static int init_methods_handler(void)
 {
-    ERR_RET_LN(add_handler("market.list", matchengine, CMD_MARKET_LIST));
-    ERR_RET_LN(add_handler("market.last", marketprice, CMD_MARKET_LAST));
+    // engine
+    ERR_RET_LN(add_handler("engine.ping", matchengine, CMD_PING));
+
+    // assets
     ERR_RET_LN(add_handler("asset.list", matchengine, CMD_ASSET_LIST));
     ERR_RET_LN(add_handler("asset.summary", matchengine, CMD_ASSET_SUMMARY));
-    ERR_RET_LN(add_handler("engine.ping", matchengine, CMD_PING));
+    ERR_RET_LN(add_handler("asset.create", matchengine, CMD_ASSET_CREATE));
+
+    // balance
+    ERR_RET_LN(add_handler("balance.query", matchengine, CMD_BALANCE_QUERY));
+    ERR_RET_LN(add_handler("balance.update", matchengine, CMD_BALANCE_UPDATE));
+    ERR_RET_LN(add_handler("balance.history", readhistory, CMD_BALANCE_HISTORY));
+
+    // order
+    ERR_RET_LN(add_handler("order.put_limit", matchengine, CMD_ORDER_PUT_LIMIT));
+    ERR_RET_LN(add_handler("order.put_market", matchengine, CMD_ORDER_PUT_MARKET));
+    ERR_RET_LN(add_handler("order.cancel", matchengine, CMD_ORDER_CANCEL));
+    ERR_RET_LN(add_handler("order.book", matchengine, CMD_ORDER_BOOK));
+    ERR_RET_LN(add_handler("order.depth", matchengine, CMD_ORDER_BOOK_DEPTH));
+    ERR_RET_LN(add_handler("order.pending", matchengine, CMD_ORDER_QUERY));
+    ERR_RET_LN(add_handler("order.pending_detail", matchengine, CMD_ORDER_DETAIL));
+    ERR_RET_LN(add_handler("order.deals", readhistory, CMD_ORDER_DEALS));
+    ERR_RET_LN(add_handler("order.finished", readhistory, CMD_ORDER_HISTORY));
+    ERR_RET_LN(add_handler("order.finished_detail", readhistory, CMD_ORDER_DETAIL_FINISHED));
+
+    // market
+    ERR_RET_LN(add_handler("market.last", marketprice, CMD_MARKET_LAST));
+    ERR_RET_LN(add_handler("market.deals", marketprice, CMD_MARKET_DEALS));
+    ERR_RET_LN(add_handler("market.kline", marketprice, CMD_MARKET_KLINE));
+    ERR_RET_LN(add_handler("market.status", marketprice, CMD_MARKET_STATUS));
+    ERR_RET_LN(add_handler("market.status_today", marketprice, CMD_MARKET_STATUS_TODAY));
+    ERR_RET_LN(add_handler("market.user_deals", readhistory, CMD_MARKET_USER_DEALS));
+    ERR_RET_LN(add_handler("market.list", matchengine, CMD_MARKET_LIST));
+    ERR_RET_LN(add_handler("market.summary", matchengine, CMD_MARKET_SUMMARY));
+
+    // @date 2019-04-03
+    // @author ayrton
+    ERR_RET_LN(add_handler("matcher.add_market", matchengine, CMD_MARKET_CREATE));
+    // ERR_RET_LN(add_handler("matcher.asset", matchengine, CMD_ASSET_CREATE));
+
+    // @date 2019-04-04
+    // @author ayrton
+    ERR_RET_LN(add_handler("market.add_market", marketprice, CMD_MARKET_CREATE));
+
     return 0;
 }
 
@@ -367,4 +406,3 @@ int init_server(void)
     ERR_RET(init_listener_clt());
     return 0;
 }
-
