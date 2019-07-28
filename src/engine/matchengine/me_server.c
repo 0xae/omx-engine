@@ -142,14 +142,18 @@ static int add_cache(sds cache_key, json_t *result)
 static int on_cmd_balance_query(nw_ses *ses, rpc_pkg *pkg, json_t *params)
 {
     size_t request_size = json_array_size(params);
-    if (request_size == 0)
+    if (request_size == 0) {
         return reply_error_invalid_argument(ses, pkg);
+    }
 
-    if (!json_is_integer(json_array_get(params, 0)))
+    if (!json_is_integer(json_array_get(params, 0))) {
         return reply_error_invalid_argument(ses, pkg);
+    }
+
     uint32_t user_id = json_integer_value(json_array_get(params, 0));
-    if (user_id == 0)
+    if (user_id <= 0) {
         return reply_error_invalid_argument(ses, pkg);
+    }
 
     json_t *result = json_object();
     if (request_size == 1) {

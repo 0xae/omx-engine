@@ -159,7 +159,6 @@ int main(int argc, char *argv[])
     // log_stderr("server start");
     nw_loop_run();
 
-
     log_vip("server stop");
     fini_message();
     fini_history();
