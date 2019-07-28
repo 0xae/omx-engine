@@ -63,12 +63,16 @@ static int init_log(void)
 
 int main(int argc, char *argv[])
 {
-    printf("process: %s version: %s, compile date: %s %s\n", __process__, __version__, __DATE__, __TIME__);
+    printf("===================================\n");
+    printf("OMX MATCH ENGINE  \n", __version__);
+    printf("[process: %s] [version: %s] [compile date: %s %s]\n", __process__, __version__, __DATE__, __TIME__);
+    printf("===================================\n\n");
 
     if (argc < 2) {
         printf("usage: %s config.json\n", argv[0]);
         exit(EXIT_FAILURE);
     }
+
     if (process_exist(__process__) != 0) {
         printf("process: %s exist\n", __process__);
         exit(EXIT_FAILURE);
@@ -79,26 +83,32 @@ int main(int argc, char *argv[])
     if (ret < 0) {
         error(EXIT_FAILURE, errno, "init mpd fail: %d", ret);
     }
+
     ret = init_config(argv[1]);
     if (ret < 0) {
         error(EXIT_FAILURE, errno, "load config fail: %d", ret);
     }
+
     ret = init_process();
     if (ret < 0) {
         error(EXIT_FAILURE, errno, "init process fail: %d", ret);
     }
+
     ret = init_log();
     if (ret < 0) {
         error(EXIT_FAILURE, errno, "init log fail: %d", ret);
     }
+
     ret = init_balance();
     if (ret < 0) {
         error(EXIT_FAILURE, errno, "init balance fail: %d", ret);
     }
+
     ret = init_update();
     if (ret < 0) {
         error(EXIT_FAILURE, errno, "init update fail: %d", ret);
     }
+
     ret = init_trade();
     if (ret < 0) {
         error(EXIT_FAILURE, errno, "init trade fail: %d", ret);

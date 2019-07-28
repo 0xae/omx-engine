@@ -2,7 +2,6 @@
  * Description: 
  *     History: yang@haipo.me, 2017/04/16, create
  */
-
 #include "mp_config.h"
 #include "mp_message.h"
 #include "mp_server.h"

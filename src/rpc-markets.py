@@ -26,7 +26,6 @@ host, port = getHttpConf(HTTPSERVER_CONF)
 
 pp = pprint.PrettyPrinter(indent=4)
 
-
 if __name__ == '__main__':
   engine = EngineRPC(
       '127.0.0.1', 
