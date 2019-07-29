@@ -1,8 +1,7 @@
 /*
  * Description: 
  *     History: yang@haipo.me, 2017/03/15, create
- */
-
+*/
 #include "me_config.h"
 #include "me_balance.h"
 
@@ -96,8 +95,9 @@ static int init_dict(void)
     type.val_destructor = asset_dict_val_free;
 
     dict_asset = dict_create(&type, 64);
-    if (dict_asset == NULL)
+    if (dict_asset == NULL) {
         return -__LINE__;
+    }
 
     memset(&type, 0, sizeof(type));
     type.hash_function  = balance_dict_hash_function;
@@ -108,8 +108,9 @@ static int init_dict(void)
     type.val_destructor = balance_dict_val_free;
 
     dict_balance = dict_create(&type, 64);
-    if (dict_balance == NULL)
+    if (dict_balance == NULL) {
         return -__LINE__;
+    }
 
     return 0;
 }
@@ -118,14 +119,16 @@ int init_balance()
 {
     ERR_RET(init_dict());
 
-    for (size_t i = 0; i < settings.asset_num; ++i) {
+    for (size_t i=0; i<settings.asset_num; ++i) {
         printf("init_balance_asset() : %s\n", settings.assets[i].name);
+
         struct asset_type type;
         type.prec_save = settings.assets[i].prec_save;
         type.prec_show = settings.assets[i].prec_show;
 
-        if (dict_add(dict_asset, settings.assets[i].name, &type) == NULL)
+        if (dict_add(dict_asset, settings.assets[i].name, &type) == NULL) {
             return -__LINE__;
+        }
     }
 
     return 0;
