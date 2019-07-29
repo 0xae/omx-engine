@@ -87,11 +87,11 @@ static int init_dict(void)
 {
     dict_types type;
     memset(&type, 0, sizeof(type));
-    type.hash_function  = asset_dict_hash_function;
-    type.key_compare    = asset_dict_key_compare;
-    type.key_dup        = asset_dict_key_dup;
+    type.hash_function = asset_dict_hash_function;
+    type.key_compare = asset_dict_key_compare;
+    type.key_dup = asset_dict_key_dup;
     type.key_destructor = asset_dict_key_free;
-    type.val_dup        = asset_dict_val_dup;
+    type.val_dup = asset_dict_val_dup;
     type.val_destructor = asset_dict_val_free;
 
     dict_asset = dict_create(&type, 64);
@@ -137,8 +137,9 @@ int init_balance()
 static struct asset_type *get_asset_type(const char *asset)
 {
     dict_entry *entry = dict_find(dict_asset, asset);
-    if (entry == NULL)
+    if (entry == NULL) {
         return NULL;
+    }
 
     return entry->val;
 }
