@@ -3,8 +3,8 @@
  *     History: yang@haipo.me, 2017/03/15, create
  */
 
-# include "me_config.h"
-# include "me_balance.h"
+#include "me_config.h"
+#include "me_balance.h"
 
 dict_t *dict_balance;
 static dict_t *dict_asset;
@@ -27,8 +27,10 @@ static void *asset_dict_key_dup(const void *key)
 static void *asset_dict_val_dup(const void *val)
 {
     struct asset_type *obj = malloc(sizeof(struct asset_type));
-    if (obj == NULL)
+    if (obj == NULL) {
         return NULL;
+    }
+
     memcpy(obj, val, sizeof(struct asset_type));
     return obj;
 }
