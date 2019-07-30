@@ -23,9 +23,7 @@ import pprint
 
 HTTPSERVER_CONF="engine/httpserver/config.json"
 host, port = getHttpConf(HTTPSERVER_CONF)
-
 pp = pprint.PrettyPrinter(indent=4)
-
 
 if __name__ == '__main__':
   engine = EngineRPC(

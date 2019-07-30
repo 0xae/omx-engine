@@ -123,8 +123,8 @@ int init_balance()
         printf("init_balance_asset() : %s\n", settings.assets[i].name);
 
         struct asset_type type;
-        type.prec_save = settings.assets[i].prec_save;
-        type.prec_show = settings.assets[i].prec_show;
+        type.prec_save=settings.assets[i].prec_save;
+        type.prec_show=settings.assets[i].prec_show;
 
         if (dict_add(dict_asset, settings.assets[i].name, &type) == NULL) {
             return -__LINE__;
@@ -203,6 +203,7 @@ mpd_t *balance_get(uint32_t user_id, uint32_t type, const char *asset)
         printf("get(%d)%s=%s.\n", user_id, asset, bal);
         free(bal);
         return result;
+
     } else {
         printf("not_found(%d)%s.\n", user_id, asset);
     }
@@ -221,7 +222,7 @@ void balance_del(uint32_t user_id, uint32_t type, const char *asset)
 
 mpd_t *balance_set(uint32_t user_id, uint32_t type, const char *asset, mpd_t *amount)
 {
-    struct asset_type *at = get_asset_type(asset);
+    struct asset_type *at=get_asset_type(asset);
     if (at == NULL) {
         printf("===> [balance_set] cant find asset %s\n", asset);
         return NULL;
