@@ -2,17 +2,16 @@
  * Description: 
  *     History: yang@haipo.me, 2017/04/16, create
  */
+#ifndef _MP_CONFIG_H_
+#define _MP_CONFIG_H_
 
-# ifndef _MP_CONFIG_H_
-# define _MP_CONFIG_H_
-
-# include <math.h>
-# include <stdio.h>
-# include <error.h>
-# include <errno.h>
-# include <ctype.h>
-# include <string.h>
-# include <stdlib.h>
+#include <math.h>
+#include <stdio.h>
+#include <error.h>
+#include <errno.h>
+#include <ctype.h>
+#include <string.h>
+#include <stdlib.h>
 #include <unistd.h>
 #include <assert.h>
 #include <inttypes.h>
