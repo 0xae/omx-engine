@@ -1,6 +1,6 @@
 #!/usr/bin/python
 #
-# Copyright 2018 Ayrton Gomes
+# Copyright 2019 XBTFinex
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -14,7 +14,6 @@
 # You should have received a copy of the GNU General Public License
 # along with this program; see the file COPYING.  If not, write to
 # the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.
-#
 
 from rpc import EngineRPC
 from conf import getHttpConf
