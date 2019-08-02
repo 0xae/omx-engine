@@ -436,7 +436,7 @@ static time_t get_day_start(time_t timestamp)
     struct tm dtm;
     memset(&dtm, 0, sizeof(dtm));
     dtm.tm_year = timeinfo->tm_year;
-    dtm.tm_mon  = timeinfo->tm_mon;
+    dtm.tm_mon = timeinfo->tm_mon;
     dtm.tm_mday = timeinfo->tm_mday;
     return mktime(&dtm);
 }
@@ -518,6 +518,7 @@ static int market_update(const char *market, double timestamp, mpd_t *price, mpd
     json_object_set_new(deal, "time", json_real(timestamp));
     json_object_set_new_mpd(deal, "price", price);
     json_object_set_new_mpd(deal, "amount", amount);
+
     if (side == MARKET_ORDER_SIDE_ASK) {
         json_object_set_new(deal, "type", json_string("sell"));
     } else {
@@ -538,6 +539,7 @@ static int market_update(const char *market, double timestamp, mpd_t *price, mpd
 
 static void on_deals_message(sds message, int64_t offset)
 {
+    // XXX: deals message
     log_trace("deals message: %s, offset: %"PRIi64, message, offset);
     json_t *obj = json_loadb(message, sdslen(message), 0, NULL);
     if (obj == NULL) {
