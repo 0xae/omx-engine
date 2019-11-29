@@ -56,6 +56,6 @@ EOS
 
 About Us
 =====
-For Sales and more information: xbtfinex@gmail.com
-### 2019 [xbtfinex.com](https://xbtfinex.com)
+For Sales and more information: info@enterstarts
+### 2019 [Enterstarts.com](https://enterstarts.com)
 
