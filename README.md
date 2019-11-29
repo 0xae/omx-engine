@@ -56,6 +56,6 @@ EOS
 
 About Us
 =====
-For Sales and more information: info@enterstarts
+For Sales and more information: info@enterstarts.com
 ### 2019 [Enterstarts.com](https://enterstarts.com)
 
