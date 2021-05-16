@@ -11,7 +11,7 @@ and at the same time provide unbreakable security upon the settlement procedure.
 The unsecure window is between matching the orders and finalizing the settlement procedures.
 With cold-storage, advanced and user friendly cryptography we can to overcome the challenge. 
 
-Our main inovation is the use of smart contracts powered by bitcoin or ethereum blockchain to represent financial instruments of interest which allows the engine to be extensible and able to transact various financial instruments with great performance and relentless security.
+Our main inovation is the use of smart contracts powered by bitcoin or ethereum blockchain to represent financial instruments of interest which allows the engine to be extensible and able to transact various financial instruments with relentless security.
 
 Keywords
 ===
