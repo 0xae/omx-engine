@@ -1,17 +1,13 @@
 # OMX Engine
-A trading engine built for the future.
 
-omx is a research project to develop a next generation trading engine for options
-and futures, without much constraints on the specific flavors of these financial instruments.
-The main objective is to build a centralized match-engine that uses a POS blockchain engine
+Next generation trading engine for options, futures and other derivative assets.
+OMX is a high-performance, optimized and centralized match-engine that can use ledger like engine
 like tendermint to do the settlement.
 
 Decoupling the matching engine and the settlement infraestructure allows us to process thousands of tx per second
 and at the same time provide unbreakable security upon the settlement procedure.
-The unsecure window is between matching the orders and finalizing the settlement procedures.
-With cold-storage, advanced and user friendly cryptography we can to overcome the challenge. 
 
-Our main inovation is the use of smart contracts powered by bitcoin or ethereum blockchain to represent financial instruments of interest which allows the engine to be extensible and able to transact various financial instruments with relentless security.
+Our main inovation is the use of solidity based smart contracts to represent financial instruments of interest which allows the engine to be extensible and able to transact various financial instruments with relentless security.
 
 Keywords
 ===
