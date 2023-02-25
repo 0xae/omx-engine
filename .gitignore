@@ -4,3 +4,4 @@
 *.a
 *.log
 src/engine/logs
+bin/*
