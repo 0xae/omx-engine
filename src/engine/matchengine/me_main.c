@@ -15,7 +15,7 @@
 #include "me_cli.h"
 #include "me_server.h"
 
-const char *__process__="omxmatchengine";
+const char *__process__="omx-matchengine";
 const char *__version__="0.1.0";
 
 nw_timer cron_timer;

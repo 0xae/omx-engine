@@ -45,6 +45,7 @@ bool is_table_exists(MYSQL *conn, const char *table)
     MYSQL_RES *result = mysql_store_result(conn);
     size_t num_rows = mysql_num_rows(result);
     mysql_free_result(result);
+
     if (num_rows == 1)
         return true;
 
