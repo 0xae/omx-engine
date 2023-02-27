@@ -7,7 +7,6 @@ like tendermint to do the settlement.
 Decoupling the matching engine and the settlement infraestructure allows us to process thousands of tx per second
 and at the same time provide unbreakable security upon the settlement procedure.
 
-Our main inovation is the use of solidity based smart contracts to represent financial instruments of interest which allows the engine to be extensible and able to transact various financial instruments with relentless security.
 
 Keywords
 ===
